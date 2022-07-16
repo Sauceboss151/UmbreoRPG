@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "umbreo_rpg:vulcor_crystal"
+  },
+  "result": "umbreo_rpg:vulcor_ingot"
+}

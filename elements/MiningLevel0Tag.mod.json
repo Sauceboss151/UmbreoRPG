@@ -1,0 +1,26 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.BLACKSTONE"
+      },
+      {
+        "value": "Blocks.COAL_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "mining_level_0_tag",
+    "namespace": "forge"
+  }
+}

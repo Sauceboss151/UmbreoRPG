@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "umbreo_rpg:blocks/tetrium_ore_block_texture",
+    "up": "umbreo_rpg:blocks/tetrium_ore_block_texture",
+    "north": "umbreo_rpg:blocks/tetrium_ore_block_texture",
+    "east": "umbreo_rpg:blocks/tetrium_ore_block_texture",
+    "south": "umbreo_rpg:blocks/tetrium_ore_block_texture",
+    "west": "umbreo_rpg:blocks/tetrium_ore_block_texture",
+    "particle": "umbreo_rpg:blocks/tetrium_ore_block_texture"
+  }
+}

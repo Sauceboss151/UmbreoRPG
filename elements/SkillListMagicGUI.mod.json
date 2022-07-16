@@ -1,0 +1,202 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 250,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Magic",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Magic",
+          "x": 199,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magic_decor_texture.png",
+          "use1Xscale": false,
+          "name": "magic_decor_texture.png",
+          "x": 92,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magic_decor_texture.png",
+          "use1Xscale": false,
+          "name": "magic_decor_texture.png",
+          "x": 315,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current Level: <VAR:integer:umbreoRpgMagicLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Current Level: <VAR:integer:umbreoRpgMagicLevel>",
+          "x": 96,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "NextSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Next",
+          "x": 285,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "PreviousSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Prev",
+          "x": 96,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 1: Tier 1 Spells",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicLevel1DisplayProcedure"
+          },
+          "name": "Level 1: Tier 1 Spells",
+          "x": 96,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 2: Tier 2 Spells",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicLevel2DisplayProcedure"
+          },
+          "name": "Level 2: Tier 2 Spells",
+          "x": 96,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 3: Tier 3 Spells",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicLevel3DisplayProcedure"
+          },
+          "name": "Level 3: Tier 3 Spells",
+          "x": 96,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 4: Tier 4 Spells",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicLevel4DisplayProcedure"
+          },
+          "name": "Level 4: Tier 4 Spells",
+          "x": 96,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 5: Tier 5 Spells",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicLevel5DisplayProcedure"
+          },
+          "name": "Level 5: Tier 5 Spells",
+          "x": 96,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Exp: <VAR:integer:umbreoRpgMagicExp>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Exp: <VAR:integer:umbreoRpgMagicExp>",
+          "x": 150,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Next Level: <VAR:integer:umbreoRpgMagicExpNextLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Next Level: <VAR:integer:umbreoRpgMagicExpNextLevel>",
+          "x": 150,
+          "y": 188
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "umbreo_rpg:jungle_core"
+    },
+    {
+      "item": "umbreo_rpg:frozen_core"
+    },
+    {
+      "item": "umbreo_rpg:twilight_core"
+    }
+  ],
+  "result": {
+    "item": "umbreo_rpg:worldly_shard",
+    "count": 1
+  }
+}

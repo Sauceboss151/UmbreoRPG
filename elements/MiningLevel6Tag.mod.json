@@ -1,0 +1,113 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.BLACKSTONE"
+      },
+      {
+        "value": "Blocks.COAL_ORE"
+      },
+      {
+        "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.IRON_ORE"
+      },
+      {
+        "value": "CUSTOM:TetriumOre"
+      },
+      {
+        "value": "Blocks.GOLD_ORE"
+      },
+      {
+        "value": "Blocks.REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.LAPIS_ORE"
+      },
+      {
+        "value": "Blocks.DIAMOND_ORE"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "CUSTOM:VulcorOre"
+      },
+      {
+        "value": "CUSTOM:ZoraliumOre"
+      },
+      {
+        "value": "CUSTOM:LathiumOre"
+      },
+      {
+        "value": "CUSTOM:CobiumOre"
+      },
+      {
+        "value": "CUSTOM:PureGoldOre"
+      },
+      {
+        "value": "Blocks.ANCIENT_DEBRIS"
+      },
+      {
+        "value": "CUSTOM:UmbelliumOre"
+      },
+      {
+        "value": "Blocks.DEEPSLATE"
+      },
+      {
+        "value": "Blocks.TUFF"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_IRON_ORE"
+      },
+      {
+        "value": "CUSTOM:TetriumDeepslateOre"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_GOLD_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_LAPIS_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_DIAMOND_ORE"
+      },
+      {
+        "value": "CUSTOM:LathiumDeepslateOre"
+      },
+      {
+        "value": "CUSTOM:ZoraliumDeepslateOre"
+      },
+      {
+        "value": "CUSTOM:CobiumDeepslateOre"
+      },
+      {
+        "value": "CUSTOM:PureGoldDeepslateOre"
+      },
+      {
+        "value": "CUSTOM:SkoriumDeepslateOre"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "mining_level_6_tag",
+    "namespace": "forge"
+  }
+}

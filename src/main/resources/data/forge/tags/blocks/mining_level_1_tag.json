@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diorite",
+    "minecraft:iron_ore",
+    "minecraft:deepslate",
+    "minecraft:tuff",
+    "minecraft:stone",
+    "minecraft:coal_ore",
+    "minecraft:blackstone",
+    "minecraft:andesite",
+    "minecraft:granite",
+    "minecraft:deepslate_iron_ore"
+  ]
+}

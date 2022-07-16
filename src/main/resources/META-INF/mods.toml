@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="umbreo_rpg"
+version="0.1"
+displayName="umbreo_rpg"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="Sauceboss, MCreator"
+
+[[dependencies.umbreo_rpg]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

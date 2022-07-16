@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "umbreo_rpg:blocks/twilight_oak_planks_texture",
+    "top": "umbreo_rpg:blocks/twilight_oak_planks_texture",
+    "side": "umbreo_rpg:blocks/twilight_oak_planks_texture"
+  }
+}

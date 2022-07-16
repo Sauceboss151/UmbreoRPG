@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 2,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "umbreo_rpg:raw_umbellium_ore"
+  },
+  "result": "umbreo_rpg:umbellium_ingot"
+}

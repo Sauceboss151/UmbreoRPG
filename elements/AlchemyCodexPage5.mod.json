@@ -1,0 +1,151 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 149,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 4",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Level 4",
+          "x": 195,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPage6"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Next",
+          "x": 252,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPage4"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Prev",
+          "x": 128,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Imp Dust can now be used as a",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Imp Dust can now be used as a",
+          "x": 139,
+          "y": 55
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Catalyst for any alchemy recipe.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Catalyst for any alchemy recipe.",
+          "x": 131,
+          "y": 65
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "line_texture.png",
+          "use1Xscale": false,
+          "name": "line_texture.png",
+          "x": 128,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "If used, the output produced can",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "If used, the output produced can",
+          "x": 129,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "be from 1 to 2 of that item.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "be from 1 to 2 of that item.",
+          "x": 139,
+          "y": 85
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Unactivated rods will always",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Unactivated rods will always",
+          "x": 137,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "produce only 1 output item.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "produce only 1 output item.",
+          "x": 142,
+          "y": 105
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

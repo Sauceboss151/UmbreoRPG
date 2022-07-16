@@ -1,0 +1,282 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 250,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Fletching",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Fletching",
+          "x": 192,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fletching_decore_texture.png",
+          "use1Xscale": false,
+          "name": "fletching_decore_texture.png",
+          "x": 92,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fletching_decore_texture.png",
+          "use1Xscale": false,
+          "name": "fletching_decore_texture.png",
+          "x": 317,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current Level: <VAR:integer:umbreoRpgFletchingLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Current Level: <VAR:integer:umbreoRpgFletchingLevel>",
+          "x": 96,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "NextSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Next",
+          "x": 285,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "PreviousSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Prev",
+          "x": 96,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 1: Twilight Oak Bow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FletchingLevel1DisplayProcedure"
+          },
+          "name": "Level 1: Twilight Oak Bow",
+          "x": 96,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 2: Reinforced Iron Bow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FletchingLevel2DisplayProcedure"
+          },
+          "name": "Level 2: Reinforced Iron Bow",
+          "x": 96,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 3: Diamond Bow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FletchingLevel3DisplayProcedure"
+          },
+          "name": "Level 3: Diamond Bow",
+          "x": 96,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 4: Zoralium, Lathium, Cobium Bow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FletchingLevel4DisplayProcedure"
+          },
+          "name": "Level 4: Zoralium, Lathium, Cobium Bow",
+          "x": 96,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 5: Netherite Bow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FletchingLevel5DisplayProcedure"
+          },
+          "name": "Level 5: Netherite Bow",
+          "x": 96,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 6: Skorium Bow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FletchingLevel6DisplayProcedure"
+          },
+          "name": "Level 6: Skorium Bow",
+          "x": 96,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 7: Umbellium Bow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FletchingLevel7DisplayProcedure"
+          },
+          "name": "Level 7: Umbellium Bow",
+          "x": 96,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 8: Mystalium Bow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FletchingLevel8DisplayProcedure"
+          },
+          "name": "Level 8: Mystalium Bow",
+          "x": 96,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 9: Osnium Bow, Duilium Bow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FletchingLevel9DisplayProcedure"
+          },
+          "name": "Level 9: Osnium Bow, Duilium Bow",
+          "x": 96,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 10: Ultrium Bow",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "FletchingLevel10DisplayProcedure"
+          },
+          "name": "Level 10: Ultrium Bow",
+          "x": 96,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Exp: <VAR:integer:umbreoRpgFletchingExp>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Exp: <VAR:integer:umbreoRpgFletchingExp>",
+          "x": 150,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Next Level: <VAR:integer:umbreoRpgFletchingExpNextLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Next Level: <VAR:integer:umbreoRpgFletchingExpNextLevel>",
+          "x": 150,
+          "y": 188
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

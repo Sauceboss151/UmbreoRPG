@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "umbreo_rpg:blocks/corn_stage_4_texture",
+    "particle": "umbreo_rpg:blocks/corn_stage_4_texture"
+  }
+}

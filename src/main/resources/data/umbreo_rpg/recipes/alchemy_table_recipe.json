@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "umbreo_rpg:treant_root"
+    },
+    "3": {
+      "item": "umbreo_rpg:imp_dust"
+    },
+    "4": {
+      "item": "umbreo_rpg:core_of_light"
+    },
+    "5": {
+      "item": "umbreo_rpg:imp_dust"
+    },
+    "6": {
+      "item": "minecraft:obsidian"
+    },
+    "7": {
+      "item": "minecraft:obsidian"
+    },
+    "8": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "umbreo_rpg:alchemy_table",
+    "count": 1
+  }
+}

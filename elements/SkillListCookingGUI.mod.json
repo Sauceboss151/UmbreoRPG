@@ -1,0 +1,295 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 250,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Cooking",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Cooking",
+          "x": 195,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current Level: <VAR:integer:umbreoRpgCookingLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Current Level: <VAR:integer:umbreoRpgCookingLevel>",
+          "x": 96,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cooking_decor_texture.png",
+          "use1Xscale": false,
+          "name": "cooking_decor_texture.png",
+          "x": 92,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cooking_decor_texture.png",
+          "use1Xscale": false,
+          "name": "cooking_decor_texture.png",
+          "x": 317,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 1: Level 1 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CookingLevel1DisplayProcedure"
+          },
+          "name": "Level 1: Level 1 Recipes",
+          "x": 96,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(Craft Cookbook to see recipe lists)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "(Craft Cookbook to see recipe lists)",
+          "x": 123,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 2: Level 2 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CookingLevel2DisplayProcedure"
+          },
+          "name": "Level 2: Level 2 Recipes",
+          "x": 96,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 3: Level 3 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CookingLevel3DisplayProcedure"
+          },
+          "name": "Level 3: Level 3 Recipes",
+          "x": 96,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 4: Level 4 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CookingLevel4DisplayProcedure"
+          },
+          "name": "Level 4: Level 4 Recipes",
+          "x": 96,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 5: Level 5 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CookingLevel5DisplayProcedure"
+          },
+          "name": "Level 5: Level 5 Recipes",
+          "x": 96,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 6: Level 6 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CookingLevel6DisplayProcedure"
+          },
+          "name": "Level 6: Level 6 Recipes",
+          "x": 96,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 7: Level 7 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CookingLevel7DisplayProcedure"
+          },
+          "name": "Level 7: Level 7 Recipes",
+          "x": 96,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 8: Level 8 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CookingLevel8DisplayProcedure"
+          },
+          "name": "Level 8: Level 8 Recipes",
+          "x": 96,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 9: Level 9 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CookingLevel9DisplayProcedure"
+          },
+          "name": "Level 9: Level 9 Recipes",
+          "x": 96,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 10: Level 10 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CookingLevel10DisplayProcedure"
+          },
+          "name": "Level 10: Level 10 Recipes",
+          "x": 96,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "NextSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Next",
+          "x": 285,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "PreviousSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Prev",
+          "x": 96,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Exp: <VAR:integer:umbreoRpgCookingExp>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Exp: <VAR:integer:umbreoRpgCookingExp>",
+          "x": 150,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Next Level: <VAR:integer:umbreoRpgCookingExpNextLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Next Level: <VAR:integer:umbreoRpgCookingExpNextLevel>",
+          "x": 150,
+          "y": 188
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

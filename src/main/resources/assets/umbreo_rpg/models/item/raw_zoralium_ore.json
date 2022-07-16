@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "umbreo_rpg:items/raw_zoralium_ore_texture"
+  }
+}

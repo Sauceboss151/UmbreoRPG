@@ -1,0 +1,20 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:RawTetriumOre"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:TetriumIngot"
+    },
+    "name": "tetrium_ore_blast_furnace",
+    "namespace": "mod"
+  }
+}

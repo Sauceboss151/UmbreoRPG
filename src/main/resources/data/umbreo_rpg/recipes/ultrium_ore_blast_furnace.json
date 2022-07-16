@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 3000,
+  "ingredient": {
+    "item": "umbreo_rpg:raw_ultrium_ore"
+  },
+  "result": "umbreo_rpg:ultrium_ingot"
+}

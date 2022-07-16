@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "umbreo_rpg:blocks/boreal_sweet_potato_stage_2_texture"
+  }
+}

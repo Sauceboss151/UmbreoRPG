@@ -1,0 +1,31 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "reinforced_iron_pickaxe_texture",
+    "customModelName": "Normal",
+    "name": "Reinforced Iron Pickaxe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 7.0,
+    "attackSpeed": 1.2,
+    "enchantability": 14,
+    "damageVsEntity": 4.0,
+    "usageCount": 552,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:ReinforcedIronIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

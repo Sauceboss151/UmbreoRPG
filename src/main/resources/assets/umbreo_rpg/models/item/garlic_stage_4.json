@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "umbreo_rpg:blocks/garlic_stage_4_texture"
+  }
+}

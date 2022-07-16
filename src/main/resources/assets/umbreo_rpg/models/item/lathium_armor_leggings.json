@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "umbreo_rpg:items/savage_lathium_leggings_texture"
+  }
+}

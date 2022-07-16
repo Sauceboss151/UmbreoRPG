@@ -1,0 +1,295 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 250,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Alchemy",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Alchemy",
+          "x": 196,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "alchemy_decore_texture.png",
+          "use1Xscale": false,
+          "name": "alchemy_decore_texture.png",
+          "x": 92,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "alchemy_decore_texture.png",
+          "use1Xscale": false,
+          "name": "alchemy_decore_texture.png",
+          "x": 317,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current Level: <VAR:integer:umbreoRpgAlchemyLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Current Level: <VAR:integer:umbreoRpgAlchemyLevel>",
+          "x": 96,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 1: Level 1 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlchemyLevel1DisplayProcedure"
+          },
+          "name": "Level 1: Level 1 Recipes",
+          "x": 96,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 2: Level 2 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlchemyLevel2DisplayProcedure"
+          },
+          "name": "Level 2: Level 2 Recipes",
+          "x": 96,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(Craft Alchemy Codex for Recipes)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "(Craft Alchemy Codex for Recipes)",
+          "x": 132,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 3: Level 3 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlchemyLevel3DisplayProcedure"
+          },
+          "name": "Level 3: Level 3 Recipes",
+          "x": 96,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 4: Level 4 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlchemyLevel4DisplayProcedure"
+          },
+          "name": "Level 4: Level 4 Recipes",
+          "x": 96,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 5: Level 5 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlchemyLevel5DisplayProcedure"
+          },
+          "name": "Level 5: Level 5 Recipes",
+          "x": 96,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 6: Level 6 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlchemyLevel6DisplayProcedure"
+          },
+          "name": "Level 6: Level 6 Recipes",
+          "x": 96,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 7: Level 7 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlchemyLevel7DisplayProcedure"
+          },
+          "name": "Level 7: Level 7 Recipes",
+          "x": 96,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 8: Level 8 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlchemyLevel8DisplayProcedure"
+          },
+          "name": "Level 8: Level 8 Recipes",
+          "x": 96,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "NextSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Next",
+          "x": 285,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "PreviousSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Prev",
+          "x": 96,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 9: Level 9 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlchemyLevel9DisplayProcedure"
+          },
+          "name": "Level 9: Level 9 Recipes",
+          "x": 96,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 10: Level 10 Recipes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlchemyLevel10DisplayProcedure"
+          },
+          "name": "Level 10: Level 10 Recipes",
+          "x": 96,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Exp: <VAR:integer:umbreoRpgAlchemyExp>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Exp: <VAR:integer:umbreoRpgAlchemyExp>",
+          "x": 150,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Next Level: <VAR:integer:umbreoRpgAlchemyExpNextLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Next Level: <VAR:integer:umbreoRpgAlchemyExpNextLevel>",
+          "x": 150,
+          "y": 188
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

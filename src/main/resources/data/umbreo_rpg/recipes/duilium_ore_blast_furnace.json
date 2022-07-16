@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 400,
+  "ingredient": {
+    "item": "umbreo_rpg:raw_duilium_ore"
+  },
+  "result": "umbreo_rpg:duilium_ingot"
+}

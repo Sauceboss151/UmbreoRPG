@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "umbreo_rpg:lathium_block"
+    }
+  ],
+  "result": {
+    "item": "umbreo_rpg:lathium_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 149,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 3",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Level 3",
+          "x": 195,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPage5"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Next",
+          "x": 252,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPage3"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Prev",
+          "x": 128,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Source: Any of the Items Below",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Source: Any of the Items Below",
+          "x": 135,
+          "y": 52
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "line_texture.png",
+          "use1Xscale": false,
+          "name": "line_texture.png",
+          "x": 127,
+          "y": 63
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 168,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 240,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 276,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Power Supply",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Power Supply",
+          "x": 181,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "line_texture.png",
+          "use1Xscale": false,
+          "name": "line_texture.png",
+          "x": 127,
+          "y": 100
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 5,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 204,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Catalyst",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Catalyst",
+          "x": 192,
+          "y": 126
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "line_texture.png",
+          "use1Xscale": false,
+          "name": "line_texture.png",
+          "x": 127,
+          "y": 136
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 6,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 204,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Output:  Activated Rod",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Output:  Activated Rod",
+          "x": 154,
+          "y": 165
+        }
+      }
+    ],
+    "onTick": {
+      "name": "Page4AddItems"
+    },
+    "onClosed": {
+      "name": "Page4RemoveItems"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

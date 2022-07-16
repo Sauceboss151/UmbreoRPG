@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "umbreo_rpg:osnium_ore"
+  },
+  "result": "umbreo_rpg:osnium_ingot"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "umbreo_rpg:blocks/vorashian_greens_stage_2_texture"
+  }
+}

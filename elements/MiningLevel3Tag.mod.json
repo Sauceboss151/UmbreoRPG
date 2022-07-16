@@ -1,0 +1,105 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.BLACKSTONE"
+      },
+      {
+        "value": "Blocks.COAL_ORE"
+      },
+      {
+        "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.IRON_ORE"
+      },
+      {
+        "value": "CUSTOM:TetriumOre"
+      }
+    ],
+    "blocks": [
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.BLACKSTONE"
+      },
+      {
+        "value": "Blocks.COAL_ORE"
+      },
+      {
+        "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.IRON_ORE"
+      },
+      {
+        "value": "CUSTOM:TetriumOre"
+      },
+      {
+        "value": "Blocks.GOLD_ORE"
+      },
+      {
+        "value": "Blocks.REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.LAPIS_ORE"
+      },
+      {
+        "value": "Blocks.DIAMOND_ORE"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "CUSTOM:VulcorOre"
+      },
+      {
+        "value": "Blocks.DEEPSLATE"
+      },
+      {
+        "value": "Blocks.TUFF"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_IRON_ORE"
+      },
+      {
+        "value": "CUSTOM:TetriumDeepslateOre"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_GOLD_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_LAPIS_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_DIAMOND_ORE"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "mining_level_3_tag",
+    "namespace": "forge"
+  }
+}

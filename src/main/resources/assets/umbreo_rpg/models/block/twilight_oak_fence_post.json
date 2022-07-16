@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "umbreo_rpg:blocks/twilight_oak_planks_texture",
+    "particle": "umbreo_rpg:blocks/twilight_oak_planks_texture"
+  }
+}

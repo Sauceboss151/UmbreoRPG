@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "umbreo_rpg:vulcor_block"
+    }
+  ],
+  "result": {
+    "item": "umbreo_rpg:vulcor_ingot",
+    "count": 9
+  }
+}

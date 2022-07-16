@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "umbreo_rpg:blocks/alchemy_table_bottom_texture",
+    "up": "umbreo_rpg:blocks/alchemy_table_top_texture",
+    "north": "umbreo_rpg:blocks/alchemy_table_side_1_texture",
+    "east": "umbreo_rpg:blocks/alchemy_table_side_2_texture",
+    "south": "umbreo_rpg:blocks/alchemy_table_side_4_texture",
+    "west": "umbreo_rpg:blocks/alchemy_table_side_3_texture",
+    "particle": "umbreo_rpg:blocks/alchemy_table_bottom_texture"
+  }
+}

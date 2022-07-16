@@ -1,0 +1,62 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "gold_helmet_texture",
+    "enableBody": true,
+    "textureBody": "gold_chestplate_texture",
+    "enableLeggings": true,
+    "textureLeggings": "gold_leggings_texture",
+    "enableBoots": true,
+    "textureBoots": "gold_boots_texture",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "gold_armor_",
+    "helmetName": "Gold Helmet",
+    "bodyName": "Gold Chestplate",
+    "leggingsName": "Gold Leggings",
+    "bootsName": "Gold Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 5,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 1,
+    "enchantability": 25,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "Items.GOLD_INGOT"
+      }
+    ]
+  }
+}

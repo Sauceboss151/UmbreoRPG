@@ -1,0 +1,282 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 250,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Combat",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Combat",
+          "x": 194,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current Level: <VAR:integer:umbreoRpgCombatLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Current Level: <VAR:integer:umbreoRpgCombatLevel>",
+          "x": 96,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 1: +1 Total ATK",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CombatLevel1DisplayProcedure"
+          },
+          "name": "Level 1: +1 Total ATK",
+          "x": 96,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 2: 10% no weapon durability used",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CombatLevel2DisplayProcedure"
+          },
+          "name": "Level 2: 10% no weapon durability used",
+          "x": 96,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 3: +2 Total ATK",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CombatLevel3DisplayProcedure"
+          },
+          "name": "Level 3: +2 Total ATK",
+          "x": 96,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 4: 20% no weapon durability used",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CombatLevel4DisplayProcedure"
+          },
+          "name": "Level 4: 20% no weapon durability used",
+          "x": 96,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 5: +3 Total ATK",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CombatLevel5DisplayProcedure"
+          },
+          "name": "Level 5: +3 Total ATK",
+          "x": 96,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "NextSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Next",
+          "x": 285,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "PreviousSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Prev",
+          "x": 96,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 6: 30% no weapon durability used",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CombatLevel6DisplayProcedure"
+          },
+          "name": "Level 6: 30% no weapon durability used",
+          "x": 96,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 7: +4 Total ATK",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CombatLevel7DisplayProcedure"
+          },
+          "name": "Level 7: +4 Total ATK",
+          "x": 96,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 8: 40% no weapon durability used",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CombatLevel8DisplayProcedure"
+          },
+          "name": "Level 8: 40% no weapon durability used",
+          "x": 96,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 9: +6 Total ATK",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CombatLevel9DisplayProcedure"
+          },
+          "name": "Level 9: +6 Total ATK",
+          "x": 96,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 10: 50% no weapon durability used",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CombatLevel10DisplayProcedure"
+          },
+          "name": "Level 10: 50% no weapon durability used",
+          "x": 96,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "combat_decor_texture.png",
+          "use1Xscale": false,
+          "name": "combat_decor_texture.png",
+          "x": 93,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "combat_decor_texture.png",
+          "use1Xscale": false,
+          "name": "combat_decor_texture.png",
+          "x": 317,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Exp: <VAR:integer:umbreoRpgCombatExp>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Exp: <VAR:integer:umbreoRpgCombatExp>",
+          "x": 150,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Next Level: <VAR:integer:umbreoRpgCombatExpNextLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Next Level: <VAR:integer:umbreoRpgCombatExpNextLevel>",
+          "x": 150,
+          "y": 188
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

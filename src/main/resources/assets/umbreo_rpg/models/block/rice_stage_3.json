@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "umbreo_rpg:blocks/rice_stage_3_texture",
+    "particle": "umbreo_rpg:blocks/rice_stage_3_texture"
+  }
+}

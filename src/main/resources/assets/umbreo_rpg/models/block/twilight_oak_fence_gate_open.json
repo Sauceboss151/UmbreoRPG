@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_fence_gate_open",
+  "textures": {
+    "texture": "umbreo_rpg:blocks/twilight_oak_planks_texture"
+  }
+}

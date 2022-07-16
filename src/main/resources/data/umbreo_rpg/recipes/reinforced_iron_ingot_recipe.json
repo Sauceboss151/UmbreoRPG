@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:iron_ingot"
+  },
+  "addition": {
+    "item": "umbreo_rpg:tetrium_ingot"
+  },
+  "result": {
+    "item": "umbreo_rpg:reinforced_iron_ingot"
+  }
+}

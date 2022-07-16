@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "umbreo_rpg:block/alchemy_table"
+    },
+    "facing=east": {
+      "model": "umbreo_rpg:block/alchemy_table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "umbreo_rpg:block/alchemy_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "umbreo_rpg:block/alchemy_table",
+      "y": 270
+    }
+  }
+}

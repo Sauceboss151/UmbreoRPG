@@ -1,0 +1,151 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 149,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 7",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Level 7",
+          "x": 195,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPage9"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Next",
+          "x": 252,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPage7"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Prev",
+          "x": 128,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Dimensional Shard can now be used",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Dimensional Shard can now be used",
+          "x": 127,
+          "y": 55
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "as Catalyst for any alchemy",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "as Catalyst for any alchemy",
+          "x": 142,
+          "y": 65
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "line_texture.png",
+          "use1Xscale": false,
+          "name": "line_texture.png",
+          "x": 128,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "recipe. If used, the output",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "recipe. If used, the output",
+          "x": 142,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "produced can be from 1 to 4 of",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "produced can be from 1 to 4 of",
+          "x": 136,
+          "y": 85
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "that item. Unactivated rods will",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "that item. Unactivated rods will",
+          "x": 130,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "always produce only 1 output item.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "always produce only 1 output item.",
+          "x": 127,
+          "y": 106
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

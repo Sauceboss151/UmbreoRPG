@@ -1,0 +1,178 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 168,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 150,
+          "y": 98
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 258,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Catalyst",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Catalyst",
+          "x": 138,
+          "y": 86
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Alchemy Table",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Alchemy Table",
+          "x": 177,
+          "y": 40
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Ingredients",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Ingredients",
+          "x": 131,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_right_texture.png",
+          "use1Xscale": false,
+          "name": "arrow_right_texture.png",
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 258,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Convert",
+          "onClick": {
+            "name": "AlchemyTableConvertPress"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Convert",
+          "x": 183,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Amount: ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Amount: ",
+          "x": 215,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:integer:umbreoRpgAlchemyTableAmount>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:integer:umbreoRpgAlchemyTableAmount>",
+          "x": 259,
+          "y": 50
+        }
+      }
+    ],
+    "onTick": {
+      "name": "AlchemyTableTickProcedure"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

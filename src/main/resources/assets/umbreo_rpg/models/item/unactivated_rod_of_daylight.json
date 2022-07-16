@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "umbreo_rpg:items/unactivated_rod_of_daylight_texture"
+  }
+}

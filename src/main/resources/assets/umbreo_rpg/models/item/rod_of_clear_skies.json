@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "umbreo_rpg:items/rod_of_clear_skies_texture"
+  }
+}

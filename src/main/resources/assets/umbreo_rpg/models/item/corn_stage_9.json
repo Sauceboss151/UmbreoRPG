@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "umbreo_rpg:blocks/corn_stage_9_texture"
+  }
+}

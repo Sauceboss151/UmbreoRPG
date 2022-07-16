@@ -1,0 +1,213 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 149,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 0 ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Level 0 ",
+          "x": 195,
+          "y": 40
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Catalyst",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Catalyst",
+          "x": 252,
+          "y": 61
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Power Supply",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Power Supply",
+          "x": 179,
+          "y": 61
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Source",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Source",
+          "x": 136,
+          "y": 61
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Output",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Output",
+          "x": 195,
+          "y": 138
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "line_texture.png",
+          "use1Xscale": false,
+          "name": "line_texture.png",
+          "x": 128,
+          "y": 72
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Iron",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Iron",
+          "x": 142,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Core of Light",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Core of Light",
+          "x": 176,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Redstone",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Redstone",
+          "x": 253,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "1.",
+          "x": 129,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "1.",
+          "x": 171,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Gold",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Gold",
+          "x": 199,
+          "y": 150
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "line_texture.png",
+          "use1Xscale": false,
+          "name": "line_texture.png",
+          "x": 127,
+          "y": 147
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPage2"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Next",
+          "x": 252,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPageMain"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Prev",
+          "x": 128,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

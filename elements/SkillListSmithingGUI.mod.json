@@ -1,0 +1,282 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 250,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Smithing",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Smithing",
+          "x": 193,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "smithing_decor_texture.png",
+          "use1Xscale": false,
+          "name": "smithing_decor_texture.png",
+          "x": 92,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "smithing_decor_texture.png",
+          "use1Xscale": false,
+          "name": "smithing_decor_texture.png",
+          "x": 318,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current Level: <VAR:integer:umbreoRpgSmithingLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Current Level: <VAR:integer:umbreoRpgSmithingLevel>",
+          "x": 96,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "NextSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Next",
+          "x": 285,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "PreviousSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Prev",
+          "x": 96,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 1: Stone Tools, Leather Armor",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SmithingLevel1DisplayProcedure"
+          },
+          "name": "Level 1: Stone Tools, Leather Armor",
+          "x": 96,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 2: Iron Tier",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SmithingLevel2DisplayProcedure"
+          },
+          "name": "Level 2: Iron Tier",
+          "x": 96,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 3: Reinforced Iron Tier",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SmithingLevel3DisplayProcedure"
+          },
+          "name": "Level 3: Reinforced Iron Tier",
+          "x": 96,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 4: Gold Tier, Vulcor Tier",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SmithingLevel4DisplayProcedure"
+          },
+          "name": "Level 4: Gold Tier, Vulcor Tier",
+          "x": 96,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 5: Diamond Tier",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SmithingLevel5DisplayProcedure"
+          },
+          "name": "Level 5: Diamond Tier",
+          "x": 96,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 6: Zoralium, Lathium, Cobium Tier",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SmithingLevel6DisplayProcedure"
+          },
+          "name": "Level 6: Zoralium, Lathium, Cobium Tier",
+          "x": 96,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 7: Netherite Tier, Skorium Tier",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SmithingLevel7DisplayProcedure"
+          },
+          "name": "Level 7: Netherite Tier, Skorium Tier",
+          "x": 96,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 8: Umbellium Tier",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SmithingLevel8DisplayProcedure"
+          },
+          "name": "Level 8: Umbellium Tier",
+          "x": 96,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 9: Mystalium, Osnium, Duilium Tier",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SmithingLevel9DisplayProcedure"
+          },
+          "name": "Level 9: Mystalium, Osnium, Duilium Tier",
+          "x": 96,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 10: Ultrium Tier",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SmithingLevel10DisplayProcedure"
+          },
+          "name": "Level 10: Ultrium Tier",
+          "x": 96,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Exp: <VAR:integer:umbreoRpgSmithingExp>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Exp: <VAR:integer:umbreoRpgSmithingExp>",
+          "x": 150,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Next Level: <VAR:integer:umbreoRpgSmithingExpNextLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Next Level: <VAR:integer:umbreoRpgSmithingExpNextLevel>",
+          "x": 150,
+          "y": 188
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

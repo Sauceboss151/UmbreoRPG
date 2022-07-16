@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "umbreo_rpg:core_of_light"
+    },
+    "1": {
+      "item": "umbreo_rpg:blast_core"
+    },
+    "2": {
+      "item": "umbreo_rpg:void_core"
+    }
+  },
+  "result": {
+    "item": "umbreo_rpg:dimensional_shard",
+    "count": 1
+  }
+}

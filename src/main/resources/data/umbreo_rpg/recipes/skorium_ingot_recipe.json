@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "umbreo_rpg:skorium_block"
+    }
+  ],
+  "result": {
+    "item": "umbreo_rpg:skorium_ingot",
+    "count": 9
+  }
+}

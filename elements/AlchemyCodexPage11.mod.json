@@ -1,0 +1,99 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 149,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Level 10",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Level 10",
+          "x": 191,
+          "y": 40
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "line_texture.png",
+          "use1Xscale": false,
+          "name": "line_texture.png",
+          "x": 128,
+          "y": 50
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPageMain"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Next",
+          "x": 252,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPage10"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Prev",
+          "x": 128,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Chromatic Core now has a 25%",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Chromatic Core now has a 25%",
+          "x": 138,
+          "y": 56
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "chance of not being damaged.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "chance of not being damaged.",
+          "x": 140,
+          "y": 65
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

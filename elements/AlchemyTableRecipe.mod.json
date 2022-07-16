@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TreantRoot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ImpDust"
+      },
+      {
+        "value": "CUSTOM:CoreOfLight"
+      },
+      {
+        "value": "CUSTOM:ImpDust"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AlchemyTable"
+    },
+    "name": "alchemy_table_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 250,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Skills",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Skills",
+          "x": 195,
+          "y": 41
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "NextSkillPageProcedure"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "Next",
+          "x": 294,
+          "y": 179
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "PreviousSkillPageProcedure"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Prev",
+          "x": 96,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Combat: <VAR:integer:umbreoRpgCombatLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Combat: <VAR:integer:umbreoRpgCombatLevel>",
+          "x": 96,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Mining: <VAR:integer:umbreoRpgMiningLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Mining: <VAR:integer:umbreoRpgMiningLevel>",
+          "x": 96,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Farming: <VAR:integer:umbreoRpgFarmingLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Farming: <VAR:integer:umbreoRpgFarmingLevel>",
+          "x": 96,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Cooking: <VAR:integer:umbreoRpgCookingLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Cooking: <VAR:integer:umbreoRpgCookingLevel>",
+          "x": 96,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Alchemy: <VAR:integer:umbreoRpgAlchemyLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Alchemy: <VAR:integer:umbreoRpgAlchemyLevel>",
+          "x": 231,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Smithing: <VAR:integer:umbreoRpgSmithingLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Smithing: <VAR:integer:umbreoRpgSmithingLevel>",
+          "x": 231,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Fletching: <VAR:integer:umbreoRpgFletchingLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Fletching: <VAR:integer:umbreoRpgFletchingLevel>",
+          "x": 231,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Magic: <VAR:integer:umbreoRpgMagicLevel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "DisplayMagicSkillProcedure"
+          },
+          "name": "Magic: <VAR:integer:umbreoRpgMagicLevel>",
+          "x": 231,
+          "y": 143
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

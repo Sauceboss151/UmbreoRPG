@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "umbreo_rpg:blocks/zoralium_block_texture",
+    "particle": "umbreo_rpg:blocks/zoralium_block_texture"
+  }
+}

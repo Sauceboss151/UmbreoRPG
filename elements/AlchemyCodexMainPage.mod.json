@@ -1,0 +1,169 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 149,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Alchemy Table Setup",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Alchemy Table Setup",
+          "x": 162,
+          "y": 40
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 0,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 159,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 204,
+          "y": 107
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 204,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Catalyst",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Catalyst",
+          "x": 192,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Power Supply",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Power Supply",
+          "x": 227,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Source",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Source",
+          "x": 152,
+          "y": 59
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow_down_100_texture.png",
+          "use1Xscale": false,
+          "name": "arrow_down_100_texture.png",
+          "x": 204,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Output",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Output",
+          "x": 198,
+          "y": 150
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPage1"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Next",
+          "x": 249,
+          "y": 178
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Prev",
+          "onClick": {
+            "name": "AlchemyCodexChangeToPage11"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Prev",
+          "x": 130,
+          "y": 178
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

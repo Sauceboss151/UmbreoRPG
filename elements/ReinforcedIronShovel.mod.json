@@ -1,0 +1,31 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "reinforced_iron_shovel_texture",
+    "customModelName": "Normal",
+    "name": "Reinforced Iron Shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 2,
+    "efficiency": 7.0,
+    "attackSpeed": 1.0,
+    "enchantability": 14,
+    "damageVsEntity": 2.5,
+    "usageCount": 552,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:ReinforcedIronIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

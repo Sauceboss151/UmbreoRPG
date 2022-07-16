@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "umbreo_rpg:block/twilight_oak_pressure_plate"
+    },
+    "powered=true": {
+      "model": "umbreo_rpg:block/twilight_oak_pressure_plate_down"
+    }
+  }
+}

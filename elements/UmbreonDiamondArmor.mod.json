@@ -1,0 +1,62 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "diamond_helmet_texture",
+    "enableBody": true,
+    "textureBody": "diamond_chestplate_texture",
+    "enableLeggings": true,
+    "textureLeggings": "diamond_leggings_texture",
+    "enableBoots": true,
+    "textureBoots": "diamond_boots_texture",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "diamond_armor_",
+    "helmetName": "Diamond Helmet",
+    "bodyName": "Diamond Chestplate",
+    "leggingsName": "Diamond Leggings",
+    "bootsName": "Diamond Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modeldiamond_armor_layer_1",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modeldiamond_armor_layer_1",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Modeldiamond_armor_layer_1",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Modeldiamond_armor_layer_1",
+    "bootsModelPartL": "LeftLeg",
+    "bootsModelPartR": "RightLeg",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 33,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 10,
+    "toughness": 2.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_generic"
+    },
+    "repairItems": [
+      {
+        "value": "Items.DIAMOND"
+      }
+    ]
+  }
+}
