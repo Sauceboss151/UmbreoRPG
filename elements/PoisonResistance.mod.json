@@ -5,7 +5,7 @@
     "effectName": "Poison Resistance",
     "icon": "poison_resistance_texture.png",
     "color": {
-      "value": -1,
+      "value": -16724890,
       "falpha": 0.0
     },
     "isInstant": false,

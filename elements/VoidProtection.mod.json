@@ -5,7 +5,7 @@
     "effectName": "Void Protection",
     "icon": "void_protection_texture.png",
     "color": {
-      "value": -1,
+      "value": -6736897,
       "falpha": 0.0
     },
     "isInstant": false,

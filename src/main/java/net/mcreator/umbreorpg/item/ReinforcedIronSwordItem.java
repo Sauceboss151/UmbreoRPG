@@ -14,7 +14,7 @@ public class ReinforcedIronSwordItem extends SwordItem {
 	public ReinforcedIronSwordItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 100;
+				return 552;
 			}
 
 			public float getSpeed() {

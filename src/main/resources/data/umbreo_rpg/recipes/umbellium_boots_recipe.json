@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "umbreo_rpg:umbellium_ingot"
+    },
+    "2": {
+      "item": "umbreo_rpg:umbellium_ingot"
+    },
+    "3": {
+      "item": "umbreo_rpg:umbellium_ingot"
+    },
+    "5": {
+      "item": "umbreo_rpg:umbellium_ingot"
+    }
+  },
+  "result": {
+    "item": "umbreo_rpg:umbellium_armor_boots",
+    "count": 1
+  }
+}

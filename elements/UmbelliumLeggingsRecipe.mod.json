@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:UmbelliumIngot"
+      },
+      {
+        "value": "CUSTOM:UmbelliumIngot"
+      },
+      {
+        "value": "CUSTOM:UmbelliumIngot"
+      },
+      {
+        "value": "CUSTOM:UmbelliumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:UmbelliumIngot"
+      },
+      {
+        "value": "CUSTOM:UmbelliumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:UmbelliumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:UmbelliumArmor.legs"
+    },
+    "name": "umbellium_leggings_recipe",
+    "namespace": "mod"
+  }
+}

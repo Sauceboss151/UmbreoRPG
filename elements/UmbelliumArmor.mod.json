@@ -1,0 +1,62 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "umbellium_helmet_texture",
+    "enableBody": true,
+    "textureBody": "umbellium_chestplate_texture",
+    "enableLeggings": true,
+    "textureLeggings": "umbellium_leggings_texture",
+    "enableBoots": true,
+    "textureBoots": "umbellium_boots_texture",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "umbellium_armor_",
+    "helmetName": "Umbellium Helmet",
+    "bodyName": "Umbellium Chestplate",
+    "leggingsName": "Umbellium Leggings",
+    "bootsName": "Umbellium Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelumbellium_armor_layer_1",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modelumbellium_armor_layer_1",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Modelumbellium_armor_layer_1",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Modelumbellium_armor_layer_1",
+    "bootsModelPartL": "LeftLeg",
+    "bootsModelPartR": "RightLeg",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 45,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 17,
+    "toughness": 4.0,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": "item.armor.equip_generic"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:UmbelliumIngot"
+      }
+    ]
+  }
+}

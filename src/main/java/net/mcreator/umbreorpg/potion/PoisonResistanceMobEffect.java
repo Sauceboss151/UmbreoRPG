@@ -9,7 +9,7 @@ import net.mcreator.umbreorpg.procedures.PoisonResistanceEffectProcedure;
 
 public class PoisonResistanceMobEffect extends MobEffect {
 	public PoisonResistanceMobEffect() {
-		super(MobEffectCategory.BENEFICIAL, -1);
+		super(MobEffectCategory.BENEFICIAL, -16724890);
 	}
 
 	@Override

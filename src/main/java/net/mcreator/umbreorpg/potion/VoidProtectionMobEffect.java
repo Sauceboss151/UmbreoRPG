@@ -6,7 +6,7 @@ import net.minecraft.world.effect.MobEffect;
 
 public class VoidProtectionMobEffect extends MobEffect {
 	public VoidProtectionMobEffect() {
-		super(MobEffectCategory.BENEFICIAL, -1);
+		super(MobEffectCategory.BENEFICIAL, -6736897);
 	}
 
 	@Override
