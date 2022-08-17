@@ -11,7 +11,7 @@ public class Ash70DisplayProcedure {
 		if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUp
 				/ (entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUpCapacity >= 7 / 11) {
+						.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUpCapacity >= 0.636) {
 			return true;
 		}
 		return false;

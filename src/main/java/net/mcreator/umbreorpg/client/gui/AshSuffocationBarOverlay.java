@@ -116,7 +116,7 @@ public class AshSuffocationBarOverlay {
 						.draw(event.getMatrixStack(),
 								"" + (int) ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUp) + "",
-								posX + -14, posY + -98, -12786964);
+								posX + -22, posY + -93, -16737793);
 			}
 			RenderSystem.depthMask(true);
 			RenderSystem.defaultBlendFunc();

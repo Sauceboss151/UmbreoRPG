@@ -32,22 +32,31 @@ public class AshBuildingUpProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (!((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUp >= (entity
+		if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUp < (entity
 						.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUpCapacity)) {
-			if (new ResourceLocation("umbreo_rpg:ashlands").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
-					|| new ResourceLocation("umbreo_rpg:volcanic_ashlands").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())) {
-				if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(UmbreoRpgModMobEffects.ASH_PROTECTION.get()) : false)) {
-					{
-						double _setval = (entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUp + 1;
-						entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.umbreoRpgAshBuildUp = _setval;
-							capability.syncPlayerVariables(entity);
-						});
-					}
-				}
+						.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUpCapacity
+				&& new ResourceLocation("umbreo_rpg:ashlands").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
+				&& !(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(UmbreoRpgModMobEffects.ASH_PROTECTION.get()) : false)) {
+			{
+				double _setval = (entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUp + 1;
+				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.umbreoRpgAshBuildUp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUp > 0
+				&& (!new ResourceLocation("umbreo_rpg:ashlands").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(UmbreoRpgModMobEffects.ASH_PROTECTION.get()) : false))) {
+			{
+				double _setval = (entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUp - 1;
+				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.umbreoRpgAshBuildUp = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 		}
 	}

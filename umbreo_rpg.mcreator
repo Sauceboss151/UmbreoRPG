@@ -9246,39 +9246,6 @@
       "path": "~/Potions and Effects/Ash Protection"
     },
     {
-      "name": "AshBuildUpProcedure",
-      "type": "procedure",
-      "sortid": 832,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ash_build_up_procedure",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Potions and Effects/Ash Protection"
-    },
-    {
       "name": "Lifesteal",
       "type": "potioneffect",
       "sortid": 833,
@@ -11865,39 +11832,6 @@
       "path": "~/Ash Suffocation"
     },
     {
-      "name": "AshReduceBuildUp",
-      "type": "procedure",
-      "sortid": 1042,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ash_reduce_build_up",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Ash Suffocation"
-    },
-    {
       "name": "WaterBottleCleanseAsh",
       "type": "procedure",
       "sortid": 1043,
@@ -11935,6 +11869,23 @@
       "locked_code": false,
       "registry_name": "log_blocks",
       "path": "~/Other"
+    },
+    {
+      "name": "AshDamagingPlayer",
+      "type": "procedure",
+      "sortid": 1046,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_damaging_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ash Suffocation"
     }
   ],
   "variable_elements": [

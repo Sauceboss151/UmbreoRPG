@@ -165,12 +165,12 @@
         "data": {
           "text": "<VAR:integer:umbreoRpgAshBuildUp>",
           "color": {
-            "value": -12786964,
+            "value": -16737793,
             "falpha": 0.0
           },
           "name": "<VAR:integer:umbreoRpgAshBuildUp>",
-          "x": 199,
-          "y": 22
+          "x": 191,
+          "y": 27
         }
       }
     ],
