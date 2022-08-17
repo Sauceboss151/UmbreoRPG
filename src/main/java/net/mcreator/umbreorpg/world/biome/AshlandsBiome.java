@@ -3,6 +3,18 @@ package net.mcreator.umbreorpg.world.biome;
 
 import net.minecraftforge.common.BiomeDictionary;
 
+import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
+import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
+import net.minecraft.world.level.levelgen.placement.CountPlacement;
+import net.minecraft.world.level.levelgen.placement.BiomeFilter;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
@@ -11,34 +23,52 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.AmbientParticleSettings;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Registry;
 
+import net.mcreator.umbreorpg.init.UmbreoRpgModBlocks;
 import net.mcreator.umbreorpg.init.UmbreoRpgModBiomes;
 
+import java.util.List;
+
 public class AshlandsBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.523809523809f, 0.809523809523f),
-			Climate.Parameter.span(-1.142857142857f, -0.857142857143f), Climate.Parameter.span(0.397142857143f, 0.682857142857f),
-			Climate.Parameter.span(0.457142857143f, 0.742857142857f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-0.466677018582f, -0.180962732868f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.285714285714f, 1.714285714286f),
+			Climate.Parameter.span(-1.714285714286f, -0.285714285714f), Climate.Parameter.span(-0.154285714286f, 1.274285714286f),
+			Climate.Parameter.span(-1.0142857142859998f, 0.4142857142860002f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-1.038105590011f, 0.390465838561f), 0);
 
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-11250604).waterColor(4159204).waterFogColor(329011)
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-11250604).waterColor(-430681004).waterFogColor(-430681004)
 				.skyColor(-11250604).foliageColorOverride(10387789).grassColorOverride(9470285)
 				.ambientParticle(new AmbientParticleSettings(ParticleTypes.ASH, 0.01f)).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				PlacementUtils.register("umbreo_rpg:tree_ashlands",
+						FeatureUtils.register("umbreo_rpg:tree_ashlands", Feature.TREE,
+								new TreeConfiguration.TreeConfigurationBuilder(
+										BlockStateProvider.simple(UmbreoRpgModBlocks.CHARRED_LOG.get().defaultBlockState()),
+										new StraightTrunkPlacer(7, 2, 0), BlockStateProvider.simple(Blocks.AIR.defaultBlockState()),
+										new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
+										.ignoreVines().build()),
+						List.of(CountPlacement.of(1), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
+								PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING),
+								BiomeFilter.biome())));
+		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
+		BiomeDefaultFeatures.addFossilDecoration(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.BLAZE, 8, 1, 2));
-		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.WITHER_SKULL, 3, 1, 2));
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.NETHER).temperature(1.5f)
-				.downfall(0f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
-				.build();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.DESERT).temperature(2f).downfall(0f)
+				.specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}
 
 	public static void init() {
 		BiomeDictionary.addTypes(ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(UmbreoRpgModBiomes.ASHLANDS.get())),
-				BiomeDictionary.Type.HOT, BiomeDictionary.Type.NETHER);
+				BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.WASTELAND);
 	}
 }

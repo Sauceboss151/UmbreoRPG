@@ -94,7 +94,7 @@ public class SkillListFletchingGUIScreen extends AbstractContainerScreen<SkillLi
 		this.font.draw(poseStack, "Current Level: " + (int) ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgFletchingLevel) + "", 7, 25, -12829636);
 		if (FletchingLevel1DisplayProcedureProcedure.execute(entity))
-			this.font.draw(poseStack, "Level 1: Twilight Oak Bow", 7, 43, -12829636);
+			this.font.draw(poseStack, "Level 1: Iron Bow", 7, 43, -12829636);
 		if (FletchingLevel2DisplayProcedureProcedure.execute(entity))
 			this.font.draw(poseStack, "Level 2: Reinforced Iron Bow", 7, 52, -12829636);
 		if (FletchingLevel3DisplayProcedureProcedure.execute(entity))

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "umbreo_rpg:blocks/boreal_allience_block_texture",
+    "particle": "umbreo_rpg:blocks/boreal_allience_block_texture"
+  }
+}

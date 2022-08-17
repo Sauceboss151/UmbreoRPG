@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "umbreo_rpg:blocks/gates_of_fates_wall_texture",
+    "particle": "umbreo_rpg:blocks/gates_of_fates_wall_texture"
+  }
+}

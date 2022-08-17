@@ -29,8 +29,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
-import net.mcreator.umbreorpg.world.biome.VolcanicAshlandsBiome;
-import net.mcreator.umbreorpg.world.biome.TwilightForestBiome;
+import net.mcreator.umbreorpg.world.biome.FateBiomeBiome;
 import net.mcreator.umbreorpg.world.biome.AshlandsBiome;
 import net.mcreator.umbreorpg.UmbreoRpgMod;
 
@@ -44,15 +43,13 @@ import com.mojang.datafixers.util.Pair;
 public class UmbreoRpgModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, UmbreoRpgMod.MODID);
 	public static final RegistryObject<Biome> ASHLANDS = REGISTRY.register("ashlands", () -> AshlandsBiome.createBiome());
-	public static final RegistryObject<Biome> VOLCANIC_ASHLANDS = REGISTRY.register("volcanic_ashlands", () -> VolcanicAshlandsBiome.createBiome());
-	public static final RegistryObject<Biome> TWILIGHT_FOREST = REGISTRY.register("twilight_forest", () -> TwilightForestBiome.createBiome());
+	public static final RegistryObject<Biome> FATE_BIOME = REGISTRY.register("fate_biome", () -> FateBiomeBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			AshlandsBiome.init();
-			VolcanicAshlandsBiome.init();
-			TwilightForestBiome.init();
+			FateBiomeBiome.init();
 		});
 	}
 
@@ -66,16 +63,14 @@ public class UmbreoRpgModBiomes {
 			WorldGenSettings worldGenSettings = server.getWorldData().worldGenSettings();
 			for (Map.Entry<ResourceKey<LevelStem>, LevelStem> entry : worldGenSettings.dimensions().entrySet()) {
 				DimensionType dimensionType = entry.getValue().typeHolder().value();
-
-				if (dimensionType == dimensionTypeRegistry.getOrThrow(DimensionType.NETHER_LOCATION)) {
+				if (dimensionType == dimensionTypeRegistry.getOrThrow(DimensionType.OVERWORLD_LOCATION)) {
 					ChunkGenerator chunkGenerator = entry.getValue().generator();
 					// Inject biomes to biome source
 					if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
 						parameters.add(new Pair<>(AshlandsBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, ASHLANDS.getId()))));
-						parameters.add(new Pair<>(VolcanicAshlandsBiome.PARAMETER_POINT,
-								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, VOLCANIC_ASHLANDS.getId()))));
+
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
 						chunkGenerator.biomeSource = moddedNoiseSource;
@@ -87,10 +82,7 @@ public class UmbreoRpgModBiomes {
 						SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 						if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-							surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, ASHLANDS.getId()),
-									UmbreoRpgModBlocks.ASH_BLOCK.get().defaultBlockState(), UmbreoRpgModBlocks.ASH_BLOCK.get().defaultBlockState(),
-									UmbreoRpgModBlocks.ASH_BLOCK.get().defaultBlockState()));
-							surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, VOLCANIC_ASHLANDS.getId()),
+							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, ASHLANDS.getId()),
 									UmbreoRpgModBlocks.ASH_BLOCK.get().defaultBlockState(), UmbreoRpgModBlocks.ASH_BLOCK.get().defaultBlockState(),
 									UmbreoRpgModBlocks.ASH_BLOCK.get().defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
@@ -104,17 +96,22 @@ public class UmbreoRpgModBiomes {
 						}
 					}
 				}
+
 			}
 		}
 
-		private static SurfaceRules.RuleSource anySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock, BlockState undergroundBlock,
-				BlockState underwaterBlock) {
-			return SurfaceRules.ifTrue(SurfaceRules.isBiome(biomeKey),
-					SurfaceRules.sequence(
-							SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
-									SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0), SurfaceRules.state(groundBlock)),
-											SurfaceRules.state(underwaterBlock))),
-							SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR), SurfaceRules.state(undergroundBlock))));
+		private static SurfaceRules.RuleSource preliminarySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock,
+				BlockState undergroundBlock, BlockState underwaterBlock) {
+			return SurfaceRules
+					.ifTrue(SurfaceRules.isBiome(biomeKey),
+							SurfaceRules
+									.ifTrue(SurfaceRules.abovePreliminarySurface(),
+											SurfaceRules.sequence(
+													SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
+															SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0),
+																	SurfaceRules.state(groundBlock)), SurfaceRules.state(underwaterBlock))),
+													SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR),
+															SurfaceRules.state(undergroundBlock)))));
 		}
 	}
 }

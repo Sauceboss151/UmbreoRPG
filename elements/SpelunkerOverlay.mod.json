@@ -1,0 +1,114 @@
+{
+  "_fv": 28,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Diamond Tier Found",
+          "color": {
+            "value": -16449562,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "DisplayDiamondTier"
+          },
+          "name": "Diamond Tier Found",
+          "x": 6,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Iron Tier Found",
+          "color": {
+            "value": -8027004,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "DisplayIronTier"
+          },
+          "name": "Iron Tier Found",
+          "x": 6,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Other Tier Found",
+          "color": {
+            "value": -14221057,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "DisplayOtherTier"
+          },
+          "name": "Other Tier Found",
+          "x": 6,
+          "y": 224
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "High Tier Found",
+          "color": {
+            "value": -558026,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "DisplayHighTier"
+          },
+          "name": "High Tier Found",
+          "x": 6,
+          "y": 197
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Ultra Tier Found",
+          "color": {
+            "value": -7077633,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "DisplayUltraTier"
+          },
+          "name": "Ultra Tier Found",
+          "x": 6,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "God  Tier Found",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "DisplayGodTier"
+          },
+          "name": "God  Tier Found",
+          "x": 6,
+          "y": 215
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

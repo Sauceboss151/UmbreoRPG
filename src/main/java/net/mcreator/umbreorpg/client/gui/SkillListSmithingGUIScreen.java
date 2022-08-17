@@ -102,7 +102,7 @@ public class SkillListSmithingGUIScreen extends AbstractContainerScreen<SkillLis
 		if (SmithingLevel4DisplayProcedureProcedure.execute(entity))
 			this.font.draw(poseStack, "Level 4: Gold Tier, Vulcor Tier", 7, 70, -12829636);
 		if (SmithingLevel5DisplayProcedureProcedure.execute(entity))
-			this.font.draw(poseStack, "Level 5: Diamond Tier", 7, 79, -12829636);
+			this.font.draw(poseStack, "Level 5: Diamond Tier, Ender Tier", 7, 79, -12829636);
 		if (SmithingLevel6DisplayProcedureProcedure.execute(entity))
 			this.font.draw(poseStack, "Level 6: Zoralium, Lathium, Cobium Tier", 7, 88, -12829636);
 		if (SmithingLevel7DisplayProcedureProcedure.execute(entity))

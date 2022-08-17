@@ -1,0 +1,80 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SkoriumArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:SkoriumArmor.body"
+      },
+      {
+        "value": "CUSTOM:SkoriumArmor.legs"
+      },
+      {
+        "value": "CUSTOM:SkoriumArmor.boots"
+      },
+      {
+        "value": "CUSTOM:SkoriumSword"
+      },
+      {
+        "value": "CUSTOM:SkoriumPickaxe"
+      },
+      {
+        "value": "CUSTOM:SkoriumAxe"
+      },
+      {
+        "value": "CUSTOM:SkoriumShovel"
+      },
+      {
+        "value": "CUSTOM:SkoriumHoe"
+      },
+      {
+        "value": "CUSTOM:SkoriumBattleaxe"
+      },
+      {
+        "value": "CUSTOM:SkoriumMace"
+      },
+      {
+        "value": "CUSTOM:UmbreonNetheriteArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:UmbreonNetheriteArmor.body"
+      },
+      {
+        "value": "CUSTOM:UmbreonNetheriteArmor.legs"
+      },
+      {
+        "value": "CUSTOM:UmbreonNetheriteArmor.boots"
+      },
+      {
+        "value": "Items.NETHERITE_SWORD"
+      },
+      {
+        "value": "Items.NETHERITE_SHOVEL"
+      },
+      {
+        "value": "Items.NETHERITE_PICKAXE"
+      },
+      {
+        "value": "Items.NETHERITE_AXE"
+      },
+      {
+        "value": "Items.NETHERITE_HOE"
+      },
+      {
+        "value": "CUSTOM:NetheriteBattleaxe"
+      },
+      {
+        "value": "CUSTOM:NetheriteMace"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "smithing_tier_3_tag",
+    "namespace": "forge"
+  }
+}

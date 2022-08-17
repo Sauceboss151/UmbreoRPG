@@ -10,6 +10,9 @@
     "textureLeggings": "reinforced_iron_leggings_texture",
     "enableBoots": true,
     "textureBoots": "reinforced_iron_boots_texture",
+    "onBootsTick": {
+      "name": "ReinforcedIronArmorEffectProcedure"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },

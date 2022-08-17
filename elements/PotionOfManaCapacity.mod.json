@@ -1,0 +1,21 @@
+{
+  "_fv": 28,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion Of Mana Capacity",
+    "splashName": "Splash Potion Of Mana Capacity",
+    "lingeringName": "Lingering Potion Of Mana Capacity",
+    "arrowName": "Arrow Of Mana Capacity",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:ManaCapacity"
+        },
+        "duration": 12000,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

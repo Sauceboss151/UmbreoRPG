@@ -1,0 +1,47 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:UmbelliumArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:UmbelliumArmor.body"
+      },
+      {
+        "value": "CUSTOM:UmbelliumArmor.legs"
+      },
+      {
+        "value": "CUSTOM:UmbelliumArmor.boots"
+      },
+      {
+        "value": "CUSTOM:UmbelliumSword"
+      },
+      {
+        "value": "CUSTOM:UmbelliumPickaxe"
+      },
+      {
+        "value": "CUSTOM:UmbelliumAxe"
+      },
+      {
+        "value": "CUSTOM:UmbelliumShovel"
+      },
+      {
+        "value": "CUSTOM:UmbelliumHoe"
+      },
+      {
+        "value": "CUSTOM:UmbelliumBattleaxe"
+      },
+      {
+        "value": "CUSTOM:UmbelliumMace"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "smithing_tier_4_tag",
+    "namespace": "forge"
+  }
+}

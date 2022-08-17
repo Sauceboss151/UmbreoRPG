@@ -12,6 +12,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
+import net.mcreator.umbreorpg.world.inventory.WorldStateBorderMenu;
 import net.mcreator.umbreorpg.world.inventory.TargetOverlayBoxTextureMenu;
 import net.mcreator.umbreorpg.world.inventory.SkillListSmithingGUIMenu;
 import net.mcreator.umbreorpg.world.inventory.SkillListMiningGUIMenu;
@@ -124,6 +125,8 @@ public class UmbreoRpgModMenus {
 			(id, inv, extraData) -> new AlchemyCodexPage10Menu(id, inv, extraData));
 	public static final MenuType<AlchemyCodexPage11Menu> ALCHEMY_CODEX_PAGE_11 = register("alchemy_codex_page_11",
 			(id, inv, extraData) -> new AlchemyCodexPage11Menu(id, inv, extraData));
+	public static final MenuType<WorldStateBorderMenu> WORLD_STATE_BORDER = register("world_state_border",
+			(id, inv, extraData) -> new WorldStateBorderMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

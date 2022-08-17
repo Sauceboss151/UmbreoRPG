@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Mana Regeneration",
+    "icon": "mana_regen_texture.png",
+    "color": {
+      "value": -12466965,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "ManaRegenerationEffect"
+    },
+    "onExpired": {
+      "name": "ManaRegenerationEndEffect"
+    }
+  }
+}

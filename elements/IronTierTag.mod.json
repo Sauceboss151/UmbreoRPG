@@ -1,0 +1,26 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.IRON_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_IRON_ORE"
+      },
+      {
+        "value": "CUSTOM:TetriumOre"
+      },
+      {
+        "value": "CUSTOM:TetriumDeepslateOre"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "iron_tier_tag",
+    "namespace": "forge"
+  }
+}

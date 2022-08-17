@@ -31,6 +31,6 @@ public class WorldlyShardItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDbForged From this World's Energy"));
+		list.add(new TextComponent("Forged From this World's Energy"));
 	}
 }

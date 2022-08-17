@@ -10,6 +10,9 @@
     "textureLeggings": "umbellium_leggings_texture",
     "enableBoots": true,
     "textureBoots": "umbellium_boots_texture",
+    "onBootsTick": {
+      "name": "UmbelliumEffectProcedure"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },

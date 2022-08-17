@@ -1,0 +1,21 @@
+{
+  "_fv": 28,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion Of Poison Resistance",
+    "splashName": "Splash Potion Of Poison Resistance",
+    "lingeringName": "Lingering Potion Of Poison Resistance",
+    "arrowName": "Arrow Of Poison Resistance",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:PoisonResistance"
+        },
+        "duration": 4800,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

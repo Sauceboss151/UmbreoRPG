@@ -4,11 +4,7 @@
   "definition": {
     "type": "Blocks",
     "items": [],
-    "blocks": [
-      {
-        "value": "CUSTOM:TwilightOakLeaves"
-      }
-    ],
+    "blocks": [],
     "functions": [],
     "entities": [],
     "name": "leaves",

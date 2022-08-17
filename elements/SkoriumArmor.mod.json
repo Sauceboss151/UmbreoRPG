@@ -10,6 +10,9 @@
     "textureLeggings": "skorium_leggings_texture",
     "enableBoots": true,
     "textureBoots": "skorium_boots_texture",
+    "onBootsTick": {
+      "name": "SkoriumArmorEffect"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },

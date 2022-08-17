@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:string"
+    },
+    "3": {
+      "item": "minecraft:rabbit_hide"
+    },
+    "4": {
+      "item": "minecraft:rabbit_hide"
+    },
+    "5": {
+      "item": "minecraft:rabbit_hide"
+    }
+  },
+  "result": {
+    "item": "minecraft:bundle",
+    "count": 1
+  }
+}

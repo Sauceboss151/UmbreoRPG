@@ -10,6 +10,9 @@
     "textureLeggings": "chainmail_leggings_texture",
     "enableBoots": true,
     "textureBoots": "chainmail_boots_texture",
+    "onBootsTick": {
+      "name": "ChainmailEffectProcedure"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },

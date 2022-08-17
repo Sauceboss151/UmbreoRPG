@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "tab",
+  "definition": {
+    "name": "Umbreo Alchemy",
+    "icon": {
+      "value": "CUSTOM:CoreOfLight"
+    },
+    "showSearch": true
+  }
+}

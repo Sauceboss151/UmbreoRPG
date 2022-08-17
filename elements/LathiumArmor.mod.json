@@ -10,6 +10,9 @@
     "textureLeggings": "savage_lathium_leggings_texture",
     "enableBoots": true,
     "textureBoots": "savage_lathium_boots_texture",
+    "onBootsTick": {
+      "name": "LathiumArmorEffect"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },

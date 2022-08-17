@@ -26,6 +26,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
+import net.mcreator.umbreorpg.init.UmbreoRpgModPotions;
 import net.mcreator.umbreorpg.init.UmbreoRpgModParticleTypes;
 import net.mcreator.umbreorpg.init.UmbreoRpgModMobEffects;
 import net.mcreator.umbreorpg.init.UmbreoRpgModItems;
@@ -49,7 +51,7 @@ public class UmbreoRpgMod {
 	private static int messageID = 0;
 
 	public UmbreoRpgMod() {
-
+		UmbreoRpgModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		UmbreoRpgModBlocks.REGISTRY.register(bus);
 		UmbreoRpgModItems.REGISTRY.register(bus);
@@ -58,7 +60,7 @@ public class UmbreoRpgMod {
 		UmbreoRpgModFeatures.REGISTRY.register(bus);
 
 		UmbreoRpgModMobEffects.REGISTRY.register(bus);
-
+		UmbreoRpgModPotions.REGISTRY.register(bus);
 		UmbreoRpgModBiomes.REGISTRY.register(bus);
 		UmbreoRpgModParticleTypes.REGISTRY.register(bus);
 	}

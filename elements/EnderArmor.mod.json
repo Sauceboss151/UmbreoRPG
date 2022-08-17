@@ -10,6 +10,9 @@
     "textureLeggings": "ender_armor_leggings_texture",
     "enableBoots": true,
     "textureBoots": "ender_armor_boots_texture",
+    "onBootsTick": {
+      "name": "EnderArmorEffectProcedure"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },

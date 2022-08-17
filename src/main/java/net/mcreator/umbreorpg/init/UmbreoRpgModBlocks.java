@@ -25,21 +25,13 @@ import net.mcreator.umbreorpg.block.VorashianGreensStage3Block;
 import net.mcreator.umbreorpg.block.VorashianGreensStage2Block;
 import net.mcreator.umbreorpg.block.VorashianGreensStage1Block;
 import net.mcreator.umbreorpg.block.VorashianGreensStage0Block;
+import net.mcreator.umbreorpg.block.VorashAllienceBlockBlock;
+import net.mcreator.umbreorpg.block.UmbreonAllienceBlockBlock;
 import net.mcreator.umbreorpg.block.UmbelliumOreBlock;
 import net.mcreator.umbreorpg.block.UmbelliumBlockBlock;
 import net.mcreator.umbreorpg.block.UltriumOreBlock;
 import net.mcreator.umbreorpg.block.UltriumDeepslateOreBlock;
 import net.mcreator.umbreorpg.block.UltriumBlockBlock;
-import net.mcreator.umbreorpg.block.TwilightOakWoodBlock;
-import net.mcreator.umbreorpg.block.TwilightOakStairsBlock;
-import net.mcreator.umbreorpg.block.TwilightOakSlabBlock;
-import net.mcreator.umbreorpg.block.TwilightOakPressurePlateBlock;
-import net.mcreator.umbreorpg.block.TwilightOakPlanksBlock;
-import net.mcreator.umbreorpg.block.TwilightOakLogBlock;
-import net.mcreator.umbreorpg.block.TwilightOakLeavesBlock;
-import net.mcreator.umbreorpg.block.TwilightOakFenceGateBlock;
-import net.mcreator.umbreorpg.block.TwilightOakFenceBlock;
-import net.mcreator.umbreorpg.block.TwilightOakButtonBlock;
 import net.mcreator.umbreorpg.block.TetriumOreBlock;
 import net.mcreator.umbreorpg.block.TetriumDeepslateOreBlock;
 import net.mcreator.umbreorpg.block.TetriumBlockBlock;
@@ -51,6 +43,7 @@ import net.mcreator.umbreorpg.block.RiceStage3Block;
 import net.mcreator.umbreorpg.block.RiceStage2Block;
 import net.mcreator.umbreorpg.block.RiceStage1Block;
 import net.mcreator.umbreorpg.block.RiceStage0Block;
+import net.mcreator.umbreorpg.block.RandomAllianceBlockBlock;
 import net.mcreator.umbreorpg.block.PureGoldOreBlock;
 import net.mcreator.umbreorpg.block.PureGoldDeepslateOreBlock;
 import net.mcreator.umbreorpg.block.PureGoldBlockBlock;
@@ -63,6 +56,10 @@ import net.mcreator.umbreorpg.block.MystaliumBlockBlock;
 import net.mcreator.umbreorpg.block.LathiumOreBlock;
 import net.mcreator.umbreorpg.block.LathiumDeepslateOreBlock;
 import net.mcreator.umbreorpg.block.LathiumBlockBlock;
+import net.mcreator.umbreorpg.block.GatesOfFatesWallBlockBlock;
+import net.mcreator.umbreorpg.block.GatesOfFatesPortalBlockBlock;
+import net.mcreator.umbreorpg.block.GatesOfFatesFloor2BlockBlock;
+import net.mcreator.umbreorpg.block.GatesOfFatesFloor1BlockBlock;
 import net.mcreator.umbreorpg.block.GarlicStage5Block;
 import net.mcreator.umbreorpg.block.GarlicStage4Block;
 import net.mcreator.umbreorpg.block.GarlicStage3Block;
@@ -87,12 +84,15 @@ import net.mcreator.umbreorpg.block.CookingRangeBlock;
 import net.mcreator.umbreorpg.block.CobiumOreBlock;
 import net.mcreator.umbreorpg.block.CobiumDeepslateOreBlock;
 import net.mcreator.umbreorpg.block.CobiumBlockBlock;
+import net.mcreator.umbreorpg.block.CharredLogBlock;
 import net.mcreator.umbreorpg.block.BorealSweetPotatoStage5Block;
 import net.mcreator.umbreorpg.block.BorealSweetPotatoStage4Block;
 import net.mcreator.umbreorpg.block.BorealSweetPotatoStage3Block;
 import net.mcreator.umbreorpg.block.BorealSweetPotatoStage2Block;
 import net.mcreator.umbreorpg.block.BorealSweetPotatoStage1Block;
 import net.mcreator.umbreorpg.block.BorealSweetPotatoStage0Block;
+import net.mcreator.umbreorpg.block.BorealAllienceBlockBlock;
+import net.mcreator.umbreorpg.block.BankingCounterBlock;
 import net.mcreator.umbreorpg.block.AshBlockBlock;
 import net.mcreator.umbreorpg.block.AlchemyTableBlock;
 import net.mcreator.umbreorpg.UmbreoRpgMod;
@@ -190,18 +190,24 @@ public class UmbreoRpgModBlocks {
 			() -> new DuiliumDeepslateOreBlock());
 	public static final RegistryObject<Block> ULTRIUM_DEEPSLATE_ORE = REGISTRY.register("ultrium_deepslate_ore",
 			() -> new UltriumDeepslateOreBlock());
-	public static final RegistryObject<Block> TWILIGHT_OAK_WOOD = REGISTRY.register("twilight_oak_wood", () -> new TwilightOakWoodBlock());
-	public static final RegistryObject<Block> TWILIGHT_OAK_LOG = REGISTRY.register("twilight_oak_log", () -> new TwilightOakLogBlock());
-	public static final RegistryObject<Block> TWILIGHT_OAK_PLANKS = REGISTRY.register("twilight_oak_planks", () -> new TwilightOakPlanksBlock());
-	public static final RegistryObject<Block> TWILIGHT_OAK_LEAVES = REGISTRY.register("twilight_oak_leaves", () -> new TwilightOakLeavesBlock());
-	public static final RegistryObject<Block> TWILIGHT_OAK_STAIRS = REGISTRY.register("twilight_oak_stairs", () -> new TwilightOakStairsBlock());
-	public static final RegistryObject<Block> TWILIGHT_OAK_SLAB = REGISTRY.register("twilight_oak_slab", () -> new TwilightOakSlabBlock());
-	public static final RegistryObject<Block> TWILIGHT_OAK_FENCE = REGISTRY.register("twilight_oak_fence", () -> new TwilightOakFenceBlock());
-	public static final RegistryObject<Block> TWILIGHT_OAK_FENCE_GATE = REGISTRY.register("twilight_oak_fence_gate",
-			() -> new TwilightOakFenceGateBlock());
-	public static final RegistryObject<Block> TWILIGHT_OAK_PRESSURE_PLATE = REGISTRY.register("twilight_oak_pressure_plate",
-			() -> new TwilightOakPressurePlateBlock());
-	public static final RegistryObject<Block> TWILIGHT_OAK_BUTTON = REGISTRY.register("twilight_oak_button", () -> new TwilightOakButtonBlock());
+	public static final RegistryObject<Block> CHARRED_LOG = REGISTRY.register("charred_log", () -> new CharredLogBlock());
+	public static final RegistryObject<Block> GATES_OF_FATES_WALL_BLOCK = REGISTRY.register("gates_of_fates_wall_block",
+			() -> new GatesOfFatesWallBlockBlock());
+	public static final RegistryObject<Block> GATES_OF_FATES_FLOOR_1_BLOCK = REGISTRY.register("gates_of_fates_floor_1_block",
+			() -> new GatesOfFatesFloor1BlockBlock());
+	public static final RegistryObject<Block> GATES_OF_FATES_FLOOR_2_BLOCK = REGISTRY.register("gates_of_fates_floor_2_block",
+			() -> new GatesOfFatesFloor2BlockBlock());
+	public static final RegistryObject<Block> UMBREON_ALLIENCE_BLOCK = REGISTRY.register("umbreon_allience_block",
+			() -> new UmbreonAllienceBlockBlock());
+	public static final RegistryObject<Block> BOREAL_ALLIENCE_BLOCK = REGISTRY.register("boreal_allience_block",
+			() -> new BorealAllienceBlockBlock());
+	public static final RegistryObject<Block> VORASH_ALLIENCE_BLOCK = REGISTRY.register("vorash_allience_block",
+			() -> new VorashAllienceBlockBlock());
+	public static final RegistryObject<Block> RANDOM_ALLIANCE_BLOCK = REGISTRY.register("random_alliance_block",
+			() -> new RandomAllianceBlockBlock());
+	public static final RegistryObject<Block> GATES_OF_FATES_PORTAL_BLOCK = REGISTRY.register("gates_of_fates_portal_block",
+			() -> new GatesOfFatesPortalBlockBlock());
+	public static final RegistryObject<Block> BANKING_COUNTER = REGISTRY.register("banking_counter", () -> new BankingCounterBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -243,6 +249,11 @@ public class UmbreoRpgModBlocks {
 			CornStage8Block.registerRenderLayer();
 			CornStage9Block.registerRenderLayer();
 			CornStage10Block.registerRenderLayer();
+			UmbreonAllienceBlockBlock.registerRenderLayer();
+			BorealAllienceBlockBlock.registerRenderLayer();
+			VorashAllienceBlockBlock.registerRenderLayer();
+			RandomAllianceBlockBlock.registerRenderLayer();
+			GatesOfFatesPortalBlockBlock.registerRenderLayer();
 		}
 	}
 }

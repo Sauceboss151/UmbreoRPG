@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "umbreo_rpg:items/ultrium_battleaxe_texture"
+  }
+}

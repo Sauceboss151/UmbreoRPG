@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "umbreo_rpg:blocks/twilight_oak_leaves_texture",
-    "particle": "umbreo_rpg:blocks/twilight_oak_leaves_texture"
-  }
-}

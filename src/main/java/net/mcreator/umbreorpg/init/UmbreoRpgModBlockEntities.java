@@ -47,6 +47,7 @@ import net.mcreator.umbreorpg.block.entity.BorealSweetPotatoStage3BlockEntity;
 import net.mcreator.umbreorpg.block.entity.BorealSweetPotatoStage2BlockEntity;
 import net.mcreator.umbreorpg.block.entity.BorealSweetPotatoStage1BlockEntity;
 import net.mcreator.umbreorpg.block.entity.BorealSweetPotatoStage0BlockEntity;
+import net.mcreator.umbreorpg.block.entity.BankingCounterBlockEntity;
 import net.mcreator.umbreorpg.block.entity.AlchemyTableBlockEntity;
 import net.mcreator.umbreorpg.UmbreoRpgMod;
 
@@ -126,6 +127,8 @@ public class UmbreoRpgModBlockEntities {
 			CornStage10BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> COOKING_RANGE = register("cooking_range", UmbreoRpgModBlocks.COOKING_RANGE,
 			CookingRangeBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BANKING_COUNTER = register("banking_counter", UmbreoRpgModBlocks.BANKING_COUNTER,
+			BankingCounterBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {

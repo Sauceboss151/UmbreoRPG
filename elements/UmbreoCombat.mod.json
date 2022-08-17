@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "tab",
+  "definition": {
+    "name": "Umbreo Combat",
+    "icon": {
+      "value": "CUSTOM:UmbelliumSword"
+    },
+    "showSearch": true
+  }
+}

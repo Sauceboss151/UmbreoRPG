@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "POTION:AWKWARD"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:DemonHorn"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:PotionOfLifesteal"
+    },
+    "name": "potion_of_lifesteal_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "_fv": 28,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "umbreo_rpg_mana_bar_base_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBarBaseProcedure"
+          },
+          "name": "umbreo_rpg_mana_bar_base_texture.png",
+          "x": 384,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umbreo_rpg_mana_bar_10_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar10Procedure"
+          },
+          "name": "umbreo_rpg_mana_bar_10_texture.png",
+          "x": 384,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umbreo_rpg_mana_bar_20_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar20Procedure"
+          },
+          "name": "umbreo_rpg_mana_bar_20_texture.png",
+          "x": 384,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umbreo_rpg_mana_bar_30_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar30Procedure"
+          },
+          "name": "umbreo_rpg_mana_bar_30_texture.png",
+          "x": 384,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umbreo_rpg_mana_bar_40_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar40Procedure"
+          },
+          "name": "umbreo_rpg_mana_bar_40_texture.png",
+          "x": 384,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umbreo_rpg_mana_bar_50_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar50Procedure"
+          },
+          "name": "umbreo_rpg_mana_bar_50_texture.png",
+          "x": 384,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umbreo_rpg_mana_bar_60_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar60Procedure"
+          },
+          "name": "umbreo_rpg_mana_bar_60_texture.png",
+          "x": 384,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umbreo_rpg_mana_bar_70_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar70Procedure"
+          },
+          "name": "umbreo_rpg_mana_bar_70_texture.png",
+          "x": 384,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umbreo_rpg_mana_bar_80_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar80Procedure"
+          },
+          "name": "umbreo_rpg_mana_bar_80_texture.png",
+          "x": 384,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umbreo_rpg_mana_bar_90_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar90Procedure"
+          },
+          "name": "umbreo_rpg_mana_bar_90_texture.png",
+          "x": 384,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umbreo_rpg_mana_bar_100_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaBar100Procedure"
+          },
+          "name": "umbreo_rpg_mana_bar_100_texture.png",
+          "x": 384,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:umbreoRpgCurrentMana>/<VAR:integer:umbreoRpgManaCapacity>",
+          "color": {
+            "value": -13434653,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ManaBarBaseProcedure"
+          },
+          "name": "<VAR:integer:umbreoRpgCurrentMana>/<VAR:integer:umbreoRpgManaCapacity>",
+          "x": 366,
+          "y": 179
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

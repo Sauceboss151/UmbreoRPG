@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "umbreo_rpg:goddess_feather"
+    },
+    {
+      "item": "umbreo_rpg:worldly_shard"
+    },
+    {
+      "item": "umbreo_rpg:burning_star"
+    },
+    {
+      "item": "umbreo_rpg:dimensional_shard"
+    },
+    {
+      "item": "umbreo_rpg:ender_dragon_scale"
+    }
+  ],
+  "result": {
+    "item": "umbreo_rpg:chromatic_core",
+    "count": 1
+  }
+}

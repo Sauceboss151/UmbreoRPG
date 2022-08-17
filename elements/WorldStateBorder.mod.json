@@ -1,0 +1,234 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 201,
+    "height": 139,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Umbreo Kingdom At War With:",
+          "color": {
+            "value": -6736897,
+            "falpha": 0.0
+          },
+          "name": "Umbreo Kingdom At War With:",
+          "x": 123,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Allied With: Umbreon Kingdom",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlliedWithUmbreonKingdom"
+          },
+          "name": "Allied With: Umbreon Kingdom",
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "World State",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "World State",
+          "x": 186,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Boreal Kingdom At War With:",
+          "color": {
+            "value": -10076403,
+            "falpha": 0.0
+          },
+          "name": "Boreal Kingdom At War With:",
+          "x": 123,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Vorash Empire At War With:",
+          "color": {
+            "value": -33280,
+            "falpha": 0.0
+          },
+          "name": "Vorash Empire At War With:",
+          "x": 123,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Allied With: Boreal Kingdom",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlliedWithBoreal"
+          },
+          "name": "Allied With: Boreal Kingdom",
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Allied With: Vorash Empire",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlliedWithVorash"
+          },
+          "name": "Allied With: Vorash Empire",
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Allied With: None",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AlliedWithNone"
+          },
+          "name": "Allied With: None",
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Boreal",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "UmbreoWarBoreal"
+          },
+          "name": "Boreal",
+          "x": 123,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Vorash",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "UmbreoWarVorash"
+          },
+          "name": "Vorash",
+          "x": 168,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Umbreo",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "UmbreoWarBoreal"
+          },
+          "name": "Umbreo",
+          "x": 123,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Vorash",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "BorealWarVorash"
+          },
+          "name": "Vorash",
+          "x": 168,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Umbreo",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "UmbreoWarVorash"
+          },
+          "name": "Umbreo",
+          "x": 123,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Boreal",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "BorealWarVorash"
+          },
+          "name": "Boreal",
+          "x": 168,
+          "y": 161
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

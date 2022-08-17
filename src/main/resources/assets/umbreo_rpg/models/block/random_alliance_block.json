@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "umbreo_rpg:blocks/random_alliance_block_texture",
+    "particle": "umbreo_rpg:blocks/random_alliance_block_texture"
+  }
+}

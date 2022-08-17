@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Mana Capacity",
+    "icon": "magic_decor_texture.png",
+    "color": {
+      "value": -14797066,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "ManaCapacityEffect"
+    },
+    "onExpired": {
+      "name": "ManaCapacityEndEffect"
+    }
+  }
+}

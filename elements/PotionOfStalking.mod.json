@@ -1,0 +1,21 @@
+{
+  "_fv": 28,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion Of Stalking",
+    "splashName": "Splash Potion Of Stalking",
+    "lingeringName": "Lingering Potion Of Stalking",
+    "arrowName": "Arrow Of Stalking",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Stalker"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

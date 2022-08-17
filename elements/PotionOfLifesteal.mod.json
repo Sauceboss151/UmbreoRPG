@@ -1,0 +1,21 @@
+{
+  "_fv": 28,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion Of Lifesteal",
+    "splashName": "Splash Potion Of Lifesteal",
+    "lingeringName": "Lingering Potion Of Lifesteal",
+    "arrowName": "Arrow Of Lifesteal",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Lifesteal"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

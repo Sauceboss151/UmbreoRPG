@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "POTION:AWKWARD"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:VenomBeetleItem"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:PotionOfPoisonResistance"
+    },
+    "name": "potion_of_poison_resistance_recipe",
+    "namespace": "mod"
+  }
+}

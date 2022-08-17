@@ -1,0 +1,35 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:UmbelliumOre"
+      },
+      {
+        "value": "CUSTOM:DuiliumOre"
+      },
+      {
+        "value": "CUSTOM:DuiliumDeepslateOre"
+      },
+      {
+        "value": "CUSTOM:OsniumOre"
+      },
+      {
+        "value": "CUSTOM:OsniumDeepslateOre"
+      },
+      {
+        "value": "CUSTOM:MystaliumOre"
+      },
+      {
+        "value": "CUSTOM:MystaliumDeepslateOre"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "ultra_tier_tag",
+    "namespace": "forge"
+  }
+}

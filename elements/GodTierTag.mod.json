@@ -1,0 +1,20 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:UltriumOre"
+      },
+      {
+        "value": "CUSTOM:UltriumDeepslateOre"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "god_tier_tag",
+    "namespace": "forge"
+  }
+}

@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.umbreorpg.client.gui.WorldStateBorderScreen;
 import net.mcreator.umbreorpg.client.gui.TargetOverlayBoxTextureScreen;
 import net.mcreator.umbreorpg.client.gui.SkillListSmithingGUIScreen;
 import net.mcreator.umbreorpg.client.gui.SkillListMiningGUIScreen;
@@ -87,6 +88,7 @@ public class UmbreoRpgModScreens {
 			MenuScreens.register(UmbreoRpgModMenus.ALCHEMY_CODEX_PAGE_9, AlchemyCodexPage9Screen::new);
 			MenuScreens.register(UmbreoRpgModMenus.ALCHEMY_CODEX_PAGE_10, AlchemyCodexPage10Screen::new);
 			MenuScreens.register(UmbreoRpgModMenus.ALCHEMY_CODEX_PAGE_11, AlchemyCodexPage11Screen::new);
+			MenuScreens.register(UmbreoRpgModMenus.WORLD_STATE_BORDER, WorldStateBorderScreen::new);
 		});
 	}
 }

@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "umbreo_rpg:skorium_shovel",
+    "umbreo_rpg:netherite_mace",
+    "umbreo_rpg:skorium_pickaxe",
+    "umbreo_rpg:skorium_armor_helmet",
+    "minecraft:netherite_axe",
+    "umbreo_rpg:netherite_battleaxe",
+    "umbreo_rpg:umbreon_netherite_armor_boots",
+    "minecraft:netherite_sword",
+    "umbreo_rpg:skorium_axe",
+    "umbreo_rpg:skorium_mace",
+    "minecraft:netherite_shovel",
+    "umbreo_rpg:skorium_armor_leggings",
+    "umbreo_rpg:skorium_sword",
+    "umbreo_rpg:umbreon_netherite_armor_helmet",
+    "minecraft:netherite_pickaxe",
+    "umbreo_rpg:skorium_armor_boots",
+    "umbreo_rpg:skorium_battleaxe",
+    "umbreo_rpg:skorium_armor_chestplate",
+    "minecraft:netherite_hoe",
+    "umbreo_rpg:umbreon_netherite_armor_chestplate",
+    "umbreo_rpg:umbreon_netherite_armor_leggings",
+    "umbreo_rpg:skorium_hoe"
+  ]
+}

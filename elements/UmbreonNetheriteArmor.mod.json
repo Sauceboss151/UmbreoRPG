@@ -10,6 +10,9 @@
     "textureLeggings": "netherite_leggings_texture",
     "enableBoots": true,
     "textureBoots": "netherite_boots_texture",
+    "onBootsTick": {
+      "name": "NetheriteArmorEffectProcedure"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },
@@ -38,10 +41,10 @@
     "bootsModelPartL": "LeftLeg",
     "bootsModelPartR": "RightLeg",
     "bootsModelTexture": "From armor",
-    "helmetImmuneToFire": false,
-    "bodyImmuneToFire": false,
-    "leggingsImmuneToFire": false,
-    "bootsImmuneToFire": false,
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
     "maxDamage": 25,
     "damageValueHelmet": 3,
     "damageValueBody": 8,

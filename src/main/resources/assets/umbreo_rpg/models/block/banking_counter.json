@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "umbreo_rpg:blocks/bank_teller_bottom_texture",
+    "up": "umbreo_rpg:blocks/bank_teller_top_texture",
+    "north": "umbreo_rpg:blocks/bank_teller_front_back_texture",
+    "east": "umbreo_rpg:blocks/bank_teller_left_right_texture",
+    "south": "umbreo_rpg:blocks/bank_teller_front_back_texture",
+    "west": "umbreo_rpg:blocks/bank_teller_left_right_texture",
+    "particle": "umbreo_rpg:blocks/bank_teller_bottom_texture"
+  }
+}

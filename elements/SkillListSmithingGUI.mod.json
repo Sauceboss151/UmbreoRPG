@@ -151,7 +151,7 @@
       {
         "type": "label",
         "data": {
-          "text": "Level 5: Diamond Tier",
+          "text": "Level 5: Diamond Tier, Ender Tier",
           "color": {
             "value": -12829636,
             "falpha": 0.0
@@ -159,7 +159,7 @@
           "displayCondition": {
             "name": "SmithingLevel5DisplayProcedure"
           },
-          "name": "Level 5: Diamond Tier",
+          "name": "Level 5: Diamond Tier, Ender Tier",
           "x": 96,
           "y": 116
         }

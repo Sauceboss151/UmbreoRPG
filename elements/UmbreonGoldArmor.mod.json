@@ -10,6 +10,9 @@
     "textureLeggings": "gold_leggings_texture",
     "enableBoots": true,
     "textureBoots": "gold_boots_texture",
+    "onBootsTick": {
+      "name": "GoldArmorEffectProcedure"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },

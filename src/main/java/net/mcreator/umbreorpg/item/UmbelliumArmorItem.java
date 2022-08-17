@@ -6,12 +6,14 @@ import net.minecraftforge.client.IItemRenderProperties;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -21,6 +23,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.umbreorpg.procedures.UmbelliumEffectProcedureProcedure;
 import net.mcreator.umbreorpg.init.UmbreoRpgModItems;
 import net.mcreator.umbreorpg.client.model.Modelumbellium_armor_layer_1;
 
@@ -209,6 +212,11 @@ public abstract class UmbelliumArmorItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "umbreo_rpg:textures/models/armor/umbellium_armor__layer_1.png";
+		}
+
+		@Override
+		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
+			UmbelliumEffectProcedureProcedure.execute(entity);
 		}
 	}
 }

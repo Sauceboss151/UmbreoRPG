@@ -1,6 +1,7 @@
 
 package net.mcreator.umbreorpg.block;
 
+import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -15,6 +16,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
@@ -24,12 +26,17 @@ import java.util.Collections;
 
 public class AshBlockBlock extends FallingBlock {
 	public AshBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.GRAVEL).strength(0.5f, 0.6f));
+		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.SAND).strength(0.5f, 0.6f));
 	}
 
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
+	}
+
+	@Override
+	public boolean canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction direction, IPlantable plantable) {
+		return true;
 	}
 
 	@Override
@@ -48,7 +55,7 @@ public class AshBlockBlock extends FallingBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		for (int l = 0; l < 8; ++l) {
+		for (int l = 0; l < 1; ++l) {
 			double x0 = x + random.nextFloat();
 			double y0 = y + random.nextFloat();
 			double z0 = z + random.nextFloat();

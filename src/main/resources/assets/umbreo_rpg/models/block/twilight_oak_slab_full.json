@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "umbreo_rpg:blocks/twilight_oak_planks_texture",
-    "top": "umbreo_rpg:blocks/twilight_oak_planks_texture",
-    "side": "umbreo_rpg:blocks/twilight_oak_planks_texture"
-  }
-}

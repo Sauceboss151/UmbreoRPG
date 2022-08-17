@@ -1,0 +1,187 @@
+{
+  "_fv": 28,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_base_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "AshBaseDisplay"
+          },
+          "name": "ash_base_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_10_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Ash10Display"
+          },
+          "name": "ash_10_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_20_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Ash20Display"
+          },
+          "name": "ash_20_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_30_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Ash30Display"
+          },
+          "name": "ash_30_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_40_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Ash40Display"
+          },
+          "name": "ash_40_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_50_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Ash50Display"
+          },
+          "name": "ash_50_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_60_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Ash60Display"
+          },
+          "name": "ash_60_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_70_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Ash70Display"
+          },
+          "name": "ash_70_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_80_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Ash80Display"
+          },
+          "name": "ash_80_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_90_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Ash90Display"
+          },
+          "name": "ash_90_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_100_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Ash100Display"
+          },
+          "name": "ash_100_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ash_damaging_bar_texture.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "AshDamagingDisplay"
+          },
+          "name": "ash_damaging_bar_texture.png",
+          "x": 223,
+          "y": 181
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:umbreoRpgAshBuildUp>",
+          "color": {
+            "value": -12786964,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:umbreoRpgAshBuildUp>",
+          "x": 199,
+          "y": 22
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

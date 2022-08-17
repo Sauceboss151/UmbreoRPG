@@ -1,0 +1,41 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:PureGoldOre"
+      },
+      {
+        "value": "CUSTOM:PureGoldDeepslateOre"
+      },
+      {
+        "value": "Blocks.GOLD_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_GOLD_ORE"
+      },
+      {
+        "value": "Blocks.LAPIS_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_LAPIS_ORE"
+      },
+      {
+        "value": "CUSTOM:VulcorOre"
+      },
+      {
+        "value": "Blocks.COPPER_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_COPPER_ORE"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "other_tier_found",
+    "namespace": "forge"
+  }
+}

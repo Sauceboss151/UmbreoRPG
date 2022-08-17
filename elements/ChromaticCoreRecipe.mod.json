@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GoddessFeather"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WorldlyShard"
+      },
+      {
+        "value": "CUSTOM:BurningStar"
+      },
+      {
+        "value": "CUSTOM:DimensionalShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EnderDragonScale"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ChromaticCore"
+    },
+    "name": "chromatic_core_recipe",
+    "namespace": "mod"
+  }
+}

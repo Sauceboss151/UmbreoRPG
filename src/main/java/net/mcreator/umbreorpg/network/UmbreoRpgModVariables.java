@@ -111,6 +111,13 @@ public class UmbreoRpgModVariables {
 			clone.umbreoRpgSmithingExpNextLevel = original.umbreoRpgSmithingExpNextLevel;
 			clone.umbreoRpgSmithingLevel = original.umbreoRpgSmithingLevel;
 			clone.umbreoRpgItemBeingCooked = original.umbreoRpgItemBeingCooked;
+			clone.umbreoRpgUmbreonAllied = original.umbreoRpgUmbreonAllied;
+			clone.umbreoRpgBorealAllied = original.umbreoRpgBorealAllied;
+			clone.umbreoRpgVorashAllied = original.umbreoRpgVorashAllied;
+			clone.umbreoRpgFateChosenTeleport = original.umbreoRpgFateChosenTeleport;
+			clone.umbreoRpgManaCapacity = original.umbreoRpgManaCapacity;
+			clone.umbreoRpgManaRegenRate = original.umbreoRpgManaRegenRate;
+			clone.umbreoRpgCurrentMana = original.umbreoRpgCurrentMana;
 			if (!event.isWasDeath()) {
 				clone.umbreoRpgSkillPageOpened = original.umbreoRpgSkillPageOpened;
 				clone.umbreoRpgTargetOverlayHealth = original.umbreoRpgTargetOverlayHealth;
@@ -122,6 +129,14 @@ public class UmbreoRpgModVariables {
 				clone.umbreoRpgAlchemyTableXPos = original.umbreoRpgAlchemyTableXPos;
 				clone.umbreoRpgAlchemyTableYPos = original.umbreoRpgAlchemyTableYPos;
 				clone.umbreoRpgAlchemyTableZPos = original.umbreoRpgAlchemyTableZPos;
+				clone.umbreoRpgAshBuildUp = original.umbreoRpgAshBuildUp;
+				clone.umbreoRpgFoundIronTier = original.umbreoRpgFoundIronTier;
+				clone.umbreoRpgFoundDiamondTier = original.umbreoRpgFoundDiamondTier;
+				clone.umbreoRpgFoundHighTier = original.umbreoRpgFoundHighTier;
+				clone.umbreoRpgFoundUltraTier = original.umbreoRpgFoundUltraTier;
+				clone.umbreoRpgFoundGodTier = original.umbreoRpgFoundGodTier;
+				clone.umbreoRpgFoundOtherTier = original.umbreoRpgFoundOtherTier;
+				clone.umbreoRpgAshBuildUpCapacity = original.umbreoRpgAshBuildUpCapacity;
 			}
 		}
 
@@ -153,6 +168,9 @@ public class UmbreoRpgModVariables {
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "umbreo_rpg_worldvars";
 		public boolean umbreoRpgWorldOfMagicEnabled = false;
+		public boolean umbreoRpgUmbreoWarBoreal = false;
+		public boolean umbreoRpgUmbreoWarVorash = false;
+		public boolean umbreoRpgBorealWarVorash = false;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -162,11 +180,17 @@ public class UmbreoRpgModVariables {
 
 		public void read(CompoundTag nbt) {
 			umbreoRpgWorldOfMagicEnabled = nbt.getBoolean("umbreoRpgWorldOfMagicEnabled");
+			umbreoRpgUmbreoWarBoreal = nbt.getBoolean("umbreoRpgUmbreoWarBoreal");
+			umbreoRpgUmbreoWarVorash = nbt.getBoolean("umbreoRpgUmbreoWarVorash");
+			umbreoRpgBorealWarVorash = nbt.getBoolean("umbreoRpgBorealWarVorash");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("umbreoRpgWorldOfMagicEnabled", umbreoRpgWorldOfMagicEnabled);
+			nbt.putBoolean("umbreoRpgUmbreoWarBoreal", umbreoRpgUmbreoWarBoreal);
+			nbt.putBoolean("umbreoRpgUmbreoWarVorash", umbreoRpgUmbreoWarVorash);
+			nbt.putBoolean("umbreoRpgBorealWarVorash", umbreoRpgBorealWarVorash);
 			return nbt;
 		}
 
@@ -189,6 +213,7 @@ public class UmbreoRpgModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "umbreo_rpg_mapvars";
+		public boolean umbreoRpgTargetOverlayDisplayStat = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -197,10 +222,12 @@ public class UmbreoRpgModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			umbreoRpgTargetOverlayDisplayStat = nbt.getBoolean("umbreoRpgTargetOverlayDisplayStat");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("umbreoRpgTargetOverlayDisplayStat", umbreoRpgTargetOverlayDisplayStat);
 			return nbt;
 		}
 
@@ -306,10 +333,10 @@ public class UmbreoRpgModVariables {
 		public double umbreoRpgFarmingExpNextLevel = 100.0;
 		public double umbreoRpgFarmingLevel = 0;
 		public double umbreoRpgFletchingExp = 0;
-		public double umbreoRpgFletchingExpNextLevel = 0;
+		public double umbreoRpgFletchingExpNextLevel = 10.0;
 		public double umbreoRpgFletchingLevel = 0;
 		public double umbreoRpgMagicExp = 0;
-		public double umbreoRpgMagicExpNextLevel = 0;
+		public double umbreoRpgMagicExpNextLevel = 50.0;
 		public double umbreoRpgMagicLevel = 0;
 		public double umbreoRpgMiningExp = 0.0;
 		public double umbreoRpgMiningExpNextLevel = 250.0;
@@ -329,6 +356,21 @@ public class UmbreoRpgModVariables {
 		public double umbreoRpgAlchemyTableXPos = 0;
 		public double umbreoRpgAlchemyTableYPos = 0;
 		public double umbreoRpgAlchemyTableZPos = 0;
+		public double umbreoRpgAshBuildUp = 0;
+		public boolean umbreoRpgFoundIronTier = false;
+		public boolean umbreoRpgFoundDiamondTier = false;
+		public boolean umbreoRpgFoundHighTier = false;
+		public boolean umbreoRpgFoundUltraTier = false;
+		public boolean umbreoRpgFoundGodTier = false;
+		public boolean umbreoRpgFoundOtherTier = false;
+		public boolean umbreoRpgUmbreonAllied = false;
+		public boolean umbreoRpgBorealAllied = false;
+		public boolean umbreoRpgVorashAllied = false;
+		public boolean umbreoRpgFateChosenTeleport = false;
+		public double umbreoRpgManaCapacity = 100.0;
+		public double umbreoRpgManaRegenRate = 1.0;
+		public double umbreoRpgCurrentMana = 100.0;
+		public double umbreoRpgAshBuildUpCapacity = 2400.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -376,6 +418,21 @@ public class UmbreoRpgModVariables {
 			nbt.putDouble("umbreoRpgAlchemyTableXPos", umbreoRpgAlchemyTableXPos);
 			nbt.putDouble("umbreoRpgAlchemyTableYPos", umbreoRpgAlchemyTableYPos);
 			nbt.putDouble("umbreoRpgAlchemyTableZPos", umbreoRpgAlchemyTableZPos);
+			nbt.putDouble("umbreoRpgAshBuildUp", umbreoRpgAshBuildUp);
+			nbt.putBoolean("umbreoRpgFoundIronTier", umbreoRpgFoundIronTier);
+			nbt.putBoolean("umbreoRpgFoundDiamondTier", umbreoRpgFoundDiamondTier);
+			nbt.putBoolean("umbreoRpgFoundHighTier", umbreoRpgFoundHighTier);
+			nbt.putBoolean("umbreoRpgFoundUltraTier", umbreoRpgFoundUltraTier);
+			nbt.putBoolean("umbreoRpgFoundGodTier", umbreoRpgFoundGodTier);
+			nbt.putBoolean("umbreoRpgFoundOtherTier", umbreoRpgFoundOtherTier);
+			nbt.putBoolean("umbreoRpgUmbreonAllied", umbreoRpgUmbreonAllied);
+			nbt.putBoolean("umbreoRpgBorealAllied", umbreoRpgBorealAllied);
+			nbt.putBoolean("umbreoRpgVorashAllied", umbreoRpgVorashAllied);
+			nbt.putBoolean("umbreoRpgFateChosenTeleport", umbreoRpgFateChosenTeleport);
+			nbt.putDouble("umbreoRpgManaCapacity", umbreoRpgManaCapacity);
+			nbt.putDouble("umbreoRpgManaRegenRate", umbreoRpgManaRegenRate);
+			nbt.putDouble("umbreoRpgCurrentMana", umbreoRpgCurrentMana);
+			nbt.putDouble("umbreoRpgAshBuildUpCapacity", umbreoRpgAshBuildUpCapacity);
 			return nbt;
 		}
 
@@ -420,6 +477,21 @@ public class UmbreoRpgModVariables {
 			umbreoRpgAlchemyTableXPos = nbt.getDouble("umbreoRpgAlchemyTableXPos");
 			umbreoRpgAlchemyTableYPos = nbt.getDouble("umbreoRpgAlchemyTableYPos");
 			umbreoRpgAlchemyTableZPos = nbt.getDouble("umbreoRpgAlchemyTableZPos");
+			umbreoRpgAshBuildUp = nbt.getDouble("umbreoRpgAshBuildUp");
+			umbreoRpgFoundIronTier = nbt.getBoolean("umbreoRpgFoundIronTier");
+			umbreoRpgFoundDiamondTier = nbt.getBoolean("umbreoRpgFoundDiamondTier");
+			umbreoRpgFoundHighTier = nbt.getBoolean("umbreoRpgFoundHighTier");
+			umbreoRpgFoundUltraTier = nbt.getBoolean("umbreoRpgFoundUltraTier");
+			umbreoRpgFoundGodTier = nbt.getBoolean("umbreoRpgFoundGodTier");
+			umbreoRpgFoundOtherTier = nbt.getBoolean("umbreoRpgFoundOtherTier");
+			umbreoRpgUmbreonAllied = nbt.getBoolean("umbreoRpgUmbreonAllied");
+			umbreoRpgBorealAllied = nbt.getBoolean("umbreoRpgBorealAllied");
+			umbreoRpgVorashAllied = nbt.getBoolean("umbreoRpgVorashAllied");
+			umbreoRpgFateChosenTeleport = nbt.getBoolean("umbreoRpgFateChosenTeleport");
+			umbreoRpgManaCapacity = nbt.getDouble("umbreoRpgManaCapacity");
+			umbreoRpgManaRegenRate = nbt.getDouble("umbreoRpgManaRegenRate");
+			umbreoRpgCurrentMana = nbt.getDouble("umbreoRpgCurrentMana");
+			umbreoRpgAshBuildUpCapacity = nbt.getDouble("umbreoRpgAshBuildUpCapacity");
 		}
 	}
 
@@ -484,6 +556,21 @@ public class UmbreoRpgModVariables {
 					variables.umbreoRpgAlchemyTableXPos = message.data.umbreoRpgAlchemyTableXPos;
 					variables.umbreoRpgAlchemyTableYPos = message.data.umbreoRpgAlchemyTableYPos;
 					variables.umbreoRpgAlchemyTableZPos = message.data.umbreoRpgAlchemyTableZPos;
+					variables.umbreoRpgAshBuildUp = message.data.umbreoRpgAshBuildUp;
+					variables.umbreoRpgFoundIronTier = message.data.umbreoRpgFoundIronTier;
+					variables.umbreoRpgFoundDiamondTier = message.data.umbreoRpgFoundDiamondTier;
+					variables.umbreoRpgFoundHighTier = message.data.umbreoRpgFoundHighTier;
+					variables.umbreoRpgFoundUltraTier = message.data.umbreoRpgFoundUltraTier;
+					variables.umbreoRpgFoundGodTier = message.data.umbreoRpgFoundGodTier;
+					variables.umbreoRpgFoundOtherTier = message.data.umbreoRpgFoundOtherTier;
+					variables.umbreoRpgUmbreonAllied = message.data.umbreoRpgUmbreonAllied;
+					variables.umbreoRpgBorealAllied = message.data.umbreoRpgBorealAllied;
+					variables.umbreoRpgVorashAllied = message.data.umbreoRpgVorashAllied;
+					variables.umbreoRpgFateChosenTeleport = message.data.umbreoRpgFateChosenTeleport;
+					variables.umbreoRpgManaCapacity = message.data.umbreoRpgManaCapacity;
+					variables.umbreoRpgManaRegenRate = message.data.umbreoRpgManaRegenRate;
+					variables.umbreoRpgCurrentMana = message.data.umbreoRpgCurrentMana;
+					variables.umbreoRpgAshBuildUpCapacity = message.data.umbreoRpgAshBuildUpCapacity;
 				}
 			});
 			context.setPacketHandled(true);

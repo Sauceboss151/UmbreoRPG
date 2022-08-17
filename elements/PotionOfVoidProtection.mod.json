@@ -1,0 +1,21 @@
+{
+  "_fv": 28,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion Of Void Protection",
+    "splashName": "Splash Potion Of Void Protection",
+    "lingeringName": "Lingering Potion Of Void Protection",
+    "arrowName": "Arrow Of Void Protection",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:VoidProtection"
+        },
+        "duration": 18000,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

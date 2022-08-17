@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DuiliumIngot"
+      },
+      {
+        "value": "CUSTOM:DuiliumIngot"
+      },
+      {
+        "value": "CUSTOM:DuiliumIngot"
+      },
+      {
+        "value": "CUSTOM:DuiliumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DuiliumIngot"
+      },
+      {
+        "value": "CUSTOM:DuiliumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DuiliumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DuiliumArmor.legs"
+    },
+    "name": "duilium_legging_recipe",
+    "namespace": "mod"
+  }
+}

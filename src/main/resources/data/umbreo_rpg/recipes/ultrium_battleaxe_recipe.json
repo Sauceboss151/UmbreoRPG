@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "umbreo_rpg:ultrium_ingot"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "umbreo_rpg:ultrium_ingot"
+    },
+    "3": {
+      "item": "umbreo_rpg:ultrium_ingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "umbreo_rpg:ultrium_ingot"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "umbreo_rpg:ultrium_battleaxe",
+    "count": 1
+  }
+}

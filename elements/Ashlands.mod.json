@@ -16,6 +16,14 @@
       "value": -11250604,
       "falpha": 0.0
     },
+    "waterColor": {
+      "value": -430681004,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -430681004,
+      "falpha": 0.0
+    },
     "ambientSound": {
       "value": ""
     },
@@ -34,18 +42,19 @@
       "value": "ASH"
     },
     "particlesProbability": 1.0,
-    "biomeCategory": "NETHER",
+    "biomeCategory": "DESERT",
     "rainingPossibility": 0.0,
-    "temperature": 1.5,
-    "baseHeight": 0.4,
-    "heightVariation": 0.4,
-    "spawnBiome": false,
-    "spawnBiomeNether": true,
+    "temperature": 2.0,
+    "baseHeight": 0.6,
+    "heightVariation": 1.2999999999999998,
+    "spawnBiome": true,
+    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 10,
+    "biomeWeight": 50,
     "biomeDictionaryTypes": [
       "HOT",
-      "NETHER"
+      "DRY",
+      "WASTELAND"
     ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
@@ -56,12 +65,12 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 0,
+    "treesPerChunk": 1,
     "vanillaTreeType": "Default",
     "treeType": 1,
-    "minHeight": 0,
+    "minHeight": 7,
     "treeStem": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:CharredLog"
     },
     "treeBranch": {
       "value": "Blocks.AIR"
@@ -72,8 +81,8 @@
     "treeFruits": {
       "value": ""
     },
-    "spawnStronghold": false,
-    "spawnMineshaft": false,
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
@@ -92,7 +101,10 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NETHER",
-    "defaultFeatures": [],
+    "defaultFeatures": [
+      "Fossils",
+      "Ores"
+    ],
     "spawnEntries": [
       {
         "entity": {
@@ -101,15 +113,6 @@
         "minGroup": 1,
         "maxGroup": 2,
         "weight": 8,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityWitherSkull"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 3,
         "spawnType": "monster"
       }
     ]

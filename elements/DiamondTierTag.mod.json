@@ -1,0 +1,63 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [
+      {
+        "value": "Blocks.DIAMOND_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_DIAMOND_ORE"
+      },
+      {
+        "value": "CUSTOM:ZoraliumOre"
+      },
+      {
+        "value": "CUSTOM:ZoraliumDeepslateOre"
+      },
+      {
+        "value": "CUSTOM:LathiumOre"
+      },
+      {
+        "value": "CUSTOM:LathiumDeepslateOre"
+      },
+      {
+        "value": "CUSTOM:CobiumOre"
+      },
+      {
+        "value": "CUSTOM:CobiumDeepslateOre"
+      }
+    ],
+    "blocks": [
+      {
+        "value": "Blocks.DIAMOND_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_DIAMOND_ORE"
+      },
+      {
+        "value": "CUSTOM:ZoraliumOre"
+      },
+      {
+        "value": "CUSTOM:ZoraliumDeepslateOre"
+      },
+      {
+        "value": "CUSTOM:LathiumOre"
+      },
+      {
+        "value": "CUSTOM:LathiumDeepslateOre"
+      },
+      {
+        "value": "CUSTOM:CobiumOre"
+      },
+      {
+        "value": "CUSTOM:CobiumDeepslateOre"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "diamond_tier_tag",
+    "namespace": "forge"
+  }
+}

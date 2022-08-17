@@ -87,7 +87,7 @@
       {
         "type": "label",
         "data": {
-          "text": "Level 1: Twilight Oak Bow",
+          "text": "Level 1: Iron Bow",
           "color": {
             "value": -12829636,
             "falpha": 0.0
@@ -95,7 +95,7 @@
           "displayCondition": {
             "name": "FletchingLevel1DisplayProcedure"
           },
-          "name": "Level 1: Twilight Oak Bow",
+          "name": "Level 1: Iron Bow",
           "x": 96,
           "y": 80
         }

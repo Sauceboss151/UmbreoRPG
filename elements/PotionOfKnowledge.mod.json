@@ -1,0 +1,21 @@
+{
+  "_fv": 28,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion Of Knowledge",
+    "splashName": "Splash Potion Of Knowledge",
+    "lingeringName": "Lingering Potion Of Knowledge",
+    "arrowName": "Arrow Of Knowledge",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:KnowledgeEffect"
+        },
+        "duration": 6000,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

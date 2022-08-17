@@ -2,16 +2,19 @@
   "_fv": 28,
   "_type": "overlay",
   "definition": {
-    "priority": "NORMAL",
+    "priority": "HIGHEST",
     "components": [
       {
         "type": "image",
         "data": {
           "image": "target_overlay_box_texture.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTargetInfo"
+          },
           "name": "target_overlay_box_texture.png",
-          "x": -8,
-          "y": -10
+          "x": 2,
+          "y": 2
         }
       },
       {
@@ -22,9 +25,12 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "displayCondition": {
+            "name": "DisplayTargetInfo"
+          },
           "name": "<VAR:integer:umbreoRpgTargetOverlayHealth>/<VAR:integer:umbreoRpgTargetOverlayMaxHealth>",
-          "x": -4,
-          "y": 6
+          "x": 7,
+          "y": 17
         }
       },
       {
@@ -35,9 +41,12 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "displayCondition": {
+            "name": "DisplayTargetInfo"
+          },
           "name": "<VAR:umbreoRpgTargetOverlayName>",
-          "x": -3,
-          "y": -7
+          "x": 7,
+          "y": 7
         }
       }
     ],
