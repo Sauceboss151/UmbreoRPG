@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "biome",
   "definition": {
     "name": "Ashlands",
@@ -17,11 +17,11 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -430681004,
+      "value": -11250604,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -430681004,
+      "value": -11250604,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -105,16 +105,6 @@
       "Fossils",
       "Ores"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityBlaze"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 8,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnEntries": []
   }
 }

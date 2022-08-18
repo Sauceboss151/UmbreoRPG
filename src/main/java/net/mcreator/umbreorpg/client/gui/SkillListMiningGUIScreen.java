@@ -48,7 +48,7 @@ public class SkillListMiningGUIScreen extends AbstractContainerScreen<SkillListM
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/skill_list_mining_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/screens/skill_list_mining_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -65,10 +65,10 @@ public class SkillListMiningGUIScreen extends AbstractContainerScreen<SkillListM
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/mining_decor_texture.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/mining_decor_texture.png"));
 		this.blit(ms, this.leftPos + 3, this.topPos + 4, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/mining_decor_texture.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/mining_decor_texture.png"));
 		this.blit(ms, this.leftPos + 227, this.topPos + 3, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();

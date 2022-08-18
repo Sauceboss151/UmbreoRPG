@@ -33,7 +33,7 @@ public class TargetOverlayBoxTextureScreen extends AbstractContainerScreen<Targe
 		this.imageHeight = 30;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/target_overlay_box_texture.png");
+	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/screens/target_overlay_box_texture.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

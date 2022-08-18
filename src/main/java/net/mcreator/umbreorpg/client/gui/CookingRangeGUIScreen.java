@@ -37,7 +37,7 @@ public class CookingRangeGUIScreen extends AbstractContainerScreen<CookingRangeG
 		this.imageHeight = 169;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/cooking_range_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/screens/cooking_range_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -54,10 +54,10 @@ public class CookingRangeGUIScreen extends AbstractContainerScreen<CookingRangeG
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/arrow_right_texture.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/arrow_right_texture.png"));
 		this.blit(ms, this.leftPos + 78, this.topPos + 35, 0, 0, 17, 17, 17, 17);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/arrow_down_100_texture.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/arrow_down_100_texture.png"));
 		this.blit(ms, this.leftPos + 132, this.topPos + 44, 0, 0, 18, 18, 18, 18);
 
 		RenderSystem.disableBlend();

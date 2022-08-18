@@ -6790,15 +6790,6 @@
       "path": "~/Ores/Vulcor"
     },
     {
-      "name": "VulcorCrystalFuel",
-      "type": "fuel",
-      "sortid": 574,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vulcor_crystal_fuel",
-      "path": "~/Ores/Vulcor"
-    },
-    {
       "name": "MiningPlacedBlockNoExpProcedure",
       "type": "procedure",
       "sortid": 575,
@@ -11886,6 +11877,124 @@
         ]
       },
       "path": "~/Ash Suffocation"
+    },
+    {
+      "name": "VulcorCrystalFuel",
+      "type": "itemextension",
+      "sortid": 1047,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vulcor_crystal_fuel",
+      "path": "~/Ores/Vulcor"
+    },
+    {
+      "name": "BankingGUI",
+      "type": "gui",
+      "sortid": 1048,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "banking_gui",
+      "path": "~/Banking and Currency/Banking System"
+    },
+    {
+      "name": "DepositGoldProcedure",
+      "type": "procedure",
+      "sortid": 1049,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deposit_gold_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Banking and Currency/Banking System"
+    },
+    {
+      "name": "CoinPouchAddCoins",
+      "type": "procedure",
+      "sortid": 1050,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_pouch_add_coins",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Banking and Currency/Gold Coin System"
+    },
+    {
+      "name": "SmallCoinPouch",
+      "type": "item",
+      "sortid": 1050,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "small_coin_pouch",
+      "path": "~/Banking and Currency/Gold Coin System"
+    },
+    {
+      "name": "SetGoldPouchMaxCoins",
+      "type": "procedure",
+      "sortid": 1051,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_gold_pouch_max_coins",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Banking and Currency/Gold Coin System"
+    },
+    {
+      "name": "MediumCoinPouch",
+      "type": "item",
+      "sortid": 1052,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "medium_coin_pouch",
+      "path": "~/Banking and Currency/Gold Coin System"
+    },
+    {
+      "name": "LargeCoinPouch",
+      "type": "item",
+      "sortid": 1053,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "large_coin_pouch",
+      "path": "~/Banking and Currency/Gold Coin System"
+    },
+    {
+      "name": "ExtraLargeCoinPouch",
+      "type": "item",
+      "sortid": 1054,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "extra_large_coin_pouch",
+      "path": "~/Banking and Currency/Gold Coin System"
+    },
+    {
+      "name": "BankersCoinPouch",
+      "type": "item",
+      "sortid": 1055,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bankers_coin_pouch",
+      "path": "~/Banking and Currency/Gold Coin System"
     }
   ],
   "variable_elements": [
@@ -12248,6 +12357,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "2400.0"
+    },
+    {
+      "name": "umbreoRpgPlayerBankGoldTotal",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -12256,6 +12371,7 @@
       "item.umbreo_rpg.raw_osnium_ore": "Raw Osnium Ore",
       "item.umbreo_rpg.cobium_armor_helmet": "Cobium Helmet",
       "item.umbreo_rpg.adventurers_stir_fry": "Adventurers Stir Fry",
+      "item.umbreo_rpg.bankers_coin_pouch": "Bankers Coin Pouch",
       "block.umbreo_rpg.duilium_ore": "Duilium Ore",
       "item.umbreo_rpg.frozen_core": "Frozen Core",
       "item.umbreo_rpg.cobium_armor_boots": "Cobium Boots",
@@ -12403,6 +12519,7 @@
       "item.umbreo_rpg.filling": "Filling",
       "effect.umbreo_rpg.void_protection": "Void Protection",
       "item.umbreo_rpg.ultrium_axe": "Ultrium Axe",
+      "item.umbreo_rpg.extra_large_coin_pouch": "Extra Large Coin Pouch",
       "item.umbreo_rpg.umbellium_armor_helmet": "Umbellium Helmet",
       "item.umbreo_rpg.duilium_armor_leggings": "Duilium Leggings",
       "item.umbreo_rpg.osnium_axe": "Osnium Axe",
@@ -12443,6 +12560,7 @@
       "block.umbreo_rpg.rice_stage_3": "Rice Stage 3",
       "block.umbreo_rpg.rice_stage_2": "Rice Stage 2",
       "block.umbreo_rpg.cobium_block": "Cobium Block",
+      "item.umbreo_rpg.large_coin_pouch": "Large Coin Pouch",
       "item.umbreo_rpg.boreal_sweet_potato": "Boreal Sweet Potato",
       "item.umbreo_rpg.rod_of_rain": "Rod Of Rain",
       "item.umbreo_rpg.umbellium_hoe": "Umbellium Hoe",
@@ -12492,6 +12610,7 @@
       "block.umbreo_rpg.corn_stage_8": "Corn Stage 8",
       "block.umbreo_rpg.corn_stage_9": "Corn Stage 9",
       "item.umbreo_rpg.raw_netherite_ore": "Raw Netherite Ore",
+      "item.umbreo_rpg.medium_coin_pouch": "Medium Coin Pouch",
       "item.umbreo_rpg.tetrium_ingot": "Tetrium Ingot",
       "item.umbreo_rpg.umbreon_netherite_armor_boots": "Netherite Boots",
       "item.umbreo_rpg.osnium_armor_leggings": "Osnium Leggings",
@@ -12576,6 +12695,7 @@
       "item.umbreo_rpg.ender_armor_leggings": "Ender Leggings",
       "block.umbreo_rpg.osnium_ore": "Osnium Ore",
       "block.umbreo_rpg.duilium_deepslate_ore": "Duilium Deepslate Ore",
+      "item.umbreo_rpg.small_coin_pouch": "Small Coin Pouch",
       "item.umbreo_rpg.cooked_rice": "Cooked Rice",
       "item.umbreo_rpg.boreal_baked_potato": "Boreal Baked Potato",
       "item.umbreo_rpg.ultrium_shovel": "Ultrium Shovel",
@@ -13320,5 +13440,5 @@
     "modElementsPackage": "net.mcreator.umbreorpg",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200120510
+  "mcreatorVersion": 202200233511
 }

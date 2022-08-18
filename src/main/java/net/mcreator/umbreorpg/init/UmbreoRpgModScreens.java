@@ -34,6 +34,7 @@ import net.mcreator.umbreorpg.client.gui.CookBookPage2Screen;
 import net.mcreator.umbreorpg.client.gui.CookBookPage1Screen;
 import net.mcreator.umbreorpg.client.gui.CookBookPage11Screen;
 import net.mcreator.umbreorpg.client.gui.CookBookPage10Screen;
+import net.mcreator.umbreorpg.client.gui.BankingGUIScreen;
 import net.mcreator.umbreorpg.client.gui.AlchemyTableGUIScreen;
 import net.mcreator.umbreorpg.client.gui.AlchemyCodexPage9Screen;
 import net.mcreator.umbreorpg.client.gui.AlchemyCodexPage8Screen;
@@ -89,6 +90,7 @@ public class UmbreoRpgModScreens {
 			MenuScreens.register(UmbreoRpgModMenus.ALCHEMY_CODEX_PAGE_10, AlchemyCodexPage10Screen::new);
 			MenuScreens.register(UmbreoRpgModMenus.ALCHEMY_CODEX_PAGE_11, AlchemyCodexPage11Screen::new);
 			MenuScreens.register(UmbreoRpgModMenus.WORLD_STATE_BORDER, WorldStateBorderScreen::new);
+			MenuScreens.register(UmbreoRpgModMenus.BANKING_GUI, BankingGUIScreen::new);
 		});
 	}
 }

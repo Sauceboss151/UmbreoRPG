@@ -1,0 +1,136 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 198,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 143,
+          "y": 64
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Deposit",
+          "onClick": {
+            "name": "DepositGoldProcedure"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Deposit",
+          "x": 124,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Bank Account",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Bank Account",
+          "x": 181,
+          "y": 41
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Total Gold: <VAR:integer:umbreoRpgPlayerBankGoldTotal>",
+          "color": {
+            "value": -800768,
+            "falpha": 0.0
+          },
+          "name": "Total Gold: <VAR:integer:umbreoRpgPlayerBankGoldTotal>",
+          "x": 191,
+          "y": 97
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gold_coin_texture.png",
+          "use1Xscale": false,
+          "name": "gold_coin_texture.png",
+          "x": 223,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "small_gold_pouch.png",
+          "use1Xscale": false,
+          "name": "small_gold_pouch.png",
+          "x": 241,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "medium_gold_pouch_texture.png",
+          "use1Xscale": false,
+          "name": "medium_gold_pouch_texture.png",
+          "x": 259,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "large_gold_pouch_texture.png",
+          "use1Xscale": false,
+          "name": "large_gold_pouch_texture.png",
+          "x": 223,
+          "y": 73
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "extra_large_gold_pouch_texture.png",
+          "use1Xscale": false,
+          "name": "extra_large_gold_pouch_texture.png",
+          "x": 241,
+          "y": 73
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bankers_gold_pouch_texture.png",
+          "use1Xscale": false,
+          "name": "bankers_gold_pouch_texture.png",
+          "x": 259,
+          "y": 73
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

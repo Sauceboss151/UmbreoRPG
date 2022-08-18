@@ -48,7 +48,7 @@ public class SkillListCombatGUIScreen extends AbstractContainerScreen<SkillListC
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/skill_list_combat_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/screens/skill_list_combat_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -65,10 +65,10 @@ public class SkillListCombatGUIScreen extends AbstractContainerScreen<SkillListC
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/combat_decor_texture.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/combat_decor_texture.png"));
 		this.blit(ms, this.leftPos + 4, this.topPos + 4, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/combat_decor_texture.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/combat_decor_texture.png"));
 		this.blit(ms, this.leftPos + 228, this.topPos + 4, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();

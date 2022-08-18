@@ -19,6 +19,6 @@ public class ImpRenderer extends HumanoidMobRenderer<ImpEntity, HumanoidModel<Im
 
 	@Override
 	public ResourceLocation getTextureLocation(ImpEntity entity) {
-		return new ResourceLocation("umbreo_rpg:textures/imp_texture.png");
+		return new ResourceLocation("umbreo_rpg:textures/entities/imp_texture.png");
 	}
 }

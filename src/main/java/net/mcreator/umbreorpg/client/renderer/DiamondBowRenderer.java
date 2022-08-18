@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class DiamondBowRenderer extends EntityRenderer<DiamondBowEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/umbreorpg_arrow_texture.png");
+	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/entities/umbreorpg_arrow_texture.png");
 	private final Modelumbreorpg_arrow model;
 
 	public DiamondBowRenderer(EntityRendererProvider.Context context) {

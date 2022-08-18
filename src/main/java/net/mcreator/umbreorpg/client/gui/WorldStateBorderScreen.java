@@ -40,7 +40,7 @@ public class WorldStateBorderScreen extends AbstractContainerScreen<WorldStateBo
 		this.imageHeight = 139;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/world_state_border.png");
+	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/screens/world_state_border.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

@@ -55,7 +55,7 @@ public class TargetHealthOverlayOverlay {
 			RenderSystem.setShaderColor(1, 1, 1, 1);
 			if (DisplayEnemyOvelayProcedureProcedure.execute(world)) {
 				if (DisplayTargetInfoProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/target_overlay_box_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/target_overlay_box_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -211, posY + -118, 0, 0, 100, 30, 100, 30);
 				}
 				if (DisplayTargetInfoProcedure.execute(entity))

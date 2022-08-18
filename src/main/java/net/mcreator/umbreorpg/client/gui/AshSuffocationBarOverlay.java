@@ -65,51 +65,51 @@ public class AshSuffocationBarOverlay {
 			RenderSystem.setShaderColor(1, 1, 1, 1);
 			if (true) {
 				if (AshBaseDisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_base_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_base_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				if (Ash10DisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_10_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_10_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				if (Ash20DisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_20_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_20_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				if (Ash30DisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_30_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_30_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				if (Ash40DisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_40_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_40_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				if (Ash50DisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_50_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_50_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				if (Ash60DisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_60_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_60_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				if (Ash70DisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_70_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_70_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				if (Ash80DisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_80_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_80_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				if (Ash90DisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_90_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_90_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				if (Ash100DisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_100_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_100_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				if (AshDamagingDisplayProcedure.execute(entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/ash_damaging_bar_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_damaging_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
 				Minecraft.getInstance().font

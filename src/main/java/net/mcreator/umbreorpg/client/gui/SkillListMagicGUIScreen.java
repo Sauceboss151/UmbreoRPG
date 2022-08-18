@@ -43,7 +43,7 @@ public class SkillListMagicGUIScreen extends AbstractContainerScreen<SkillListMa
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/skill_list_magic_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/screens/skill_list_magic_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -60,10 +60,10 @@ public class SkillListMagicGUIScreen extends AbstractContainerScreen<SkillListMa
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/magic_decor_texture.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/magic_decor_texture.png"));
 		this.blit(ms, this.leftPos + 3, this.topPos + 4, 0, 0, 18, 18, 18, 18);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/magic_decor_texture.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/magic_decor_texture.png"));
 		this.blit(ms, this.leftPos + 226, this.topPos + 4, 0, 0, 18, 18, 18, 18);
 
 		RenderSystem.disableBlend();

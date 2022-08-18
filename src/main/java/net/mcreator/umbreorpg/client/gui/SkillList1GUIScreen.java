@@ -39,7 +39,7 @@ public class SkillList1GUIScreen extends AbstractContainerScreen<SkillList1GUIMe
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/skill_list_1_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/screens/skill_list_1_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

@@ -64,47 +64,47 @@ public class ManaBarOverlay {
 			RenderSystem.setShaderColor(1, 1, 1, 1);
 			if (true) {
 				if (ManaBarBaseProcedureProcedure.execute(world)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/umbreo_rpg_mana_bar_base_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/umbreo_rpg_mana_bar_base_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 171, posY + 68, 0, 0, 7, 41, 7, 41);
 				}
 				if (ManaBar10ProcedureProcedure.execute(world, entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/umbreo_rpg_mana_bar_10_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/umbreo_rpg_mana_bar_10_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 171, posY + 68, 0, 0, 7, 41, 7, 41);
 				}
 				if (ManaBar20ProcedureProcedure.execute(world, entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/umbreo_rpg_mana_bar_20_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/umbreo_rpg_mana_bar_20_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 171, posY + 68, 0, 0, 7, 41, 7, 41);
 				}
 				if (ManaBar30ProcedureProcedure.execute(world, entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/umbreo_rpg_mana_bar_30_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/umbreo_rpg_mana_bar_30_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 171, posY + 68, 0, 0, 7, 41, 7, 41);
 				}
 				if (ManaBar40ProcedureProcedure.execute(world, entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/umbreo_rpg_mana_bar_40_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/umbreo_rpg_mana_bar_40_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 171, posY + 68, 0, 0, 7, 41, 7, 41);
 				}
 				if (ManaBar50ProcedureProcedure.execute(world, entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/umbreo_rpg_mana_bar_50_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/umbreo_rpg_mana_bar_50_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 171, posY + 68, 0, 0, 7, 41, 7, 41);
 				}
 				if (ManaBar60ProcedureProcedure.execute(world, entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/umbreo_rpg_mana_bar_60_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/umbreo_rpg_mana_bar_60_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 171, posY + 68, 0, 0, 7, 41, 7, 41);
 				}
 				if (ManaBar70ProcedureProcedure.execute(world, entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/umbreo_rpg_mana_bar_70_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/umbreo_rpg_mana_bar_70_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 171, posY + 68, 0, 0, 7, 41, 7, 41);
 				}
 				if (ManaBar80ProcedureProcedure.execute(world, entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/umbreo_rpg_mana_bar_80_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/umbreo_rpg_mana_bar_80_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 171, posY + 68, 0, 0, 7, 41, 7, 41);
 				}
 				if (ManaBar90ProcedureProcedure.execute(world, entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/umbreo_rpg_mana_bar_90_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/umbreo_rpg_mana_bar_90_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 171, posY + 68, 0, 0, 7, 41, 7, 41);
 				}
 				if (ManaBar100ProcedureProcedure.execute(world, entity)) {
-					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/umbreo_rpg_mana_bar_100_texture.png"));
+					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/umbreo_rpg_mana_bar_100_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 171, posY + 68, 0, 0, 7, 41, 7, 41);
 				}
 				if (ManaBarBaseProcedureProcedure.execute(world))

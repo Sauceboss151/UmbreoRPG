@@ -35,6 +35,7 @@ import net.mcreator.umbreorpg.world.inventory.CookBookPage2Menu;
 import net.mcreator.umbreorpg.world.inventory.CookBookPage1Menu;
 import net.mcreator.umbreorpg.world.inventory.CookBookPage11Menu;
 import net.mcreator.umbreorpg.world.inventory.CookBookPage10Menu;
+import net.mcreator.umbreorpg.world.inventory.BankingGUIMenu;
 import net.mcreator.umbreorpg.world.inventory.AlchemyTableGUIMenu;
 import net.mcreator.umbreorpg.world.inventory.AlchemyCodexPage9Menu;
 import net.mcreator.umbreorpg.world.inventory.AlchemyCodexPage8Menu;
@@ -127,6 +128,8 @@ public class UmbreoRpgModMenus {
 			(id, inv, extraData) -> new AlchemyCodexPage11Menu(id, inv, extraData));
 	public static final MenuType<WorldStateBorderMenu> WORLD_STATE_BORDER = register("world_state_border",
 			(id, inv, extraData) -> new WorldStateBorderMenu(id, inv, extraData));
+	public static final MenuType<BankingGUIMenu> BANKING_GUI = register("banking_gui",
+			(id, inv, extraData) -> new BankingGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

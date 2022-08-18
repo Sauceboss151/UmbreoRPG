@@ -6,7 +6,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.Material;
@@ -60,8 +59,8 @@ public class RiceStage5Block extends Block
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		Vec3 offset = state.getOffset(world, pos);
-		return box(0, 0, 0, 16, 10, 16).move(offset.x, offset.y, offset.z);
+
+		return box(0, 0, 0, 16, 10, 16);
 	}
 
 	@Override

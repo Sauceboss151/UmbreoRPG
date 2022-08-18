@@ -19,6 +19,6 @@ public class TreantRenderer extends HumanoidMobRenderer<TreantEntity, HumanoidMo
 
 	@Override
 	public ResourceLocation getTextureLocation(TreantEntity entity) {
-		return new ResourceLocation("umbreo_rpg:textures/treant_texture.png");
+		return new ResourceLocation("umbreo_rpg:textures/entities/treant_texture.png");
 	}
 }

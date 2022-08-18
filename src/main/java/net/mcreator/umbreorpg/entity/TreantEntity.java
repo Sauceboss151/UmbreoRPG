@@ -127,6 +127,7 @@ public class TreantEntity extends PathfinderMob {
 		builder = builder.add(Attributes.MAX_HEALTH, 16);
 		builder = builder.add(Attributes.ARMOR, 0.5);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 8);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.5);
 		return builder;
 	}

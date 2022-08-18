@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class UmbelliumBowRenderer extends EntityRenderer<UmbelliumBowEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/umbreorpg_arrow_texture.png");
+	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/entities/umbreorpg_arrow_texture.png");
 	private final Modelumbreorpg_arrow model;
 
 	public UmbelliumBowRenderer(EntityRendererProvider.Context context) {

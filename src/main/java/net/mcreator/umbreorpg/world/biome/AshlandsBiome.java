@@ -21,8 +21,6 @@ import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.AmbientParticleSettings;
-import net.minecraft.world.entity.MobCategory;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
@@ -44,7 +42,7 @@ public class AshlandsBiome {
 			Climate.Parameter.span(-1.038105590011f, 0.390465838561f), 0);
 
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-11250604).waterColor(-430681004).waterFogColor(-430681004)
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-11250604).waterColor(-11250604).waterFogColor(-11250604)
 				.skyColor(-11250604).foliageColorOverride(10387789).grassColorOverride(9470285)
 				.ambientParticle(new AmbientParticleSettings(ParticleTypes.ASH, 0.01f)).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
@@ -62,7 +60,6 @@ public class AshlandsBiome {
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addFossilDecoration(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
-		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.BLAZE, 8, 1, 2));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.DESERT).temperature(2f).downfall(0f)
 				.specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}

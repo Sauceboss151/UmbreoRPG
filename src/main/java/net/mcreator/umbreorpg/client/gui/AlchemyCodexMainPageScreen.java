@@ -37,7 +37,7 @@ public class AlchemyCodexMainPageScreen extends AbstractContainerScreen<AlchemyC
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/alchemy_codex_main_page.png");
+	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/screens/alchemy_codex_main_page.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -54,7 +54,7 @@ public class AlchemyCodexMainPageScreen extends AbstractContainerScreen<AlchemyC
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/arrow_down_100_texture.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/arrow_down_100_texture.png"));
 		this.blit(ms, this.leftPos + 78, this.topPos + 97, 0, 0, 18, 18, 18, 18);
 
 		RenderSystem.disableBlend();

@@ -37,7 +37,7 @@ public class CookBookPage1Screen extends AbstractContainerScreen<CookBookPage1Me
 		this.imageHeight = 174;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/cook_book_page_1.png");
+	private static final ResourceLocation texture = new ResourceLocation("umbreo_rpg:textures/screens/cook_book_page_1.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

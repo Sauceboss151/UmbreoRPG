@@ -118,6 +118,7 @@ public class UmbreoRpgModVariables {
 			clone.umbreoRpgManaCapacity = original.umbreoRpgManaCapacity;
 			clone.umbreoRpgManaRegenRate = original.umbreoRpgManaRegenRate;
 			clone.umbreoRpgCurrentMana = original.umbreoRpgCurrentMana;
+			clone.umbreoRpgPlayerBankGoldTotal = original.umbreoRpgPlayerBankGoldTotal;
 			if (!event.isWasDeath()) {
 				clone.umbreoRpgSkillPageOpened = original.umbreoRpgSkillPageOpened;
 				clone.umbreoRpgTargetOverlayHealth = original.umbreoRpgTargetOverlayHealth;
@@ -371,6 +372,7 @@ public class UmbreoRpgModVariables {
 		public double umbreoRpgManaRegenRate = 1.0;
 		public double umbreoRpgCurrentMana = 100.0;
 		public double umbreoRpgAshBuildUpCapacity = 2400.0;
+		public double umbreoRpgPlayerBankGoldTotal = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -433,6 +435,7 @@ public class UmbreoRpgModVariables {
 			nbt.putDouble("umbreoRpgManaRegenRate", umbreoRpgManaRegenRate);
 			nbt.putDouble("umbreoRpgCurrentMana", umbreoRpgCurrentMana);
 			nbt.putDouble("umbreoRpgAshBuildUpCapacity", umbreoRpgAshBuildUpCapacity);
+			nbt.putDouble("umbreoRpgPlayerBankGoldTotal", umbreoRpgPlayerBankGoldTotal);
 			return nbt;
 		}
 
@@ -492,6 +495,7 @@ public class UmbreoRpgModVariables {
 			umbreoRpgManaRegenRate = nbt.getDouble("umbreoRpgManaRegenRate");
 			umbreoRpgCurrentMana = nbt.getDouble("umbreoRpgCurrentMana");
 			umbreoRpgAshBuildUpCapacity = nbt.getDouble("umbreoRpgAshBuildUpCapacity");
+			umbreoRpgPlayerBankGoldTotal = nbt.getDouble("umbreoRpgPlayerBankGoldTotal");
 		}
 	}
 
@@ -571,6 +575,7 @@ public class UmbreoRpgModVariables {
 					variables.umbreoRpgManaRegenRate = message.data.umbreoRpgManaRegenRate;
 					variables.umbreoRpgCurrentMana = message.data.umbreoRpgCurrentMana;
 					variables.umbreoRpgAshBuildUpCapacity = message.data.umbreoRpgAshBuildUpCapacity;
+					variables.umbreoRpgPlayerBankGoldTotal = message.data.umbreoRpgPlayerBankGoldTotal;
 				}
 			});
 			context.setPacketHandled(true);
