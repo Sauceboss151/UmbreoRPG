@@ -13,8 +13,8 @@
             "name": "DisplayTargetInfo"
           },
           "name": "target_overlay_box_texture.png",
-          "x": 2,
-          "y": 2
+          "x": 0,
+          "y": 0
         }
       },
       {
@@ -29,8 +29,8 @@
             "name": "DisplayTargetInfo"
           },
           "name": "<VAR:integer:umbreoRpgTargetOverlayHealth>/<VAR:integer:umbreoRpgTargetOverlayMaxHealth>",
-          "x": 7,
-          "y": 17
+          "x": 5,
+          "y": 16
         }
       },
       {
@@ -45,8 +45,8 @@
             "name": "DisplayTargetInfo"
           },
           "name": "<VAR:umbreoRpgTargetOverlayName>",
-          "x": 7,
-          "y": 7
+          "x": 5,
+          "y": 5
         }
       }
     ],

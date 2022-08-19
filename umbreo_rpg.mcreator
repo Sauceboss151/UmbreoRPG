@@ -11995,6 +11995,27 @@
       "locked_code": true,
       "registry_name": "bankers_coin_pouch",
       "path": "~/Banking and Currency/Gold Coin System"
+    },
+    {
+      "name": "TargetOverlayTimeout",
+      "type": "procedure",
+      "sortid": 1056,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "target_overlay_timeout",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Target Health Overlay"
     }
   ],
   "variable_elements": [
@@ -12363,6 +12384,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "umbreoRpgOverlayTimeout",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -12370,8 +12397,8 @@
     "en_us": {
       "item.umbreo_rpg.raw_osnium_ore": "Raw Osnium Ore",
       "item.umbreo_rpg.cobium_armor_helmet": "Cobium Helmet",
-      "item.umbreo_rpg.adventurers_stir_fry": "Adventurers Stir Fry",
       "item.umbreo_rpg.bankers_coin_pouch": "Bankers Coin Pouch",
+      "item.umbreo_rpg.adventurers_stir_fry": "Adventurers Stir Fry",
       "block.umbreo_rpg.duilium_ore": "Duilium Ore",
       "item.umbreo_rpg.frozen_core": "Frozen Core",
       "item.umbreo_rpg.cobium_armor_boots": "Cobium Boots",
@@ -12413,18 +12440,18 @@
       "item.umbreo_rpg.duilium_armor_boots": "Duilium Boots",
       "item.umbreo_rpg.umbreon_leather_armor_chestplate": "Leather Chestplate",
       "block.umbreo_rpg.lathium_deepslate_ore": "Lathium Deepslate Ore",
-      "item.umbreo_rpg.mystalium_armor_helmet": "Mystalium Helmet",
       "item.umbreo_rpg.vulcor_armor_boots": "Vulcor Boots",
-      "item.umbreo_rpg.vulcor_hoe": "Vulcor Hoe",
+      "item.umbreo_rpg.mystalium_armor_helmet": "Mystalium Helmet",
       "item.umbreo_rpg.rod_of_storms": "Rod Of Storms",
-      "item.umbreo_rpg.zoralium_battleaxe": "Zoralium Battleaxe",
+      "item.umbreo_rpg.vulcor_hoe": "Vulcor Hoe",
       "item.umbreo_rpg.imp_dust": "Imp Dust",
+      "item.umbreo_rpg.zoralium_battleaxe": "Zoralium Battleaxe",
       "item.umbreo_rpg.cobium_mace": "Cobium Mace",
       "item.umbreo_rpg.beef_and_carrots": "Beef And Carrots",
       "item.umbreo_rpg.duilium_ingot": "Duilium Ingot",
       "item.umbreo_rpg.iron_bow": "Iron Bow",
-      "item.umbreo_rpg.cobium_axe": "Cobium Axe",
       "item.umbreo_rpg.gold_mace": "Gold Mace",
+      "item.umbreo_rpg.cobium_axe": "Cobium Axe",
       "item.umbreo_rpg.umbreon_leather_armor_helmet": "Leather Hood",
       "block.umbreo_rpg.random_alliance_block": "Random Alliance Block",
       "item.umbreo_rpg.duilium_armor_chestplate": "Duilium Chestplate",
@@ -12437,8 +12464,8 @@
       "item.umbreo_rpg.cobium_armor_leggings": "Cobium Leggings",
       "block.umbreo_rpg.pure_gold_block": "Pure Gold Block",
       "item.umbreo_rpg.lathium_bow": "Lathium Bow",
-      "block.umbreo_rpg.gates_of_fates_floor_1_block": "Gates Of Fates Floor 1 Block",
       "item.umbreo_rpg.lathium_sword": "Lathium Sword",
+      "block.umbreo_rpg.gates_of_fates_floor_1_block": "Gates Of Fates Floor 1 Block",
       "item.umbreo_rpg.roasted_seeds": "Roasted Seeds",
       "item.umbreo_rpg.cobium_shovel": "Cobium Shovel",
       "block.umbreo_rpg.banking_counter": "Banking Counter",
@@ -12463,8 +12490,8 @@
       "item.umbreo_rpg.unactivated_rod_of_clear_skies": "Unactivated Rod Of Clear Skies",
       "block.umbreo_rpg.duilium_block": "Duilium Block",
       "item.umbreo_rpg.unactivated_rod_of_daylight": "Unactivated Rod Of Daylight",
-      "item.umbreo_rpg.diamond_bow": "Diamond Bow",
       "item.umbreo_rpg.reinforced_mace": "Reinforced Iron Mace",
+      "item.umbreo_rpg.diamond_bow": "Diamond Bow",
       "item.umbreo_rpg.sweet_potato_pie": "Sweet Potato Pie",
       "item.minecraft.splash_potion.effect.potion_of_knowledge": "Splash Potion Of Knowledge",
       "item.umbreo_rpg.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
@@ -12492,9 +12519,9 @@
       "block.umbreo_rpg.lathium_block": "Lathium Block",
       "item.umbreo_rpg.diamond_mace": "Diamond Mace",
       "item.umbreo_rpg.umbreon_netherite_armor_leggings": "Netherite Leggings",
-      "item.umbreo_rpg.lathium_armor_helmet": "Lathium Helmet",
-      "item.umbreo_rpg.umbellium_armor_chestplate": "Umbellium Chestplate",
       "item.umbreo_rpg.ultrium_pickaxe": "Ultrium Pickaxe",
+      "item.umbreo_rpg.umbellium_armor_chestplate": "Umbellium Chestplate",
+      "item.umbreo_rpg.lathium_armor_helmet": "Lathium Helmet",
       "item.umbreo_rpg.garlic_seeds": "Garlic Seeds",
       "item.umbreo_rpg.ultrium_armor_chestplate": "Ultrium Chestplate",
       "item.umbreo_rpg.marshland_rice": "Marshland Rice",
@@ -12516,8 +12543,8 @@
       "item.umbreo_rpg.demon_horn": "Demon Horn",
       "item.umbreo_rpg.umbellium_shovel": "Umbellium Shovel",
       "item.umbreo_rpg.sour_cream": "Sour Cream",
-      "item.umbreo_rpg.filling": "Filling",
       "effect.umbreo_rpg.void_protection": "Void Protection",
+      "item.umbreo_rpg.filling": "Filling",
       "item.umbreo_rpg.ultrium_axe": "Ultrium Axe",
       "item.umbreo_rpg.extra_large_coin_pouch": "Extra Large Coin Pouch",
       "item.umbreo_rpg.umbellium_armor_helmet": "Umbellium Helmet",

@@ -119,6 +119,7 @@ public class UmbreoRpgModVariables {
 			clone.umbreoRpgManaRegenRate = original.umbreoRpgManaRegenRate;
 			clone.umbreoRpgCurrentMana = original.umbreoRpgCurrentMana;
 			clone.umbreoRpgPlayerBankGoldTotal = original.umbreoRpgPlayerBankGoldTotal;
+			clone.umbreoRpgOverlayTimeout = original.umbreoRpgOverlayTimeout;
 			if (!event.isWasDeath()) {
 				clone.umbreoRpgSkillPageOpened = original.umbreoRpgSkillPageOpened;
 				clone.umbreoRpgTargetOverlayHealth = original.umbreoRpgTargetOverlayHealth;
@@ -373,6 +374,7 @@ public class UmbreoRpgModVariables {
 		public double umbreoRpgCurrentMana = 100.0;
 		public double umbreoRpgAshBuildUpCapacity = 2400.0;
 		public double umbreoRpgPlayerBankGoldTotal = 0;
+		public double umbreoRpgOverlayTimeout = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -436,6 +438,7 @@ public class UmbreoRpgModVariables {
 			nbt.putDouble("umbreoRpgCurrentMana", umbreoRpgCurrentMana);
 			nbt.putDouble("umbreoRpgAshBuildUpCapacity", umbreoRpgAshBuildUpCapacity);
 			nbt.putDouble("umbreoRpgPlayerBankGoldTotal", umbreoRpgPlayerBankGoldTotal);
+			nbt.putDouble("umbreoRpgOverlayTimeout", umbreoRpgOverlayTimeout);
 			return nbt;
 		}
 
@@ -496,6 +499,7 @@ public class UmbreoRpgModVariables {
 			umbreoRpgCurrentMana = nbt.getDouble("umbreoRpgCurrentMana");
 			umbreoRpgAshBuildUpCapacity = nbt.getDouble("umbreoRpgAshBuildUpCapacity");
 			umbreoRpgPlayerBankGoldTotal = nbt.getDouble("umbreoRpgPlayerBankGoldTotal");
+			umbreoRpgOverlayTimeout = nbt.getDouble("umbreoRpgOverlayTimeout");
 		}
 	}
 
@@ -576,6 +580,7 @@ public class UmbreoRpgModVariables {
 					variables.umbreoRpgCurrentMana = message.data.umbreoRpgCurrentMana;
 					variables.umbreoRpgAshBuildUpCapacity = message.data.umbreoRpgAshBuildUpCapacity;
 					variables.umbreoRpgPlayerBankGoldTotal = message.data.umbreoRpgPlayerBankGoldTotal;
+					variables.umbreoRpgOverlayTimeout = message.data.umbreoRpgOverlayTimeout;
 				}
 			});
 			context.setPacketHandled(true);
