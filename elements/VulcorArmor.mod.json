@@ -14,7 +14,7 @@
       "name": "VulcorArmorEffectProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "vulcor_armor_",
     "helmetName": "Vulcor Helmet",

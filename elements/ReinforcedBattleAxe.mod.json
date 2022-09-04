@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "reinforced_battleaxe_texture",
     "customModelName": "Normal",
-    "name": "Reinforced Iron Battle Axe",
+    "name": "Reinforced Iron Battleaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 0,

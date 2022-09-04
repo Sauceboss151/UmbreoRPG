@@ -14,7 +14,7 @@
       "name": "LeatherArmorEffect"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "leather_armor_",
     "helmetName": "Leather Hood",

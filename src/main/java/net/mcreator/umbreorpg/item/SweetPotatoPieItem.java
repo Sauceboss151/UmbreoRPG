@@ -5,12 +5,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.food.FoodProperties;
+
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 
 public class SweetPotatoPieItem extends Item {
 	public SweetPotatoPieItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(64).rarity(Rarity.COMMON)
+		super(new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_FOOD).stacksTo(64).rarity(Rarity.COMMON)
 				.food((new FoodProperties.Builder()).nutrition(12).saturationMod(2.2f)
 
 						.build()));

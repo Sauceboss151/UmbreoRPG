@@ -18,6 +18,7 @@ public class UmbreoRpgModTabs {
 	public static CreativeModeTab TAB_UMBREO_ALCHEMY;
 	public static CreativeModeTab TAB_UMBREO_BLOCKS;
 	public static CreativeModeTab TAB_UMBREO_MINING;
+	public static CreativeModeTab TAB_UMBREO_MISC;
 
 	public static void load() {
 		TAB_UMBREO_COMBAT = new CreativeModeTab("tabumbreo_combat") {
@@ -97,5 +98,16 @@ public class UmbreoRpgModTabs {
 				return true;
 			}
 		}.setBackgroundSuffix("item_search.png");
+		TAB_UMBREO_MISC = new CreativeModeTab("tabumbreo_misc") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(UmbreoRpgModItems.PLACE_HOLDER_ITEM.get());
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return false;
+			}
+		};
 	}
 }

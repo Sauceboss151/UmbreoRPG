@@ -10,7 +10,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
@@ -24,6 +23,7 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.umbreorpg.procedures.ReinforcedIronArmorEffectProcedureProcedure;
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 import net.mcreator.umbreorpg.init.UmbreoRpgModItems;
 import net.mcreator.umbreorpg.client.model.Modelreinforced_iron_armor_layer_1;
 
@@ -77,7 +77,7 @@ public abstract class ReinforcedIronArmorItem extends ArmorItem {
 
 	public static class Helmet extends ReinforcedIronArmorItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT));
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
@@ -109,7 +109,7 @@ public abstract class ReinforcedIronArmorItem extends ArmorItem {
 
 	public static class Chestplate extends ReinforcedIronArmorItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT));
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
@@ -146,7 +146,7 @@ public abstract class ReinforcedIronArmorItem extends ArmorItem {
 
 	public static class Leggings extends ReinforcedIronArmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT));
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
@@ -181,7 +181,7 @@ public abstract class ReinforcedIronArmorItem extends ArmorItem {
 
 	public static class Boots extends ReinforcedIronArmorItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT));
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {

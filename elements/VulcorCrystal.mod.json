@@ -8,7 +8,7 @@
     "name": "Vulcor Crystal",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:UmbreoMining"
     },
     "stackSize": 64,
     "enchantability": 0,

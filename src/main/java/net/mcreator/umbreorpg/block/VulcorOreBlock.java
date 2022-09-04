@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class VulcorOreBlock extends Block {
 	public VulcorOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.NETHERRACK).strength(3f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -14,7 +14,7 @@
       "name": "EnderArmorEffectProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "ender_armor_",
     "helmetName": "Ender Helmet",

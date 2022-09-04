@@ -7,15 +7,16 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
+
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 
 import java.util.List;
 
 public class WorldlyShardItem extends Item {
 	public WorldlyShardItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(50).fireResistant().rarity(Rarity.RARE));
+		super(new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_ALCHEMY).durability(50).fireResistant().rarity(Rarity.RARE));
 	}
 
 	@Override

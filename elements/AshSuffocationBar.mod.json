@@ -159,19 +159,6 @@
           "x": 223,
           "y": 181
         }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<VAR:integer:umbreoRpgAshBuildUp>",
-          "color": {
-            "value": -16737793,
-            "falpha": 0.0
-          },
-          "name": "<VAR:integer:umbreoRpgAshBuildUp>",
-          "x": 191,
-          "y": 27
-        }
       }
     ],
     "baseTexture": "",

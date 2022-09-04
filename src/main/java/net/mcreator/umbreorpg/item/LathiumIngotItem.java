@@ -5,11 +5,12 @@ import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
+
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 
 public class LathiumIngotItem extends Item {
 	public LathiumIngotItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MINING).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

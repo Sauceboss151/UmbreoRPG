@@ -6,8 +6,8 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 import net.mcreator.umbreorpg.init.UmbreoRpgModItems;
 
 public class VulcorSwordItem extends SwordItem {
@@ -36,6 +36,6 @@ public class VulcorSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(UmbreoRpgModItems.VULCOR_INGOT.get()));
 			}
-		}, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_MISC).fireResistant());
+		}, 3, -2.4f, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT).fireResistant());
 	}
 }

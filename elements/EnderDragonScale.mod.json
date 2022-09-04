@@ -8,7 +8,7 @@
     "name": "Ender Dragon Scale",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:UmbreoMisc"
     },
     "stackSize": 64,
     "enchantability": 0,

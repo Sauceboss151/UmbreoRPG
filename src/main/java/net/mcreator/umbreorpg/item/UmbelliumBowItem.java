@@ -7,7 +7,6 @@ import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -16,11 +15,12 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 import net.mcreator.umbreorpg.entity.UmbelliumBowEntity;
 
 public class UmbelliumBowItem extends Item {
 	public UmbelliumBowItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(1000));
+		super(new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT).durability(1000));
 	}
 
 	@Override

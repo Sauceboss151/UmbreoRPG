@@ -14,7 +14,7 @@
       "name": "ChainmailEffectProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "chainmail_armor_",
     "helmetName": "Chainmail Helmet",

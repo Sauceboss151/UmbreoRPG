@@ -17,11 +17,13 @@ import net.minecraft.network.chat.Component;
 import net.mcreator.umbreorpg.procedures.SetGoldPouchMaxCoinsProcedure;
 import net.mcreator.umbreorpg.procedures.CoinPouchAddCoinsProcedure;
 
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
+
 import java.util.List;
 
 public class LargeCoinPouchItem extends Item {
 	public LargeCoinPouchItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC).stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

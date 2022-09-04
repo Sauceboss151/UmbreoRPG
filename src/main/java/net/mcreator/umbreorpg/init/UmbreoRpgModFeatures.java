@@ -41,12 +41,10 @@ import java.util.ArrayList;
 public class UmbreoRpgModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, UmbreoRpgMod.MODID);
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
-	public static final RegistryObject<Feature<?>> UMBELLIUM_ORE = register("umbellium_ore", UmbelliumOreFeature::feature, new FeatureRegistration(
-			GenerationStep.Decoration.UNDERGROUND_ORES, UmbelliumOreFeature.GENERATE_BIOMES, UmbelliumOreFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> VULCOR_ORE = register("vulcor_ore", VulcorOreFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, VulcorOreFeature.GENERATE_BIOMES, VulcorOreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> TETRIUM_ORE = register("tetrium_ore", TetriumOreFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, TetriumOreFeature.GENERATE_BIOMES, TetriumOreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> VULCOR_ORE = register("vulcor_ore", VulcorOreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, VulcorOreFeature.GENERATE_BIOMES, VulcorOreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> PURE_GOLD_ORE = register("pure_gold_ore", PureGoldOreFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.UNDERGROUND_ORES, PureGoldOreFeature.GENERATE_BIOMES, PureGoldOreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> ZORALIUM_ORE = register("zoralium_ore", ZoraliumOreFeature::feature, new FeatureRegistration(
@@ -73,6 +71,8 @@ public class UmbreoRpgModFeatures {
 	public static final RegistryObject<Feature<?>> SKORIUM_DEEPSLATE_ORE = register("skorium_deepslate_ore", SkoriumDeepslateOreFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, SkoriumDeepslateOreFeature.GENERATE_BIOMES,
 					SkoriumDeepslateOreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> UMBELLIUM_ORE = register("umbellium_ore", UmbelliumOreFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.UNDERGROUND_ORES, UmbelliumOreFeature.GENERATE_BIOMES, UmbelliumOreFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

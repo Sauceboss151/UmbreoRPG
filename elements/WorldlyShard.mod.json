@@ -8,7 +8,7 @@
     "name": "Worldly Shard",
     "rarity": "RARE",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:UmbreoAlchemy"
     },
     "stackSize": 1,
     "enchantability": 0,

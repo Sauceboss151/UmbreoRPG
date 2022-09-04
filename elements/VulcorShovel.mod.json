@@ -8,7 +8,7 @@
     "name": "Vulcor Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:UmbreoTools"
     },
     "toolType": "Spade",
     "harvestLevel": 2,

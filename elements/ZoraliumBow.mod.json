@@ -8,7 +8,7 @@
     "name": "Zoralium Bow",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "stackSize": 1,
     "ammoItem": {

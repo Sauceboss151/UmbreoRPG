@@ -8,7 +8,7 @@
     "name": "Reinforced Iron Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:UmbreoTools"
     },
     "toolType": "Spade",
     "harvestLevel": 2,

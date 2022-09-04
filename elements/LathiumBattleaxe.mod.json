@@ -8,7 +8,7 @@
     "name": "Lathium Battleaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 0,

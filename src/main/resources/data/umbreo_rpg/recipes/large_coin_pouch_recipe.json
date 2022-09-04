@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "umbreo_rpg:medium_coin_pouch"
+    },
+    {
+      "item": "umbreo_rpg:medium_coin_pouch"
+    },
+    {
+      "item": "umbreo_rpg:medium_coin_pouch"
+    }
+  ],
+  "result": {
+    "item": "umbreo_rpg:large_coin_pouch",
+    "count": 1
+  }
+}

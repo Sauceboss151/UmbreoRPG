@@ -14,7 +14,7 @@
       "name": "ReinforcedIronArmorEffectProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "reinforced_iron_armor_",
     "helmetName": "Reinforced Iron Helmet",

@@ -14,7 +14,7 @@
       "name": "CobiumArmorEffect"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "cobium_armor_",
     "helmetName": "Cobium Helmet",

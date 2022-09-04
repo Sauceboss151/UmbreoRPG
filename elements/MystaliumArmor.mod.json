@@ -14,7 +14,7 @@
       "name": "MystaliumArmorEffect"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "mystalium_armor_",
     "helmetName": "Mystalium Helmet",

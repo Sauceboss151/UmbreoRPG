@@ -55,6 +55,10 @@ public class UmbreoRpgModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, UmbreoRpgMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> ALCHEMY_TABLE = register("alchemy_table", UmbreoRpgModBlocks.ALCHEMY_TABLE,
 			AlchemyTableBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BANKING_COUNTER = register("banking_counter", UmbreoRpgModBlocks.BANKING_COUNTER,
+			BankingCounterBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> COOKING_RANGE = register("cooking_range", UmbreoRpgModBlocks.COOKING_RANGE,
+			CookingRangeBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BOREAL_SWEET_POTATO_STAGE_0 = register("boreal_sweet_potato_stage_0",
 			UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_0, BorealSweetPotatoStage0BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BOREAL_SWEET_POTATO_STAGE_1 = register("boreal_sweet_potato_stage_1",
@@ -125,10 +129,6 @@ public class UmbreoRpgModBlockEntities {
 			CornStage9BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CORN_STAGE_10 = register("corn_stage_10", UmbreoRpgModBlocks.CORN_STAGE_10,
 			CornStage10BlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> COOKING_RANGE = register("cooking_range", UmbreoRpgModBlocks.COOKING_RANGE,
-			CookingRangeBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> BANKING_COUNTER = register("banking_counter", UmbreoRpgModBlocks.BANKING_COUNTER,
-			BankingCounterBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {

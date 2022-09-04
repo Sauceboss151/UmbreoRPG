@@ -93,6 +93,7 @@ import net.mcreator.umbreorpg.item.SkoriumAxeItem;
 import net.mcreator.umbreorpg.item.SkoriumArmorItem;
 import net.mcreator.umbreorpg.item.ShepardsPieItem;
 import net.mcreator.umbreorpg.item.SheepSaladItem;
+import net.mcreator.umbreorpg.item.ScrollOfKnowledgeItem;
 import net.mcreator.umbreorpg.item.RodOfStormsItem;
 import net.mcreator.umbreorpg.item.RodOfRainItem;
 import net.mcreator.umbreorpg.item.RodOfMoonlightItem;
@@ -124,6 +125,7 @@ import net.mcreator.umbreorpg.item.RawDuiliumOreItem;
 import net.mcreator.umbreorpg.item.RawCobiumOreItem;
 import net.mcreator.umbreorpg.item.PureGoldIngotItem;
 import net.mcreator.umbreorpg.item.PumpkinCookiesItem;
+import net.mcreator.umbreorpg.item.PlaceHolderItemItem;
 import net.mcreator.umbreorpg.item.OsniumSwordItem;
 import net.mcreator.umbreorpg.item.OsniumShovelItem;
 import net.mcreator.umbreorpg.item.OsniumPickaxeItem;
@@ -133,6 +135,7 @@ import net.mcreator.umbreorpg.item.OsniumHoeItem;
 import net.mcreator.umbreorpg.item.OsniumBattleaxeItem;
 import net.mcreator.umbreorpg.item.OsniumAxeItem;
 import net.mcreator.umbreorpg.item.OsniumArmorItem;
+import net.mcreator.umbreorpg.item.OreAttunementArtifactItem;
 import net.mcreator.umbreorpg.item.OilItem;
 import net.mcreator.umbreorpg.item.NetheriteMaceItem;
 import net.mcreator.umbreorpg.item.NetheriteBowItem;
@@ -249,116 +252,18 @@ import net.mcreator.umbreorpg.UmbreoRpgMod;
 
 public class UmbreoRpgModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, UmbreoRpgMod.MODID);
-	public static final RegistryObject<Item> ALCHEMY_TABLE = block(UmbreoRpgModBlocks.ALCHEMY_TABLE, CreativeModeTab.TAB_MISC);
+	public static final RegistryObject<Item> ALCHEMY_CODEX = REGISTRY.register("alchemy_codex", () -> new AlchemyCodexItem());
+	public static final RegistryObject<Item> ALCHEMY_TABLE = block(UmbreoRpgModBlocks.ALCHEMY_TABLE, UmbreoRpgModTabs.TAB_UMBREO_ALCHEMY);
 	public static final RegistryObject<Item> CORE_OF_LIGHT = REGISTRY.register("core_of_light", () -> new CoreOfLightItem());
-	public static final RegistryObject<Item> TREANT = REGISTRY.register("treant_spawn_egg",
-			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.TREANT, -9810159, -13531813, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> TREANT_ROOT = REGISTRY.register("treant_root", () -> new TreantRootItem());
-	public static final RegistryObject<Item> IMP_DUST = REGISTRY.register("imp_dust", () -> new ImpDustItem());
-	public static final RegistryObject<Item> IMP = REGISTRY.register("imp_spawn_egg",
-			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.IMP, -15066598, -7303024, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> ASH_BLOCK = block(UmbreoRpgModBlocks.ASH_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> JUNGLE_CORE = REGISTRY.register("jungle_core", () -> new JungleCoreItem());
 	public static final RegistryObject<Item> FROZEN_CORE = REGISTRY.register("frozen_core", () -> new FrozenCoreItem());
 	public static final RegistryObject<Item> BLAST_CORE = REGISTRY.register("blast_core", () -> new BlastCoreItem());
 	public static final RegistryObject<Item> VOID_CORE = REGISTRY.register("void_core", () -> new VoidCoreItem());
 	public static final RegistryObject<Item> TWILIGHT_CORE = REGISTRY.register("twilight_core", () -> new TwilightCoreItem());
-	public static final RegistryObject<Item> UMBELLIUM_INGOT = REGISTRY.register("umbellium_ingot", () -> new UmbelliumIngotItem());
-	public static final RegistryObject<Item> UMBELLIUM_ORE = block(UmbreoRpgModBlocks.UMBELLIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> UMBELLIUM_BLOCK = block(UmbreoRpgModBlocks.UMBELLIUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> VULCOR_INGOT = REGISTRY.register("vulcor_ingot", () -> new VulcorIngotItem());
-	public static final RegistryObject<Item> VULCOR_ORE = block(UmbreoRpgModBlocks.VULCOR_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> VULCOR_BLOCK = block(UmbreoRpgModBlocks.VULCOR_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> TETRIUM_INGOT = REGISTRY.register("tetrium_ingot", () -> new TetriumIngotItem());
-	public static final RegistryObject<Item> REINFORCED_IRON_INGOT = REGISTRY.register("reinforced_iron_ingot", () -> new ReinforcedIronIngotItem());
-	public static final RegistryObject<Item> TETRIUM_ORE = block(UmbreoRpgModBlocks.TETRIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> TETRIUM_BLOCK = block(UmbreoRpgModBlocks.TETRIUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> PURE_GOLD_INGOT = REGISTRY.register("pure_gold_ingot", () -> new PureGoldIngotItem());
-	public static final RegistryObject<Item> PURE_GOLD_ORE = block(UmbreoRpgModBlocks.PURE_GOLD_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> PURE_GOLD_BLOCK = block(UmbreoRpgModBlocks.PURE_GOLD_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> ZORALIUM_INGOT = REGISTRY.register("zoralium_ingot", () -> new ZoraliumIngotItem());
-	public static final RegistryObject<Item> ZORALIUM_ORE = block(UmbreoRpgModBlocks.ZORALIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> ZORALIUM_BLOCK = block(UmbreoRpgModBlocks.ZORALIUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> LATHIUM_INGOT = REGISTRY.register("lathium_ingot", () -> new LathiumIngotItem());
-	public static final RegistryObject<Item> LATHIUM_ORE = block(UmbreoRpgModBlocks.LATHIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> LATHIUM_BLOCK = block(UmbreoRpgModBlocks.LATHIUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> COBIUM_INGOT = REGISTRY.register("cobium_ingot", () -> new CobiumIngotItem());
-	public static final RegistryObject<Item> COBIUM_ORE = block(UmbreoRpgModBlocks.COBIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> COBIUM_BLOCK = block(UmbreoRpgModBlocks.COBIUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> SKORIUM_INGOT = REGISTRY.register("skorium_ingot", () -> new SkoriumIngotItem());
-	public static final RegistryObject<Item> SKORIUM_BLOCK = block(UmbreoRpgModBlocks.SKORIUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> MYSTALIUM_INGOT = REGISTRY.register("mystalium_ingot", () -> new MystaliumIngotItem());
-	public static final RegistryObject<Item> MYSTALIUM_ORE = block(UmbreoRpgModBlocks.MYSTALIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> MYSTALIUM_BLOCK = block(UmbreoRpgModBlocks.MYSTALIUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> OSNIUM_INGOT = REGISTRY.register("osnium_ingot", () -> new OsniumIngotItem());
-	public static final RegistryObject<Item> OSNIUM_ORE = block(UmbreoRpgModBlocks.OSNIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> OSNIUM_BLOCK = block(UmbreoRpgModBlocks.OSNIUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> DUILIUM_INGOT = REGISTRY.register("duilium_ingot", () -> new DuiliumIngotItem());
-	public static final RegistryObject<Item> DUILIUM_ORE = block(UmbreoRpgModBlocks.DUILIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> DUILIUM_BLOCK = block(UmbreoRpgModBlocks.DUILIUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> ULTRIUM_INGOT = REGISTRY.register("ultrium_ingot", () -> new UltriumIngotItem());
-	public static final RegistryObject<Item> ULTRIUM_ORE = block(UmbreoRpgModBlocks.ULTRIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> ULTRIUM_BLOCK = block(UmbreoRpgModBlocks.ULTRIUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> SWEET_POTATO_SEEDS = REGISTRY.register("sweet_potato_seeds", () -> new SweetPotatoSeedsItem());
-	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_0 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_0, null);
-	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_1 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_1, null);
-	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_2 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_2, null);
-	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_3 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_3, null);
-	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_4 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_4, null);
-	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_5 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_5, null);
-	public static final RegistryObject<Item> GREEN_SEEDS = REGISTRY.register("green_seeds", () -> new GreenSeedsItem());
-	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_0 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_0, null);
-	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_1 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_1, null);
-	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_2 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_2, null);
-	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_3 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_3, null);
-	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_4 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_4, null);
-	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_5 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_5, null);
-	public static final RegistryObject<Item> GARLIC_SEEDS = REGISTRY.register("garlic_seeds", () -> new GarlicSeedsItem());
-	public static final RegistryObject<Item> GARLIC_STAGE_0 = block(UmbreoRpgModBlocks.GARLIC_STAGE_0, null);
-	public static final RegistryObject<Item> GARLIC_STAGE_1 = block(UmbreoRpgModBlocks.GARLIC_STAGE_1, null);
-	public static final RegistryObject<Item> GARLIC_STAGE_2 = block(UmbreoRpgModBlocks.GARLIC_STAGE_2, null);
-	public static final RegistryObject<Item> GARLIC_STAGE_3 = block(UmbreoRpgModBlocks.GARLIC_STAGE_3, null);
-	public static final RegistryObject<Item> GARLIC_STAGE_4 = block(UmbreoRpgModBlocks.GARLIC_STAGE_4, null);
-	public static final RegistryObject<Item> GARLIC_STAGE_5 = block(UmbreoRpgModBlocks.GARLIC_STAGE_5, null);
-	public static final RegistryObject<Item> MARSHLAND_RICE = REGISTRY.register("marshland_rice", () -> new MarshlandRiceItem());
-	public static final RegistryObject<Item> RICE_PLANT_SEEDS = REGISTRY.register("rice_plant_seeds", () -> new RicePlantSeedsItem());
-	public static final RegistryObject<Item> RICE_STAGE_0 = block(UmbreoRpgModBlocks.RICE_STAGE_0, null);
-	public static final RegistryObject<Item> RICE_STAGE_1 = block(UmbreoRpgModBlocks.RICE_STAGE_1, null);
-	public static final RegistryObject<Item> RICE_STAGE_2 = block(UmbreoRpgModBlocks.RICE_STAGE_2, null);
-	public static final RegistryObject<Item> RICE_STAGE_3 = block(UmbreoRpgModBlocks.RICE_STAGE_3, null);
-	public static final RegistryObject<Item> RICE_STAGE_4 = block(UmbreoRpgModBlocks.RICE_STAGE_4, null);
-	public static final RegistryObject<Item> RICE_STAGE_5 = block(UmbreoRpgModBlocks.RICE_STAGE_5, null);
-	public static final RegistryObject<Item> CORN_SEEDS = REGISTRY.register("corn_seeds", () -> new CornSeedsItem());
-	public static final RegistryObject<Item> CORN_STAGE_0 = block(UmbreoRpgModBlocks.CORN_STAGE_0, null);
-	public static final RegistryObject<Item> CORN_STAGE_1 = block(UmbreoRpgModBlocks.CORN_STAGE_1, null);
-	public static final RegistryObject<Item> CORN_STAGE_2 = block(UmbreoRpgModBlocks.CORN_STAGE_2, null);
-	public static final RegistryObject<Item> CORN_STAGE_3 = block(UmbreoRpgModBlocks.CORN_STAGE_3, null);
-	public static final RegistryObject<Item> CORN_STAGE_4 = block(UmbreoRpgModBlocks.CORN_STAGE_4, null);
-	public static final RegistryObject<Item> CORN_STAGE_5 = block(UmbreoRpgModBlocks.CORN_STAGE_5, null);
-	public static final RegistryObject<Item> CORN_STAGE_6 = block(UmbreoRpgModBlocks.CORN_STAGE_6, null);
-	public static final RegistryObject<Item> CORN_STAGE_7 = block(UmbreoRpgModBlocks.CORN_STAGE_7, null);
-	public static final RegistryObject<Item> CORN_STAGE_8 = block(UmbreoRpgModBlocks.CORN_STAGE_8, null);
-	public static final RegistryObject<Item> CORN_STAGE_9 = block(UmbreoRpgModBlocks.CORN_STAGE_9, null);
-	public static final RegistryObject<Item> CORN_STAGE_10 = block(UmbreoRpgModBlocks.CORN_STAGE_10, null);
-	public static final RegistryObject<Item> COOKING_RANGE = block(UmbreoRpgModBlocks.COOKING_RANGE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> COOK_BOOK = REGISTRY.register("cook_book", () -> new CookBookItem());
-	public static final RegistryObject<Item> FLOUR = REGISTRY.register("flour", () -> new FlourItem());
-	public static final RegistryObject<Item> DOUGH = REGISTRY.register("dough", () -> new DoughItem());
-	public static final RegistryObject<Item> OIL = REGISTRY.register("oil", () -> new OilItem());
-	public static final RegistryObject<Item> SOUR_CREAM = REGISTRY.register("sour_cream", () -> new SourCreamItem());
-	public static final RegistryObject<Item> FILLING = REGISTRY.register("filling", () -> new FillingItem());
-	public static final RegistryObject<Item> UMBREON_LEATHER_ARMOR_HELMET = REGISTRY.register("umbreon_leather_armor_helmet",
-			() -> new UmbreonLeatherArmorItem.Helmet());
-	public static final RegistryObject<Item> UMBREON_LEATHER_ARMOR_CHESTPLATE = REGISTRY.register("umbreon_leather_armor_chestplate",
-			() -> new UmbreonLeatherArmorItem.Chestplate());
-	public static final RegistryObject<Item> UMBREON_LEATHER_ARMOR_LEGGINGS = REGISTRY.register("umbreon_leather_armor_leggings",
-			() -> new UmbreonLeatherArmorItem.Leggings());
-	public static final RegistryObject<Item> UMBREON_LEATHER_ARMOR_BOOTS = REGISTRY.register("umbreon_leather_armor_boots",
-			() -> new UmbreonLeatherArmorItem.Boots());
-	public static final RegistryObject<Item> CHROMATIC_CORE = REGISTRY.register("chromatic_core", () -> new ChromaticCoreItem());
 	public static final RegistryObject<Item> WORLDLY_SHARD = REGISTRY.register("worldly_shard", () -> new WorldlyShardItem());
 	public static final RegistryObject<Item> DIMENSIONAL_SHARD = REGISTRY.register("dimensional_shard", () -> new DimensionalShardItem());
-	public static final RegistryObject<Item> ALCHEMY_CODEX = REGISTRY.register("alchemy_codex", () -> new AlchemyCodexItem());
+	public static final RegistryObject<Item> IMP_DUST = REGISTRY.register("imp_dust", () -> new ImpDustItem());
+	public static final RegistryObject<Item> TREANT_ROOT = REGISTRY.register("treant_root", () -> new TreantRootItem());
 	public static final RegistryObject<Item> UNACTIVATED_ROD_OF_CLEAR_SKIES = REGISTRY.register("unactivated_rod_of_clear_skies",
 			() -> new UnactivatedRodOfClearSkiesItem());
 	public static final RegistryObject<Item> UNACTIVATED_ROD_OF_DAYLIGHT = REGISTRY.register("unactivated_rod_of_daylight",
@@ -369,16 +274,95 @@ public class UmbreoRpgModItems {
 			() -> new UnactivatedRodOfRainItem());
 	public static final RegistryObject<Item> UNACTIVATED_ROD_OF_STORMS = REGISTRY.register("unactivated_rod_of_storms",
 			() -> new UnactivatedRodOfStormsItem());
-	public static final RegistryObject<Item> ROD_OF_CLEAR_SKIES = REGISTRY.register("rod_of_clear_skies", () -> new RodOfClearSkiesItem());
-	public static final RegistryObject<Item> ROD_OF_DAYLIGHT = REGISTRY.register("rod_of_daylight", () -> new RodOfDaylightItem());
-	public static final RegistryObject<Item> ROD_OF_MOONLIGHT = REGISTRY.register("rod_of_moonlight", () -> new RodOfMoonlightItem());
-	public static final RegistryObject<Item> ROD_OF_RAIN = REGISTRY.register("rod_of_rain", () -> new RodOfRainItem());
-	public static final RegistryObject<Item> ROD_OF_STORMS = REGISTRY.register("rod_of_storms", () -> new RodOfStormsItem());
+	public static final RegistryObject<Item> TREANT = REGISTRY.register("treant_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.TREANT, -9810159, -13531813, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> IMP = REGISTRY.register("imp_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.IMP, -15066598, -7303024, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> CHROMATIC_CORE = REGISTRY.register("chromatic_core", () -> new ChromaticCoreItem());
+	public static final RegistryObject<Item> SPARKLING_FLUID = REGISTRY.register("sparkling_fluid", () -> new SparklingFluidItem());
+	public static final RegistryObject<Item> SMALL_COIN_POUCH = REGISTRY.register("small_coin_pouch", () -> new SmallCoinPouchItem());
+	public static final RegistryObject<Item> MEDIUM_COIN_POUCH = REGISTRY.register("medium_coin_pouch", () -> new MediumCoinPouchItem());
+	public static final RegistryObject<Item> LARGE_COIN_POUCH = REGISTRY.register("large_coin_pouch", () -> new LargeCoinPouchItem());
+	public static final RegistryObject<Item> EXTRA_LARGE_COIN_POUCH = REGISTRY.register("extra_large_coin_pouch",
+			() -> new ExtraLargeCoinPouchItem());
+	public static final RegistryObject<Item> BANKERS_COIN_POUCH = REGISTRY.register("bankers_coin_pouch", () -> new BankersCoinPouchItem());
+	public static final RegistryObject<Item> SCROLL_OF_KNOWLEDGE = REGISTRY.register("scroll_of_knowledge", () -> new ScrollOfKnowledgeItem());
+	public static final RegistryObject<Item> TETRIUM_ORE = block(UmbreoRpgModBlocks.TETRIUM_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> VULCOR_ORE = block(UmbreoRpgModBlocks.VULCOR_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> PURE_GOLD_ORE = block(UmbreoRpgModBlocks.PURE_GOLD_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> ZORALIUM_ORE = block(UmbreoRpgModBlocks.ZORALIUM_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> LATHIUM_ORE = block(UmbreoRpgModBlocks.LATHIUM_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> COBIUM_ORE = block(UmbreoRpgModBlocks.COBIUM_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> MYSTALIUM_ORE = block(UmbreoRpgModBlocks.MYSTALIUM_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> DUILIUM_ORE = block(UmbreoRpgModBlocks.DUILIUM_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> OSNIUM_ORE = block(UmbreoRpgModBlocks.OSNIUM_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> ULTRIUM_ORE = block(UmbreoRpgModBlocks.ULTRIUM_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> TETRIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.TETRIUM_DEEPSLATE_ORE,
+			UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> PURE_GOLD_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.PURE_GOLD_DEEPSLATE_ORE,
+			UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> ZORALIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.ZORALIUM_DEEPSLATE_ORE,
+			UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> LATHIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.LATHIUM_DEEPSLATE_ORE,
+			UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> COBIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.COBIUM_DEEPSLATE_ORE,
+			UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> SKORIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.SKORIUM_DEEPSLATE_ORE,
+			UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> UMBELLIUM_ORE = block(UmbreoRpgModBlocks.UMBELLIUM_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> MYSTALIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.MYSTALIUM_DEEPSLATE_ORE,
+			UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> DUILIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.DUILIUM_DEEPSLATE_ORE,
+			UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> OSNIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.OSNIUM_DEEPSLATE_ORE,
+			UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> ULTRIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.ULTRIUM_DEEPSLATE_ORE,
+			UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> RAW_TETRIUM_ORE = REGISTRY.register("raw_tetrium_ore", () -> new RawTetriumOreItem());
+	public static final RegistryObject<Item> VULCOR_CRYSTAL = REGISTRY.register("vulcor_crystal", () -> new VulcorCrystalItem());
+	public static final RegistryObject<Item> RAW_PURE_GOLD_ORE = REGISTRY.register("raw_pure_gold_ore", () -> new RawPureGoldOreItem());
+	public static final RegistryObject<Item> RAW_ZORALIUM_ORE = REGISTRY.register("raw_zoralium_ore", () -> new RawZoraliumOreItem());
+	public static final RegistryObject<Item> RAW_LATHIUM_ORE = REGISTRY.register("raw_lathium_ore", () -> new RawLathiumOreItem());
+	public static final RegistryObject<Item> RAW_COBIUM_ORE = REGISTRY.register("raw_cobium_ore", () -> new RawCobiumOreItem());
+	public static final RegistryObject<Item> RAW_NETHERITE_ORE = REGISTRY.register("raw_netherite_ore", () -> new RawNetheriteOreItem());
+	public static final RegistryObject<Item> RAW_SKORIUM_ORE = REGISTRY.register("raw_skorium_ore", () -> new RawSkoriumOreItem());
+	public static final RegistryObject<Item> RAW_UMBELLIUM_ORE = REGISTRY.register("raw_umbellium_ore", () -> new RawUmbelliumOreItem());
+	public static final RegistryObject<Item> RAW_MYSTALIUM_ORE = REGISTRY.register("raw_mystalium_ore", () -> new RawMystaliumOreItem());
+	public static final RegistryObject<Item> RAW_DUILIUM_ORE = REGISTRY.register("raw_duilium_ore", () -> new RawDuiliumOreItem());
+	public static final RegistryObject<Item> RAW_OSNIUM_ORE = REGISTRY.register("raw_osnium_ore", () -> new RawOsniumOreItem());
+	public static final RegistryObject<Item> RAW_ULTRIUM_ORE = REGISTRY.register("raw_ultrium_ore", () -> new RawUltriumOreItem());
+	public static final RegistryObject<Item> TETRIUM_INGOT = REGISTRY.register("tetrium_ingot", () -> new TetriumIngotItem());
+	public static final RegistryObject<Item> REINFORCED_IRON_INGOT = REGISTRY.register("reinforced_iron_ingot", () -> new ReinforcedIronIngotItem());
+	public static final RegistryObject<Item> VULCOR_INGOT = REGISTRY.register("vulcor_ingot", () -> new VulcorIngotItem());
+	public static final RegistryObject<Item> PURE_GOLD_INGOT = REGISTRY.register("pure_gold_ingot", () -> new PureGoldIngotItem());
+	public static final RegistryObject<Item> ZORALIUM_INGOT = REGISTRY.register("zoralium_ingot", () -> new ZoraliumIngotItem());
+	public static final RegistryObject<Item> LATHIUM_INGOT = REGISTRY.register("lathium_ingot", () -> new LathiumIngotItem());
+	public static final RegistryObject<Item> COBIUM_INGOT = REGISTRY.register("cobium_ingot", () -> new CobiumIngotItem());
+	public static final RegistryObject<Item> SKORIUM_INGOT = REGISTRY.register("skorium_ingot", () -> new SkoriumIngotItem());
+	public static final RegistryObject<Item> UMBELLIUM_INGOT = REGISTRY.register("umbellium_ingot", () -> new UmbelliumIngotItem());
+	public static final RegistryObject<Item> MYSTALIUM_INGOT = REGISTRY.register("mystalium_ingot", () -> new MystaliumIngotItem());
+	public static final RegistryObject<Item> DUILIUM_INGOT = REGISTRY.register("duilium_ingot", () -> new DuiliumIngotItem());
+	public static final RegistryObject<Item> OSNIUM_INGOT = REGISTRY.register("osnium_ingot", () -> new OsniumIngotItem());
+	public static final RegistryObject<Item> ULTRIUM_INGOT = REGISTRY.register("ultrium_ingot", () -> new UltriumIngotItem());
+	public static final RegistryObject<Item> ORE_ATTUNEMENT_ARTIFACT = REGISTRY.register("ore_attunement_artifact",
+			() -> new OreAttunementArtifactItem());
+	public static final RegistryObject<Item> COOK_BOOK = REGISTRY.register("cook_book", () -> new CookBookItem());
+	public static final RegistryObject<Item> SWEET_POTATO_SEEDS = REGISTRY.register("sweet_potato_seeds", () -> new SweetPotatoSeedsItem());
+	public static final RegistryObject<Item> GREEN_SEEDS = REGISTRY.register("green_seeds", () -> new GreenSeedsItem());
+	public static final RegistryObject<Item> GARLIC_SEEDS = REGISTRY.register("garlic_seeds", () -> new GarlicSeedsItem());
+	public static final RegistryObject<Item> RICE_PLANT_SEEDS = REGISTRY.register("rice_plant_seeds", () -> new RicePlantSeedsItem());
+	public static final RegistryObject<Item> CORN_SEEDS = REGISTRY.register("corn_seeds", () -> new CornSeedsItem());
 	public static final RegistryObject<Item> BOREAL_SWEET_POTATO = REGISTRY.register("boreal_sweet_potato", () -> new BorealSweetPotatoItem());
 	public static final RegistryObject<Item> VORASHIAN_DESERT_GREENS = REGISTRY.register("vorashian_desert_greens",
 			() -> new VorashianDesertGreensItem());
 	public static final RegistryObject<Item> UMBREON_GARLIC = REGISTRY.register("umbreon_garlic", () -> new UmbreonGarlicItem());
+	public static final RegistryObject<Item> MARSHLAND_RICE = REGISTRY.register("marshland_rice", () -> new MarshlandRiceItem());
 	public static final RegistryObject<Item> MYSTRO_CORN = REGISTRY.register("mystro_corn", () -> new MystroCornItem());
+	public static final RegistryObject<Item> FLOUR = REGISTRY.register("flour", () -> new FlourItem());
+	public static final RegistryObject<Item> DOUGH = REGISTRY.register("dough", () -> new DoughItem());
+	public static final RegistryObject<Item> OIL = REGISTRY.register("oil", () -> new OilItem());
+	public static final RegistryObject<Item> SOUR_CREAM = REGISTRY.register("sour_cream", () -> new SourCreamItem());
+	public static final RegistryObject<Item> FILLING = REGISTRY.register("filling", () -> new FillingItem());
 	public static final RegistryObject<Item> ROASTED_SEEDS = REGISTRY.register("roasted_seeds", () -> new RoastedSeedsItem());
 	public static final RegistryObject<Item> COOKED_CARROTS = REGISTRY.register("cooked_carrots", () -> new CookedCarrotsItem());
 	public static final RegistryObject<Item> BEEF_AND_CARROTS = REGISTRY.register("beef_and_carrots", () -> new BeefAndCarrotsItem());
@@ -421,55 +405,55 @@ public class UmbreoRpgModItems {
 	public static final RegistryObject<Item> GOLDEN_MELON_WINE = REGISTRY.register("golden_melon_wine", () -> new GoldenMelonWineItem());
 	public static final RegistryObject<Item> FRIED_CORN = REGISTRY.register("fried_corn", () -> new FriedCornItem());
 	public static final RegistryObject<Item> CHICKEN_POT_PIE = REGISTRY.register("chicken_pot_pie", () -> new ChickenPotPieItem());
-	public static final RegistryObject<Item> RAW_TETRIUM_ORE = REGISTRY.register("raw_tetrium_ore", () -> new RawTetriumOreItem());
-	public static final RegistryObject<Item> TETRIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.TETRIUM_DEEPSLATE_ORE,
-			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> RAW_PURE_GOLD_ORE = REGISTRY.register("raw_pure_gold_ore", () -> new RawPureGoldOreItem());
-	public static final RegistryObject<Item> PURE_GOLD_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.PURE_GOLD_DEEPSLATE_ORE,
-			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> RAW_ZORALIUM_ORE = REGISTRY.register("raw_zoralium_ore", () -> new RawZoraliumOreItem());
-	public static final RegistryObject<Item> ZORALIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.ZORALIUM_DEEPSLATE_ORE,
-			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> LATHIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.LATHIUM_DEEPSLATE_ORE,
-			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> COBIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.COBIUM_DEEPSLATE_ORE,
-			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> RAW_LATHIUM_ORE = REGISTRY.register("raw_lathium_ore", () -> new RawLathiumOreItem());
-	public static final RegistryObject<Item> RAW_COBIUM_ORE = REGISTRY.register("raw_cobium_ore", () -> new RawCobiumOreItem());
-	public static final RegistryObject<Item> SKORIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.SKORIUM_DEEPSLATE_ORE,
-			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> RAW_SKORIUM_ORE = REGISTRY.register("raw_skorium_ore", () -> new RawSkoriumOreItem());
-	public static final RegistryObject<Item> MYSTALIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.MYSTALIUM_DEEPSLATE_ORE,
-			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> RAW_MYSTALIUM_ORE = REGISTRY.register("raw_mystalium_ore", () -> new RawMystaliumOreItem());
-	public static final RegistryObject<Item> OSNIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.OSNIUM_DEEPSLATE_ORE,
-			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> RAW_OSNIUM_ORE = REGISTRY.register("raw_osnium_ore", () -> new RawOsniumOreItem());
-	public static final RegistryObject<Item> DUILIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.DUILIUM_DEEPSLATE_ORE,
-			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> RAW_DUILIUM_ORE = REGISTRY.register("raw_duilium_ore", () -> new RawDuiliumOreItem());
-	public static final RegistryObject<Item> ULTRIUM_DEEPSLATE_ORE = block(UmbreoRpgModBlocks.ULTRIUM_DEEPSLATE_ORE,
-			CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> RAW_ULTRIUM_ORE = REGISTRY.register("raw_ultrium_ore", () -> new RawUltriumOreItem());
-	public static final RegistryObject<Item> RAW_UMBELLIUM_ORE = REGISTRY.register("raw_umbellium_ore", () -> new RawUmbelliumOreItem());
-	public static final RegistryObject<Item> VULCOR_CRYSTAL = REGISTRY.register("vulcor_crystal", () -> new VulcorCrystalItem());
 	public static final RegistryObject<Item> REINFORCED_IRON_SWORD = REGISTRY.register("reinforced_iron_sword", () -> new ReinforcedIronSwordItem());
-	public static final RegistryObject<Item> REINFORCED_IRON_PICKAXE = REGISTRY.register("reinforced_iron_pickaxe",
-			() -> new ReinforcedIronPickaxeItem());
-	public static final RegistryObject<Item> REINFORCED_IRON_AXE = REGISTRY.register("reinforced_iron_axe", () -> new ReinforcedIronAxeItem());
-	public static final RegistryObject<Item> REINFORCED_IRON_SHOVEL = REGISTRY.register("reinforced_iron_shovel",
-			() -> new ReinforcedIronShovelItem());
-	public static final RegistryObject<Item> REINFORCED_IRON_HOE = REGISTRY.register("reinforced_iron_hoe", () -> new ReinforcedIronHoeItem());
 	public static final RegistryObject<Item> VULCOR_SWORD = REGISTRY.register("vulcor_sword", () -> new VulcorSwordItem());
-	public static final RegistryObject<Item> VULCOR_PICKAXE = REGISTRY.register("vulcor_pickaxe", () -> new VulcorPickaxeItem());
-	public static final RegistryObject<Item> VULCOR_AXE = REGISTRY.register("vulcor_axe", () -> new VulcorAxeItem());
-	public static final RegistryObject<Item> VULCOR_SHOVEL = REGISTRY.register("vulcor_shovel", () -> new VulcorShovelItem());
-	public static final RegistryObject<Item> VULCOR_HOE = REGISTRY.register("vulcor_hoe", () -> new VulcorHoeItem());
 	public static final RegistryObject<Item> ZORALIUM_SWORD = REGISTRY.register("zoralium_sword", () -> new ZoraliumSwordItem());
-	public static final RegistryObject<Item> ZORALIUM_PICKAXE = REGISTRY.register("zoralium_pickaxe", () -> new ZoraliumPickaxeItem());
-	public static final RegistryObject<Item> ZORALIUM_AXE = REGISTRY.register("zoralium_axe", () -> new ZoraliumAxeItem());
-	public static final RegistryObject<Item> ZORALIUM_SHOVEL = REGISTRY.register("zoralium_shovel", () -> new ZoraliumShovelItem());
-	public static final RegistryObject<Item> ZORALIUM_HOE = REGISTRY.register("zoralium_hoe", () -> new ZoraliumHoeItem());
+	public static final RegistryObject<Item> LATHIUM_SWORD = REGISTRY.register("lathium_sword", () -> new LathiumSwordItem());
+	public static final RegistryObject<Item> COBIUM_SWORD = REGISTRY.register("cobium_sword", () -> new CobiumSwordItem());
+	public static final RegistryObject<Item> SKORIUM_SWORD = REGISTRY.register("skorium_sword", () -> new SkoriumSwordItem());
+	public static final RegistryObject<Item> UMBELLIUM_SWORD = REGISTRY.register("umbellium_sword", () -> new UmbelliumSwordItem());
+	public static final RegistryObject<Item> MYSTALIUM_SWORD = REGISTRY.register("mystalium_sword", () -> new MystaliumSwordItem());
+	public static final RegistryObject<Item> DUILIUM_SWORD = REGISTRY.register("duilium_sword", () -> new DuiliumSwordItem());
+	public static final RegistryObject<Item> OSNIUM_SWORD = REGISTRY.register("osnium_sword", () -> new OsniumSwordItem());
+	public static final RegistryObject<Item> ULTRIUM_SWORD = REGISTRY.register("ultrium_sword", () -> new UltriumSwordItem());
+	public static final RegistryObject<Item> IRON_BATTLEAXE = REGISTRY.register("iron_battleaxe", () -> new IronBattleaxeItem());
+	public static final RegistryObject<Item> GOLD_BATTLEAXE = REGISTRY.register("gold_battleaxe", () -> new GoldBattleaxeItem());
+	public static final RegistryObject<Item> REINFORCED_BATTLE_AXE = REGISTRY.register("reinforced_battle_axe", () -> new ReinforcedBattleAxeItem());
+	public static final RegistryObject<Item> VULCOR_BATTLEAXE = REGISTRY.register("vulcor_battleaxe", () -> new VulcorBattleaxeItem());
+	public static final RegistryObject<Item> DIAMOND_BATTLEAXE = REGISTRY.register("diamond_battleaxe", () -> new DiamondBattleaxeItem());
+	public static final RegistryObject<Item> ZORALIUM_BATTLEAXE = REGISTRY.register("zoralium_battleaxe", () -> new ZoraliumBattleaxeItem());
+	public static final RegistryObject<Item> LATHIUM_BATTLEAXE = REGISTRY.register("lathium_battleaxe", () -> new LathiumBattleaxeItem());
+	public static final RegistryObject<Item> COBIUM_BATTLEAXE = REGISTRY.register("cobium_battleaxe", () -> new CobiumBattleaxeItem());
+	public static final RegistryObject<Item> NETHERITE_BATTLEAXE = REGISTRY.register("netherite_battleaxe", () -> new NetheriteBattleaxeItem());
+	public static final RegistryObject<Item> SKORIUM_BATTLEAXE = REGISTRY.register("skorium_battleaxe", () -> new SkoriumBattleaxeItem());
+	public static final RegistryObject<Item> UMBELLIUM_BATTLEAXE = REGISTRY.register("umbellium_battleaxe", () -> new UmbelliumBattleaxeItem());
+	public static final RegistryObject<Item> MYSTALIUM_BATTLEAXE = REGISTRY.register("mystalium_battleaxe", () -> new MystaliumBattleaxeItem());
+	public static final RegistryObject<Item> DUILIUM_BATTLEAXE = REGISTRY.register("duilium_battleaxe", () -> new DuiliumBattleaxeItem());
+	public static final RegistryObject<Item> OSNIUM_BATTLEAXE = REGISTRY.register("osnium_battleaxe", () -> new OsniumBattleaxeItem());
+	public static final RegistryObject<Item> ULTRIUM_BATTLEAXE = REGISTRY.register("ultrium_battleaxe", () -> new UltriumBattleaxeItem());
+	public static final RegistryObject<Item> IRON_MACE = REGISTRY.register("iron_mace", () -> new IronMaceItem());
+	public static final RegistryObject<Item> GOLD_MACE = REGISTRY.register("gold_mace", () -> new GoldMaceItem());
+	public static final RegistryObject<Item> REINFORCED_MACE = REGISTRY.register("reinforced_mace", () -> new ReinforcedMaceItem());
+	public static final RegistryObject<Item> VULCOR_MACE = REGISTRY.register("vulcor_mace", () -> new VulcorMaceItem());
+	public static final RegistryObject<Item> DIAMOND_MACE = REGISTRY.register("diamond_mace", () -> new DiamondMaceItem());
+	public static final RegistryObject<Item> ZORALIUM_MACE = REGISTRY.register("zoralium_mace", () -> new ZoraliumMaceItem());
+	public static final RegistryObject<Item> LATHIUM_MACE = REGISTRY.register("lathium_mace", () -> new LathiumMaceItem());
+	public static final RegistryObject<Item> COBIUM_MACE = REGISTRY.register("cobium_mace", () -> new CobiumMaceItem());
+	public static final RegistryObject<Item> NETHERITE_MACE = REGISTRY.register("netherite_mace", () -> new NetheriteMaceItem());
+	public static final RegistryObject<Item> SKORIUM_MACE = REGISTRY.register("skorium_mace", () -> new SkoriumMaceItem());
+	public static final RegistryObject<Item> UMBELLIUM_MACE = REGISTRY.register("umbellium_mace", () -> new UmbelliumMaceItem());
+	public static final RegistryObject<Item> MYSTALIUM_MACE = REGISTRY.register("mystalium_mace", () -> new MystaliumMaceItem());
+	public static final RegistryObject<Item> OSNIUM_MACE = REGISTRY.register("osnium_mace", () -> new OsniumMaceItem());
+	public static final RegistryObject<Item> DUILIUM_MACE = REGISTRY.register("duilium_mace", () -> new DuiliumMaceItem());
+	public static final RegistryObject<Item> ULTRIUM_MACE = REGISTRY.register("ultrium_mace", () -> new UltriumMaceItem());
+	public static final RegistryObject<Item> UMBREON_LEATHER_ARMOR_HELMET = REGISTRY.register("umbreon_leather_armor_helmet",
+			() -> new UmbreonLeatherArmorItem.Helmet());
+	public static final RegistryObject<Item> UMBREON_LEATHER_ARMOR_CHESTPLATE = REGISTRY.register("umbreon_leather_armor_chestplate",
+			() -> new UmbreonLeatherArmorItem.Chestplate());
+	public static final RegistryObject<Item> UMBREON_LEATHER_ARMOR_LEGGINGS = REGISTRY.register("umbreon_leather_armor_leggings",
+			() -> new UmbreonLeatherArmorItem.Leggings());
+	public static final RegistryObject<Item> UMBREON_LEATHER_ARMOR_BOOTS = REGISTRY.register("umbreon_leather_armor_boots",
+			() -> new UmbreonLeatherArmorItem.Boots());
 	public static final RegistryObject<Item> UMBREON_IRON_ARMOR_HELMET = REGISTRY.register("umbreon_iron_armor_helmet",
 			() -> new UmbreonIronArmorItem.Helmet());
 	public static final RegistryObject<Item> UMBREON_IRON_ARMOR_CHESTPLATE = REGISTRY.register("umbreon_iron_armor_chestplate",
@@ -510,7 +494,6 @@ public class UmbreoRpgModItems {
 			() -> new UmbreonNetheriteArmorItem.Leggings());
 	public static final RegistryObject<Item> UMBREON_NETHERITE_ARMOR_BOOTS = REGISTRY.register("umbreon_netherite_armor_boots",
 			() -> new UmbreonNetheriteArmorItem.Boots());
-	public static final RegistryObject<Item> RAW_NETHERITE_ORE = REGISTRY.register("raw_netherite_ore", () -> new RawNetheriteOreItem());
 	public static final RegistryObject<Item> VULCOR_ARMOR_HELMET = REGISTRY.register("vulcor_armor_helmet", () -> new VulcorArmorItem.Helmet());
 	public static final RegistryObject<Item> VULCOR_ARMOR_CHESTPLATE = REGISTRY.register("vulcor_armor_chestplate",
 			() -> new VulcorArmorItem.Chestplate());
@@ -524,7 +507,6 @@ public class UmbreoRpgModItems {
 			() -> new ReinforcedIronArmorItem.Leggings());
 	public static final RegistryObject<Item> REINFORCED_IRON_ARMOR_BOOTS = REGISTRY.register("reinforced_iron_armor_boots",
 			() -> new ReinforcedIronArmorItem.Boots());
-	public static final RegistryObject<Item> ENDER_DRAGON_SCALE = REGISTRY.register("ender_dragon_scale", () -> new EnderDragonScaleItem());
 	public static final RegistryObject<Item> ENDER_ARMOR_HELMET = REGISTRY.register("ender_armor_helmet", () -> new EnderArmorItem.Helmet());
 	public static final RegistryObject<Item> ENDER_ARMOR_CHESTPLATE = REGISTRY.register("ender_armor_chestplate",
 			() -> new EnderArmorItem.Chestplate());
@@ -560,110 +542,6 @@ public class UmbreoRpgModItems {
 	public static final RegistryObject<Item> UMBELLIUM_ARMOR_LEGGINGS = REGISTRY.register("umbellium_armor_leggings",
 			() -> new UmbelliumArmorItem.Leggings());
 	public static final RegistryObject<Item> UMBELLIUM_ARMOR_BOOTS = REGISTRY.register("umbellium_armor_boots", () -> new UmbelliumArmorItem.Boots());
-	public static final RegistryObject<Item> LATHIUM_SWORD = REGISTRY.register("lathium_sword", () -> new LathiumSwordItem());
-	public static final RegistryObject<Item> LATHIUM_PICKAXE = REGISTRY.register("lathium_pickaxe", () -> new LathiumPickaxeItem());
-	public static final RegistryObject<Item> LATHIUM_AXE = REGISTRY.register("lathium_axe", () -> new LathiumAxeItem());
-	public static final RegistryObject<Item> LATHIUM_SHOVEL = REGISTRY.register("lathium_shovel", () -> new LathiumShovelItem());
-	public static final RegistryObject<Item> LATHIUM_HOE = REGISTRY.register("lathium_hoe", () -> new LathiumHoeItem());
-	public static final RegistryObject<Item> COBIUM_SWORD = REGISTRY.register("cobium_sword", () -> new CobiumSwordItem());
-	public static final RegistryObject<Item> COBIUM_PICKAXE = REGISTRY.register("cobium_pickaxe", () -> new CobiumPickaxeItem());
-	public static final RegistryObject<Item> COBIUM_AXE = REGISTRY.register("cobium_axe", () -> new CobiumAxeItem());
-	public static final RegistryObject<Item> COBIUM_SHOVEL = REGISTRY.register("cobium_shovel", () -> new CobiumShovelItem());
-	public static final RegistryObject<Item> COBIUM_HOE = REGISTRY.register("cobium_hoe", () -> new CobiumHoeItem());
-	public static final RegistryObject<Item> SKORIUM_SWORD = REGISTRY.register("skorium_sword", () -> new SkoriumSwordItem());
-	public static final RegistryObject<Item> SKORIUM_PICKAXE = REGISTRY.register("skorium_pickaxe", () -> new SkoriumPickaxeItem());
-	public static final RegistryObject<Item> SKORIUM_AXE = REGISTRY.register("skorium_axe", () -> new SkoriumAxeItem());
-	public static final RegistryObject<Item> SKORIUM_SHOVEL = REGISTRY.register("skorium_shovel", () -> new SkoriumShovelItem());
-	public static final RegistryObject<Item> SKORIUM_HOE = REGISTRY.register("skorium_hoe", () -> new SkoriumHoeItem());
-	public static final RegistryObject<Item> UMBELLIUM_SWORD = REGISTRY.register("umbellium_sword", () -> new UmbelliumSwordItem());
-	public static final RegistryObject<Item> UMBELLIUM_PICKAXE = REGISTRY.register("umbellium_pickaxe", () -> new UmbelliumPickaxeItem());
-	public static final RegistryObject<Item> UMBELLIUM_AXE = REGISTRY.register("umbellium_axe", () -> new UmbelliumAxeItem());
-	public static final RegistryObject<Item> UMBELLIUM_SHOVEL = REGISTRY.register("umbellium_shovel", () -> new UmbelliumShovelItem());
-	public static final RegistryObject<Item> UMBELLIUM_HOE = REGISTRY.register("umbellium_hoe", () -> new UmbelliumHoeItem());
-	public static final RegistryObject<Item> REINFORCED_BATTLE_AXE = REGISTRY.register("reinforced_battle_axe", () -> new ReinforcedBattleAxeItem());
-	public static final RegistryObject<Item> REINFORCED_MACE = REGISTRY.register("reinforced_mace", () -> new ReinforcedMaceItem());
-	public static final RegistryObject<Item> VULCOR_BATTLEAXE = REGISTRY.register("vulcor_battleaxe", () -> new VulcorBattleaxeItem());
-	public static final RegistryObject<Item> VULCOR_MACE = REGISTRY.register("vulcor_mace", () -> new VulcorMaceItem());
-	public static final RegistryObject<Item> ZORALIUM_BATTLEAXE = REGISTRY.register("zoralium_battleaxe", () -> new ZoraliumBattleaxeItem());
-	public static final RegistryObject<Item> ZORALIUM_MACE = REGISTRY.register("zoralium_mace", () -> new ZoraliumMaceItem());
-	public static final RegistryObject<Item> IRON_BATTLEAXE = REGISTRY.register("iron_battleaxe", () -> new IronBattleaxeItem());
-	public static final RegistryObject<Item> IRON_MACE = REGISTRY.register("iron_mace", () -> new IronMaceItem());
-	public static final RegistryObject<Item> GOLD_BATTLEAXE = REGISTRY.register("gold_battleaxe", () -> new GoldBattleaxeItem());
-	public static final RegistryObject<Item> GOLD_MACE = REGISTRY.register("gold_mace", () -> new GoldMaceItem());
-	public static final RegistryObject<Item> DIAMOND_BATTLEAXE = REGISTRY.register("diamond_battleaxe", () -> new DiamondBattleaxeItem());
-	public static final RegistryObject<Item> DIAMOND_MACE = REGISTRY.register("diamond_mace", () -> new DiamondMaceItem());
-	public static final RegistryObject<Item> NETHERITE_BATTLEAXE = REGISTRY.register("netherite_battleaxe", () -> new NetheriteBattleaxeItem());
-	public static final RegistryObject<Item> NETHERITE_MACE = REGISTRY.register("netherite_mace", () -> new NetheriteMaceItem());
-	public static final RegistryObject<Item> LATHIUM_BATTLEAXE = REGISTRY.register("lathium_battleaxe", () -> new LathiumBattleaxeItem());
-	public static final RegistryObject<Item> LATHIUM_MACE = REGISTRY.register("lathium_mace", () -> new LathiumMaceItem());
-	public static final RegistryObject<Item> COBIUM_BATTLEAXE = REGISTRY.register("cobium_battleaxe", () -> new CobiumBattleaxeItem());
-	public static final RegistryObject<Item> COBIUM_MACE = REGISTRY.register("cobium_mace", () -> new CobiumMaceItem());
-	public static final RegistryObject<Item> SKORIUM_BATTLEAXE = REGISTRY.register("skorium_battleaxe", () -> new SkoriumBattleaxeItem());
-	public static final RegistryObject<Item> SKORIUM_MACE = REGISTRY.register("skorium_mace", () -> new SkoriumMaceItem());
-	public static final RegistryObject<Item> UMBELLIUM_BATTLEAXE = REGISTRY.register("umbellium_battleaxe", () -> new UmbelliumBattleaxeItem());
-	public static final RegistryObject<Item> UMBELLIUM_MACE = REGISTRY.register("umbellium_mace", () -> new UmbelliumMaceItem());
-	public static final RegistryObject<Item> DEMON_HORN = REGISTRY.register("demon_horn", () -> new DemonHornItem());
-	public static final RegistryObject<Item> BUG_NET = REGISTRY.register("bug_net", () -> new BugNetItem());
-	public static final RegistryObject<Item> FIREFLY_ITEM = REGISTRY.register("firefly_item", () -> new FireflyItemItem());
-	public static final RegistryObject<Item> DUSTMITE_ITEM = REGISTRY.register("dustmite_item", () -> new DustmiteItemItem());
-	public static final RegistryObject<Item> CHARRED_LOG = block(UmbreoRpgModBlocks.CHARRED_LOG, CreativeModeTab.TAB_MISC);
-	public static final RegistryObject<Item> VENOM_BEETLE_ITEM = REGISTRY.register("venom_beetle_item", () -> new VenomBeetleItemItem());
-	public static final RegistryObject<Item> SPARKLING_FLUID = REGISTRY.register("sparkling_fluid", () -> new SparklingFluidItem());
-	public static final RegistryObject<Item> IRON_BOW = REGISTRY.register("iron_bow", () -> new IronBowItem());
-	public static final RegistryObject<Item> REINFORCED_IRON_BOW = REGISTRY.register("reinforced_iron_bow", () -> new ReinforcedIronBowItem());
-	public static final RegistryObject<Item> DIAMOND_BOW = REGISTRY.register("diamond_bow", () -> new DiamondBowItem());
-	public static final RegistryObject<Item> ZORALIUM_BOW = REGISTRY.register("zoralium_bow", () -> new ZoraliumBowItem());
-	public static final RegistryObject<Item> LATHIUM_BOW = REGISTRY.register("lathium_bow", () -> new LathiumBowItem());
-	public static final RegistryObject<Item> COBIUM_BOW = REGISTRY.register("cobium_bow", () -> new CobiumBowItem());
-	public static final RegistryObject<Item> SKORIUM_BOW = REGISTRY.register("skorium_bow", () -> new SkoriumBowItem());
-	public static final RegistryObject<Item> NETHERITE_BOW = REGISTRY.register("netherite_bow", () -> new NetheriteBowItem());
-	public static final RegistryObject<Item> UMBELLIUM_BOW = REGISTRY.register("umbellium_bow", () -> new UmbelliumBowItem());
-	public static final RegistryObject<Item> GODDESS_FEATHER = REGISTRY.register("goddess_feather", () -> new GoddessFeatherItem());
-	public static final RegistryObject<Item> BURNING_STAR = REGISTRY.register("burning_star", () -> new BurningStarItem());
-	public static final RegistryObject<Item> GATES_OF_FATES_WALL_BLOCK = block(UmbreoRpgModBlocks.GATES_OF_FATES_WALL_BLOCK,
-			UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
-	public static final RegistryObject<Item> GATES_OF_FATES_FLOOR_1_BLOCK = block(UmbreoRpgModBlocks.GATES_OF_FATES_FLOOR_1_BLOCK,
-			UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
-	public static final RegistryObject<Item> GATES_OF_FATES_FLOOR_2_BLOCK = block(UmbreoRpgModBlocks.GATES_OF_FATES_FLOOR_2_BLOCK,
-			UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
-	public static final RegistryObject<Item> UMBREON_ALLIENCE_BLOCK = block(UmbreoRpgModBlocks.UMBREON_ALLIENCE_BLOCK,
-			UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
-	public static final RegistryObject<Item> BOREAL_ALLIENCE_BLOCK = block(UmbreoRpgModBlocks.BOREAL_ALLIENCE_BLOCK,
-			UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
-	public static final RegistryObject<Item> VORASH_ALLIENCE_BLOCK = block(UmbreoRpgModBlocks.VORASH_ALLIENCE_BLOCK,
-			UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
-	public static final RegistryObject<Item> RANDOM_ALLIANCE_BLOCK = block(UmbreoRpgModBlocks.RANDOM_ALLIANCE_BLOCK,
-			UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
-	public static final RegistryObject<Item> GATES_OF_FATES_PORTAL_BLOCK = block(UmbreoRpgModBlocks.GATES_OF_FATES_PORTAL_BLOCK,
-			UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
-	public static final RegistryObject<Item> MYSTALIUM_SWORD = REGISTRY.register("mystalium_sword", () -> new MystaliumSwordItem());
-	public static final RegistryObject<Item> MYSTALIUM_PICKAXE = REGISTRY.register("mystalium_pickaxe", () -> new MystaliumPickaxeItem());
-	public static final RegistryObject<Item> MYSTALIUM_AXE = REGISTRY.register("mystalium_axe", () -> new MystaliumAxeItem());
-	public static final RegistryObject<Item> MYSTALIUM_SHOVEL = REGISTRY.register("mystalium_shovel", () -> new MystaliumShovelItem());
-	public static final RegistryObject<Item> MYSTALIUM_HOE = REGISTRY.register("mystalium_hoe", () -> new MystaliumHoeItem());
-	public static final RegistryObject<Item> MYSTALIUM_BATTLEAXE = REGISTRY.register("mystalium_battleaxe", () -> new MystaliumBattleaxeItem());
-	public static final RegistryObject<Item> MYSTALIUM_MACE = REGISTRY.register("mystalium_mace", () -> new MystaliumMaceItem());
-	public static final RegistryObject<Item> OSNIUM_SWORD = REGISTRY.register("osnium_sword", () -> new OsniumSwordItem());
-	public static final RegistryObject<Item> OSNIUM_PICKAXE = REGISTRY.register("osnium_pickaxe", () -> new OsniumPickaxeItem());
-	public static final RegistryObject<Item> OSNIUM_AXE = REGISTRY.register("osnium_axe", () -> new OsniumAxeItem());
-	public static final RegistryObject<Item> OSNIUM_SHOVEL = REGISTRY.register("osnium_shovel", () -> new OsniumShovelItem());
-	public static final RegistryObject<Item> OSNIUM_HOE = REGISTRY.register("osnium_hoe", () -> new OsniumHoeItem());
-	public static final RegistryObject<Item> OSNIUM_BATTLEAXE = REGISTRY.register("osnium_battleaxe", () -> new OsniumBattleaxeItem());
-	public static final RegistryObject<Item> OSNIUM_MACE = REGISTRY.register("osnium_mace", () -> new OsniumMaceItem());
-	public static final RegistryObject<Item> DUILIUM_SWORD = REGISTRY.register("duilium_sword", () -> new DuiliumSwordItem());
-	public static final RegistryObject<Item> DUILIUM_PICKAXE = REGISTRY.register("duilium_pickaxe", () -> new DuiliumPickaxeItem());
-	public static final RegistryObject<Item> DUILIUM_AXE = REGISTRY.register("duilium_axe", () -> new DuiliumAxeItem());
-	public static final RegistryObject<Item> DUILIUM_SHOVEL = REGISTRY.register("duilium_shovel", () -> new DuiliumShovelItem());
-	public static final RegistryObject<Item> DUILIUM_HOE = REGISTRY.register("duilium_hoe", () -> new DuiliumHoeItem());
-	public static final RegistryObject<Item> DUILIUM_BATTLEAXE = REGISTRY.register("duilium_battleaxe", () -> new DuiliumBattleaxeItem());
-	public static final RegistryObject<Item> DUILIUM_MACE = REGISTRY.register("duilium_mace", () -> new DuiliumMaceItem());
-	public static final RegistryObject<Item> ULTRIUM_SWORD = REGISTRY.register("ultrium_sword", () -> new UltriumSwordItem());
-	public static final RegistryObject<Item> ULTRIUM_PICKAXE = REGISTRY.register("ultrium_pickaxe", () -> new UltriumPickaxeItem());
-	public static final RegistryObject<Item> ULTRIUM_AXE = REGISTRY.register("ultrium_axe", () -> new UltriumAxeItem());
-	public static final RegistryObject<Item> ULTRIUM_SHOVEL = REGISTRY.register("ultrium_shovel", () -> new UltriumShovelItem());
-	public static final RegistryObject<Item> ULTRIUM_HOE = REGISTRY.register("ultrium_hoe", () -> new UltriumHoeItem());
-	public static final RegistryObject<Item> ULTRIUM_BATTLEAXE = REGISTRY.register("ultrium_battleaxe", () -> new UltriumBattleaxeItem());
-	public static final RegistryObject<Item> ULTRIUM_MACE = REGISTRY.register("ultrium_mace", () -> new UltriumMaceItem());
 	public static final RegistryObject<Item> MYSTALIUM_ARMOR_HELMET = REGISTRY.register("mystalium_armor_helmet",
 			() -> new MystaliumArmorItem.Helmet());
 	public static final RegistryObject<Item> MYSTALIUM_ARMOR_CHESTPLATE = REGISTRY.register("mystalium_armor_chestplate",
@@ -671,8 +549,6 @@ public class UmbreoRpgModItems {
 	public static final RegistryObject<Item> MYSTALIUM_ARMOR_LEGGINGS = REGISTRY.register("mystalium_armor_leggings",
 			() -> new MystaliumArmorItem.Leggings());
 	public static final RegistryObject<Item> MYSTALIUM_ARMOR_BOOTS = REGISTRY.register("mystalium_armor_boots", () -> new MystaliumArmorItem.Boots());
-	public static final RegistryObject<Item> CRYSTAL_BONE = REGISTRY.register("crystal_bone", () -> new CrystalBoneItem());
-	public static final RegistryObject<Item> CORE_OF_MANA = REGISTRY.register("core_of_mana", () -> new CoreOfManaItem());
 	public static final RegistryObject<Item> DUILIUM_ARMOR_HELMET = REGISTRY.register("duilium_armor_helmet", () -> new DuiliumArmorItem.Helmet());
 	public static final RegistryObject<Item> DUILIUM_ARMOR_CHESTPLATE = REGISTRY.register("duilium_armor_chestplate",
 			() -> new DuiliumArmorItem.Chestplate());
@@ -690,14 +566,137 @@ public class UmbreoRpgModItems {
 	public static final RegistryObject<Item> ULTRIUM_ARMOR_LEGGINGS = REGISTRY.register("ultrium_armor_leggings",
 			() -> new UltriumArmorItem.Leggings());
 	public static final RegistryObject<Item> ULTRIUM_ARMOR_BOOTS = REGISTRY.register("ultrium_armor_boots", () -> new UltriumArmorItem.Boots());
+	public static final RegistryObject<Item> IRON_BOW = REGISTRY.register("iron_bow", () -> new IronBowItem());
+	public static final RegistryObject<Item> REINFORCED_IRON_BOW = REGISTRY.register("reinforced_iron_bow", () -> new ReinforcedIronBowItem());
+	public static final RegistryObject<Item> DIAMOND_BOW = REGISTRY.register("diamond_bow", () -> new DiamondBowItem());
+	public static final RegistryObject<Item> ZORALIUM_BOW = REGISTRY.register("zoralium_bow", () -> new ZoraliumBowItem());
+	public static final RegistryObject<Item> LATHIUM_BOW = REGISTRY.register("lathium_bow", () -> new LathiumBowItem());
+	public static final RegistryObject<Item> COBIUM_BOW = REGISTRY.register("cobium_bow", () -> new CobiumBowItem());
+	public static final RegistryObject<Item> SKORIUM_BOW = REGISTRY.register("skorium_bow", () -> new SkoriumBowItem());
+	public static final RegistryObject<Item> NETHERITE_BOW = REGISTRY.register("netherite_bow", () -> new NetheriteBowItem());
+	public static final RegistryObject<Item> UMBELLIUM_BOW = REGISTRY.register("umbellium_bow", () -> new UmbelliumBowItem());
+	public static final RegistryObject<Item> REINFORCED_IRON_PICKAXE = REGISTRY.register("reinforced_iron_pickaxe",
+			() -> new ReinforcedIronPickaxeItem());
+	public static final RegistryObject<Item> REINFORCED_IRON_AXE = REGISTRY.register("reinforced_iron_axe", () -> new ReinforcedIronAxeItem());
+	public static final RegistryObject<Item> REINFORCED_IRON_SHOVEL = REGISTRY.register("reinforced_iron_shovel",
+			() -> new ReinforcedIronShovelItem());
+	public static final RegistryObject<Item> REINFORCED_IRON_HOE = REGISTRY.register("reinforced_iron_hoe", () -> new ReinforcedIronHoeItem());
+	public static final RegistryObject<Item> VULCOR_PICKAXE = REGISTRY.register("vulcor_pickaxe", () -> new VulcorPickaxeItem());
+	public static final RegistryObject<Item> VULCOR_AXE = REGISTRY.register("vulcor_axe", () -> new VulcorAxeItem());
+	public static final RegistryObject<Item> VULCOR_SHOVEL = REGISTRY.register("vulcor_shovel", () -> new VulcorShovelItem());
+	public static final RegistryObject<Item> VULCOR_HOE = REGISTRY.register("vulcor_hoe", () -> new VulcorHoeItem());
+	public static final RegistryObject<Item> ZORALIUM_PICKAXE = REGISTRY.register("zoralium_pickaxe", () -> new ZoraliumPickaxeItem());
+	public static final RegistryObject<Item> ZORALIUM_AXE = REGISTRY.register("zoralium_axe", () -> new ZoraliumAxeItem());
+	public static final RegistryObject<Item> ZORALIUM_SHOVEL = REGISTRY.register("zoralium_shovel", () -> new ZoraliumShovelItem());
+	public static final RegistryObject<Item> ZORALIUM_HOE = REGISTRY.register("zoralium_hoe", () -> new ZoraliumHoeItem());
+	public static final RegistryObject<Item> LATHIUM_PICKAXE = REGISTRY.register("lathium_pickaxe", () -> new LathiumPickaxeItem());
+	public static final RegistryObject<Item> LATHIUM_AXE = REGISTRY.register("lathium_axe", () -> new LathiumAxeItem());
+	public static final RegistryObject<Item> LATHIUM_SHOVEL = REGISTRY.register("lathium_shovel", () -> new LathiumShovelItem());
+	public static final RegistryObject<Item> LATHIUM_HOE = REGISTRY.register("lathium_hoe", () -> new LathiumHoeItem());
+	public static final RegistryObject<Item> COBIUM_PICKAXE = REGISTRY.register("cobium_pickaxe", () -> new CobiumPickaxeItem());
+	public static final RegistryObject<Item> COBIUM_AXE = REGISTRY.register("cobium_axe", () -> new CobiumAxeItem());
+	public static final RegistryObject<Item> COBIUM_SHOVEL = REGISTRY.register("cobium_shovel", () -> new CobiumShovelItem());
+	public static final RegistryObject<Item> COBIUM_HOE = REGISTRY.register("cobium_hoe", () -> new CobiumHoeItem());
+	public static final RegistryObject<Item> SKORIUM_PICKAXE = REGISTRY.register("skorium_pickaxe", () -> new SkoriumPickaxeItem());
+	public static final RegistryObject<Item> SKORIUM_AXE = REGISTRY.register("skorium_axe", () -> new SkoriumAxeItem());
+	public static final RegistryObject<Item> SKORIUM_SHOVEL = REGISTRY.register("skorium_shovel", () -> new SkoriumShovelItem());
+	public static final RegistryObject<Item> SKORIUM_HOE = REGISTRY.register("skorium_hoe", () -> new SkoriumHoeItem());
+	public static final RegistryObject<Item> UMBELLIUM_PICKAXE = REGISTRY.register("umbellium_pickaxe", () -> new UmbelliumPickaxeItem());
+	public static final RegistryObject<Item> UMBELLIUM_AXE = REGISTRY.register("umbellium_axe", () -> new UmbelliumAxeItem());
+	public static final RegistryObject<Item> UMBELLIUM_SHOVEL = REGISTRY.register("umbellium_shovel", () -> new UmbelliumShovelItem());
+	public static final RegistryObject<Item> UMBELLIUM_HOE = REGISTRY.register("umbellium_hoe", () -> new UmbelliumHoeItem());
+	public static final RegistryObject<Item> MYSTALIUM_PICKAXE = REGISTRY.register("mystalium_pickaxe", () -> new MystaliumPickaxeItem());
+	public static final RegistryObject<Item> MYSTALIUM_AXE = REGISTRY.register("mystalium_axe", () -> new MystaliumAxeItem());
+	public static final RegistryObject<Item> MYSTALIUM_SHOVEL = REGISTRY.register("mystalium_shovel", () -> new MystaliumShovelItem());
+	public static final RegistryObject<Item> MYSTALIUM_HOE = REGISTRY.register("mystalium_hoe", () -> new MystaliumHoeItem());
+	public static final RegistryObject<Item> DUILIUM_PICKAXE = REGISTRY.register("duilium_pickaxe", () -> new DuiliumPickaxeItem());
+	public static final RegistryObject<Item> DUILIUM_AXE = REGISTRY.register("duilium_axe", () -> new DuiliumAxeItem());
+	public static final RegistryObject<Item> DUILIUM_SHOVEL = REGISTRY.register("duilium_shovel", () -> new DuiliumShovelItem());
+	public static final RegistryObject<Item> DUILIUM_HOE = REGISTRY.register("duilium_hoe", () -> new DuiliumHoeItem());
+	public static final RegistryObject<Item> OSNIUM_PICKAXE = REGISTRY.register("osnium_pickaxe", () -> new OsniumPickaxeItem());
+	public static final RegistryObject<Item> OSNIUM_AXE = REGISTRY.register("osnium_axe", () -> new OsniumAxeItem());
+	public static final RegistryObject<Item> OSNIUM_SHOVEL = REGISTRY.register("osnium_shovel", () -> new OsniumShovelItem());
+	public static final RegistryObject<Item> OSNIUM_HOE = REGISTRY.register("osnium_hoe", () -> new OsniumHoeItem());
+	public static final RegistryObject<Item> ULTRIUM_PICKAXE = REGISTRY.register("ultrium_pickaxe", () -> new UltriumPickaxeItem());
+	public static final RegistryObject<Item> ULTRIUM_AXE = REGISTRY.register("ultrium_axe", () -> new UltriumAxeItem());
+	public static final RegistryObject<Item> ULTRIUM_SHOVEL = REGISTRY.register("ultrium_shovel", () -> new UltriumShovelItem());
+	public static final RegistryObject<Item> ULTRIUM_HOE = REGISTRY.register("ultrium_hoe", () -> new UltriumHoeItem());
+	public static final RegistryObject<Item> ROD_OF_CLEAR_SKIES = REGISTRY.register("rod_of_clear_skies", () -> new RodOfClearSkiesItem());
+	public static final RegistryObject<Item> ROD_OF_DAYLIGHT = REGISTRY.register("rod_of_daylight", () -> new RodOfDaylightItem());
+	public static final RegistryObject<Item> ROD_OF_MOONLIGHT = REGISTRY.register("rod_of_moonlight", () -> new RodOfMoonlightItem());
+	public static final RegistryObject<Item> ROD_OF_RAIN = REGISTRY.register("rod_of_rain", () -> new RodOfRainItem());
+	public static final RegistryObject<Item> ROD_OF_STORMS = REGISTRY.register("rod_of_storms", () -> new RodOfStormsItem());
+	public static final RegistryObject<Item> BUG_NET = REGISTRY.register("bug_net", () -> new BugNetItem());
+	public static final RegistryObject<Item> ENDER_DRAGON_SCALE = REGISTRY.register("ender_dragon_scale", () -> new EnderDragonScaleItem());
+	public static final RegistryObject<Item> GODDESS_FEATHER = REGISTRY.register("goddess_feather", () -> new GoddessFeatherItem());
+	public static final RegistryObject<Item> BURNING_STAR = REGISTRY.register("burning_star", () -> new BurningStarItem());
 	public static final RegistryObject<Item> GOLD_COIN = REGISTRY.register("gold_coin", () -> new GoldCoinItem());
+	public static final RegistryObject<Item> FIREFLY_ITEM = REGISTRY.register("firefly_item", () -> new FireflyItemItem());
+	public static final RegistryObject<Item> VENOM_BEETLE_ITEM = REGISTRY.register("venom_beetle_item", () -> new VenomBeetleItemItem());
+	public static final RegistryObject<Item> DUSTMITE_ITEM = REGISTRY.register("dustmite_item", () -> new DustmiteItemItem());
+	public static final RegistryObject<Item> DEMON_HORN = REGISTRY.register("demon_horn", () -> new DemonHornItem());
+	public static final RegistryObject<Item> CORE_OF_MANA = REGISTRY.register("core_of_mana", () -> new CoreOfManaItem());
+	public static final RegistryObject<Item> CRYSTAL_BONE = REGISTRY.register("crystal_bone", () -> new CrystalBoneItem());
 	public static final RegistryObject<Item> BANKING_COUNTER = block(UmbreoRpgModBlocks.BANKING_COUNTER, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
-	public static final RegistryObject<Item> SMALL_COIN_POUCH = REGISTRY.register("small_coin_pouch", () -> new SmallCoinPouchItem());
-	public static final RegistryObject<Item> MEDIUM_COIN_POUCH = REGISTRY.register("medium_coin_pouch", () -> new MediumCoinPouchItem());
-	public static final RegistryObject<Item> LARGE_COIN_POUCH = REGISTRY.register("large_coin_pouch", () -> new LargeCoinPouchItem());
-	public static final RegistryObject<Item> EXTRA_LARGE_COIN_POUCH = REGISTRY.register("extra_large_coin_pouch",
-			() -> new ExtraLargeCoinPouchItem());
-	public static final RegistryObject<Item> BANKERS_COIN_POUCH = REGISTRY.register("bankers_coin_pouch", () -> new BankersCoinPouchItem());
+	public static final RegistryObject<Item> TETRIUM_BLOCK = block(UmbreoRpgModBlocks.TETRIUM_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> VULCOR_BLOCK = block(UmbreoRpgModBlocks.VULCOR_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> PURE_GOLD_BLOCK = block(UmbreoRpgModBlocks.PURE_GOLD_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> ZORALIUM_BLOCK = block(UmbreoRpgModBlocks.ZORALIUM_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> LATHIUM_BLOCK = block(UmbreoRpgModBlocks.LATHIUM_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> COBIUM_BLOCK = block(UmbreoRpgModBlocks.COBIUM_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> SKORIUM_BLOCK = block(UmbreoRpgModBlocks.SKORIUM_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> UMBELLIUM_BLOCK = block(UmbreoRpgModBlocks.UMBELLIUM_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> MYSTALIUM_BLOCK = block(UmbreoRpgModBlocks.MYSTALIUM_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> DUILIUM_BLOCK = block(UmbreoRpgModBlocks.DUILIUM_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> OSNIUM_BLOCK = block(UmbreoRpgModBlocks.OSNIUM_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> ULTRIUM_BLOCK = block(UmbreoRpgModBlocks.ULTRIUM_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> CHARRED_LOG = block(UmbreoRpgModBlocks.CHARRED_LOG, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> ASH_BLOCK = block(UmbreoRpgModBlocks.ASH_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> COOKING_RANGE = block(UmbreoRpgModBlocks.COOKING_RANGE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_0 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_0, null);
+	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_1 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_1, null);
+	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_2 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_2, null);
+	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_3 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_3, null);
+	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_4 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_4, null);
+	public static final RegistryObject<Item> BOREAL_SWEET_POTATO_STAGE_5 = block(UmbreoRpgModBlocks.BOREAL_SWEET_POTATO_STAGE_5, null);
+	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_0 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_0, null);
+	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_1 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_1, null);
+	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_2 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_2, null);
+	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_3 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_3, null);
+	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_4 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_4, null);
+	public static final RegistryObject<Item> VORASHIAN_GREENS_STAGE_5 = block(UmbreoRpgModBlocks.VORASHIAN_GREENS_STAGE_5, null);
+	public static final RegistryObject<Item> GARLIC_STAGE_0 = block(UmbreoRpgModBlocks.GARLIC_STAGE_0, null);
+	public static final RegistryObject<Item> GARLIC_STAGE_1 = block(UmbreoRpgModBlocks.GARLIC_STAGE_1, null);
+	public static final RegistryObject<Item> GARLIC_STAGE_2 = block(UmbreoRpgModBlocks.GARLIC_STAGE_2, null);
+	public static final RegistryObject<Item> GARLIC_STAGE_3 = block(UmbreoRpgModBlocks.GARLIC_STAGE_3, null);
+	public static final RegistryObject<Item> GARLIC_STAGE_4 = block(UmbreoRpgModBlocks.GARLIC_STAGE_4, null);
+	public static final RegistryObject<Item> GARLIC_STAGE_5 = block(UmbreoRpgModBlocks.GARLIC_STAGE_5, null);
+	public static final RegistryObject<Item> RICE_STAGE_0 = block(UmbreoRpgModBlocks.RICE_STAGE_0, null);
+	public static final RegistryObject<Item> RICE_STAGE_1 = block(UmbreoRpgModBlocks.RICE_STAGE_1, null);
+	public static final RegistryObject<Item> RICE_STAGE_2 = block(UmbreoRpgModBlocks.RICE_STAGE_2, null);
+	public static final RegistryObject<Item> RICE_STAGE_3 = block(UmbreoRpgModBlocks.RICE_STAGE_3, null);
+	public static final RegistryObject<Item> RICE_STAGE_4 = block(UmbreoRpgModBlocks.RICE_STAGE_4, null);
+	public static final RegistryObject<Item> RICE_STAGE_5 = block(UmbreoRpgModBlocks.RICE_STAGE_5, null);
+	public static final RegistryObject<Item> CORN_STAGE_0 = block(UmbreoRpgModBlocks.CORN_STAGE_0, null);
+	public static final RegistryObject<Item> CORN_STAGE_1 = block(UmbreoRpgModBlocks.CORN_STAGE_1, null);
+	public static final RegistryObject<Item> CORN_STAGE_2 = block(UmbreoRpgModBlocks.CORN_STAGE_2, null);
+	public static final RegistryObject<Item> CORN_STAGE_3 = block(UmbreoRpgModBlocks.CORN_STAGE_3, null);
+	public static final RegistryObject<Item> CORN_STAGE_4 = block(UmbreoRpgModBlocks.CORN_STAGE_4, null);
+	public static final RegistryObject<Item> CORN_STAGE_5 = block(UmbreoRpgModBlocks.CORN_STAGE_5, null);
+	public static final RegistryObject<Item> CORN_STAGE_6 = block(UmbreoRpgModBlocks.CORN_STAGE_6, null);
+	public static final RegistryObject<Item> CORN_STAGE_7 = block(UmbreoRpgModBlocks.CORN_STAGE_7, null);
+	public static final RegistryObject<Item> CORN_STAGE_8 = block(UmbreoRpgModBlocks.CORN_STAGE_8, null);
+	public static final RegistryObject<Item> CORN_STAGE_9 = block(UmbreoRpgModBlocks.CORN_STAGE_9, null);
+	public static final RegistryObject<Item> CORN_STAGE_10 = block(UmbreoRpgModBlocks.CORN_STAGE_10, null);
+	public static final RegistryObject<Item> GATES_OF_FATES_WALL_BLOCK = block(UmbreoRpgModBlocks.GATES_OF_FATES_WALL_BLOCK, null);
+	public static final RegistryObject<Item> GATES_OF_FATES_FLOOR_1_BLOCK = block(UmbreoRpgModBlocks.GATES_OF_FATES_FLOOR_1_BLOCK, null);
+	public static final RegistryObject<Item> GATES_OF_FATES_FLOOR_2_BLOCK = block(UmbreoRpgModBlocks.GATES_OF_FATES_FLOOR_2_BLOCK, null);
+	public static final RegistryObject<Item> UMBREON_ALLIENCE_BLOCK = block(UmbreoRpgModBlocks.UMBREON_ALLIENCE_BLOCK, null);
+	public static final RegistryObject<Item> BOREAL_ALLIENCE_BLOCK = block(UmbreoRpgModBlocks.BOREAL_ALLIENCE_BLOCK, null);
+	public static final RegistryObject<Item> VORASH_ALLIENCE_BLOCK = block(UmbreoRpgModBlocks.VORASH_ALLIENCE_BLOCK, null);
+	public static final RegistryObject<Item> RANDOM_ALLIANCE_BLOCK = block(UmbreoRpgModBlocks.RANDOM_ALLIANCE_BLOCK, null);
+	public static final RegistryObject<Item> GATES_OF_FATES_PORTAL_BLOCK = block(UmbreoRpgModBlocks.GATES_OF_FATES_PORTAL_BLOCK, null);
+	public static final RegistryObject<Item> PLACE_HOLDER_ITEM = REGISTRY.register("place_holder_item", () -> new PlaceHolderItemItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

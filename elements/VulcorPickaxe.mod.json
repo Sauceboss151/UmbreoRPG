@@ -8,7 +8,7 @@
     "name": "Vulcor Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:UmbreoTools"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 2,

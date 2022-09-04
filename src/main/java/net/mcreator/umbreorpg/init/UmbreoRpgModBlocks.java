@@ -100,30 +100,51 @@ import net.mcreator.umbreorpg.UmbreoRpgMod;
 public class UmbreoRpgModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, UmbreoRpgMod.MODID);
 	public static final RegistryObject<Block> ALCHEMY_TABLE = REGISTRY.register("alchemy_table", () -> new AlchemyTableBlock());
-	public static final RegistryObject<Block> ASH_BLOCK = REGISTRY.register("ash_block", () -> new AshBlockBlock());
-	public static final RegistryObject<Block> UMBELLIUM_ORE = REGISTRY.register("umbellium_ore", () -> new UmbelliumOreBlock());
-	public static final RegistryObject<Block> UMBELLIUM_BLOCK = REGISTRY.register("umbellium_block", () -> new UmbelliumBlockBlock());
-	public static final RegistryObject<Block> VULCOR_ORE = REGISTRY.register("vulcor_ore", () -> new VulcorOreBlock());
-	public static final RegistryObject<Block> VULCOR_BLOCK = REGISTRY.register("vulcor_block", () -> new VulcorBlockBlock());
 	public static final RegistryObject<Block> TETRIUM_ORE = REGISTRY.register("tetrium_ore", () -> new TetriumOreBlock());
-	public static final RegistryObject<Block> TETRIUM_BLOCK = REGISTRY.register("tetrium_block", () -> new TetriumBlockBlock());
+	public static final RegistryObject<Block> VULCOR_ORE = REGISTRY.register("vulcor_ore", () -> new VulcorOreBlock());
 	public static final RegistryObject<Block> PURE_GOLD_ORE = REGISTRY.register("pure_gold_ore", () -> new PureGoldOreBlock());
-	public static final RegistryObject<Block> PURE_GOLD_BLOCK = REGISTRY.register("pure_gold_block", () -> new PureGoldBlockBlock());
 	public static final RegistryObject<Block> ZORALIUM_ORE = REGISTRY.register("zoralium_ore", () -> new ZoraliumOreBlock());
-	public static final RegistryObject<Block> ZORALIUM_BLOCK = REGISTRY.register("zoralium_block", () -> new ZoraliumBlockBlock());
 	public static final RegistryObject<Block> LATHIUM_ORE = REGISTRY.register("lathium_ore", () -> new LathiumOreBlock());
-	public static final RegistryObject<Block> LATHIUM_BLOCK = REGISTRY.register("lathium_block", () -> new LathiumBlockBlock());
 	public static final RegistryObject<Block> COBIUM_ORE = REGISTRY.register("cobium_ore", () -> new CobiumOreBlock());
+	public static final RegistryObject<Block> MYSTALIUM_ORE = REGISTRY.register("mystalium_ore", () -> new MystaliumOreBlock());
+	public static final RegistryObject<Block> DUILIUM_ORE = REGISTRY.register("duilium_ore", () -> new DuiliumOreBlock());
+	public static final RegistryObject<Block> OSNIUM_ORE = REGISTRY.register("osnium_ore", () -> new OsniumOreBlock());
+	public static final RegistryObject<Block> ULTRIUM_ORE = REGISTRY.register("ultrium_ore", () -> new UltriumOreBlock());
+	public static final RegistryObject<Block> TETRIUM_DEEPSLATE_ORE = REGISTRY.register("tetrium_deepslate_ore",
+			() -> new TetriumDeepslateOreBlock());
+	public static final RegistryObject<Block> PURE_GOLD_DEEPSLATE_ORE = REGISTRY.register("pure_gold_deepslate_ore",
+			() -> new PureGoldDeepslateOreBlock());
+	public static final RegistryObject<Block> ZORALIUM_DEEPSLATE_ORE = REGISTRY.register("zoralium_deepslate_ore",
+			() -> new ZoraliumDeepslateOreBlock());
+	public static final RegistryObject<Block> LATHIUM_DEEPSLATE_ORE = REGISTRY.register("lathium_deepslate_ore",
+			() -> new LathiumDeepslateOreBlock());
+	public static final RegistryObject<Block> COBIUM_DEEPSLATE_ORE = REGISTRY.register("cobium_deepslate_ore", () -> new CobiumDeepslateOreBlock());
+	public static final RegistryObject<Block> SKORIUM_DEEPSLATE_ORE = REGISTRY.register("skorium_deepslate_ore",
+			() -> new SkoriumDeepslateOreBlock());
+	public static final RegistryObject<Block> UMBELLIUM_ORE = REGISTRY.register("umbellium_ore", () -> new UmbelliumOreBlock());
+	public static final RegistryObject<Block> MYSTALIUM_DEEPSLATE_ORE = REGISTRY.register("mystalium_deepslate_ore",
+			() -> new MystaliumDeepslateOreBlock());
+	public static final RegistryObject<Block> DUILIUM_DEEPSLATE_ORE = REGISTRY.register("duilium_deepslate_ore",
+			() -> new DuiliumDeepslateOreBlock());
+	public static final RegistryObject<Block> OSNIUM_DEEPSLATE_ORE = REGISTRY.register("osnium_deepslate_ore", () -> new OsniumDeepslateOreBlock());
+	public static final RegistryObject<Block> ULTRIUM_DEEPSLATE_ORE = REGISTRY.register("ultrium_deepslate_ore",
+			() -> new UltriumDeepslateOreBlock());
+	public static final RegistryObject<Block> BANKING_COUNTER = REGISTRY.register("banking_counter", () -> new BankingCounterBlock());
+	public static final RegistryObject<Block> TETRIUM_BLOCK = REGISTRY.register("tetrium_block", () -> new TetriumBlockBlock());
+	public static final RegistryObject<Block> VULCOR_BLOCK = REGISTRY.register("vulcor_block", () -> new VulcorBlockBlock());
+	public static final RegistryObject<Block> PURE_GOLD_BLOCK = REGISTRY.register("pure_gold_block", () -> new PureGoldBlockBlock());
+	public static final RegistryObject<Block> ZORALIUM_BLOCK = REGISTRY.register("zoralium_block", () -> new ZoraliumBlockBlock());
+	public static final RegistryObject<Block> LATHIUM_BLOCK = REGISTRY.register("lathium_block", () -> new LathiumBlockBlock());
 	public static final RegistryObject<Block> COBIUM_BLOCK = REGISTRY.register("cobium_block", () -> new CobiumBlockBlock());
 	public static final RegistryObject<Block> SKORIUM_BLOCK = REGISTRY.register("skorium_block", () -> new SkoriumBlockBlock());
-	public static final RegistryObject<Block> MYSTALIUM_ORE = REGISTRY.register("mystalium_ore", () -> new MystaliumOreBlock());
+	public static final RegistryObject<Block> UMBELLIUM_BLOCK = REGISTRY.register("umbellium_block", () -> new UmbelliumBlockBlock());
 	public static final RegistryObject<Block> MYSTALIUM_BLOCK = REGISTRY.register("mystalium_block", () -> new MystaliumBlockBlock());
-	public static final RegistryObject<Block> OSNIUM_ORE = REGISTRY.register("osnium_ore", () -> new OsniumOreBlock());
-	public static final RegistryObject<Block> OSNIUM_BLOCK = REGISTRY.register("osnium_block", () -> new OsniumBlockBlock());
-	public static final RegistryObject<Block> DUILIUM_ORE = REGISTRY.register("duilium_ore", () -> new DuiliumOreBlock());
 	public static final RegistryObject<Block> DUILIUM_BLOCK = REGISTRY.register("duilium_block", () -> new DuiliumBlockBlock());
-	public static final RegistryObject<Block> ULTRIUM_ORE = REGISTRY.register("ultrium_ore", () -> new UltriumOreBlock());
+	public static final RegistryObject<Block> OSNIUM_BLOCK = REGISTRY.register("osnium_block", () -> new OsniumBlockBlock());
 	public static final RegistryObject<Block> ULTRIUM_BLOCK = REGISTRY.register("ultrium_block", () -> new UltriumBlockBlock());
+	public static final RegistryObject<Block> CHARRED_LOG = REGISTRY.register("charred_log", () -> new CharredLogBlock());
+	public static final RegistryObject<Block> ASH_BLOCK = REGISTRY.register("ash_block", () -> new AshBlockBlock());
+	public static final RegistryObject<Block> COOKING_RANGE = REGISTRY.register("cooking_range", () -> new CookingRangeBlock());
 	public static final RegistryObject<Block> BOREAL_SWEET_POTATO_STAGE_0 = REGISTRY.register("boreal_sweet_potato_stage_0",
 			() -> new BorealSweetPotatoStage0Block());
 	public static final RegistryObject<Block> BOREAL_SWEET_POTATO_STAGE_1 = REGISTRY.register("boreal_sweet_potato_stage_1",
@@ -171,26 +192,6 @@ public class UmbreoRpgModBlocks {
 	public static final RegistryObject<Block> CORN_STAGE_8 = REGISTRY.register("corn_stage_8", () -> new CornStage8Block());
 	public static final RegistryObject<Block> CORN_STAGE_9 = REGISTRY.register("corn_stage_9", () -> new CornStage9Block());
 	public static final RegistryObject<Block> CORN_STAGE_10 = REGISTRY.register("corn_stage_10", () -> new CornStage10Block());
-	public static final RegistryObject<Block> COOKING_RANGE = REGISTRY.register("cooking_range", () -> new CookingRangeBlock());
-	public static final RegistryObject<Block> TETRIUM_DEEPSLATE_ORE = REGISTRY.register("tetrium_deepslate_ore",
-			() -> new TetriumDeepslateOreBlock());
-	public static final RegistryObject<Block> PURE_GOLD_DEEPSLATE_ORE = REGISTRY.register("pure_gold_deepslate_ore",
-			() -> new PureGoldDeepslateOreBlock());
-	public static final RegistryObject<Block> ZORALIUM_DEEPSLATE_ORE = REGISTRY.register("zoralium_deepslate_ore",
-			() -> new ZoraliumDeepslateOreBlock());
-	public static final RegistryObject<Block> LATHIUM_DEEPSLATE_ORE = REGISTRY.register("lathium_deepslate_ore",
-			() -> new LathiumDeepslateOreBlock());
-	public static final RegistryObject<Block> COBIUM_DEEPSLATE_ORE = REGISTRY.register("cobium_deepslate_ore", () -> new CobiumDeepslateOreBlock());
-	public static final RegistryObject<Block> SKORIUM_DEEPSLATE_ORE = REGISTRY.register("skorium_deepslate_ore",
-			() -> new SkoriumDeepslateOreBlock());
-	public static final RegistryObject<Block> MYSTALIUM_DEEPSLATE_ORE = REGISTRY.register("mystalium_deepslate_ore",
-			() -> new MystaliumDeepslateOreBlock());
-	public static final RegistryObject<Block> OSNIUM_DEEPSLATE_ORE = REGISTRY.register("osnium_deepslate_ore", () -> new OsniumDeepslateOreBlock());
-	public static final RegistryObject<Block> DUILIUM_DEEPSLATE_ORE = REGISTRY.register("duilium_deepslate_ore",
-			() -> new DuiliumDeepslateOreBlock());
-	public static final RegistryObject<Block> ULTRIUM_DEEPSLATE_ORE = REGISTRY.register("ultrium_deepslate_ore",
-			() -> new UltriumDeepslateOreBlock());
-	public static final RegistryObject<Block> CHARRED_LOG = REGISTRY.register("charred_log", () -> new CharredLogBlock());
 	public static final RegistryObject<Block> GATES_OF_FATES_WALL_BLOCK = REGISTRY.register("gates_of_fates_wall_block",
 			() -> new GatesOfFatesWallBlockBlock());
 	public static final RegistryObject<Block> GATES_OF_FATES_FLOOR_1_BLOCK = REGISTRY.register("gates_of_fates_floor_1_block",
@@ -207,7 +208,6 @@ public class UmbreoRpgModBlocks {
 			() -> new RandomAllianceBlockBlock());
 	public static final RegistryObject<Block> GATES_OF_FATES_PORTAL_BLOCK = REGISTRY.register("gates_of_fates_portal_block",
 			() -> new GatesOfFatesPortalBlockBlock());
-	public static final RegistryObject<Block> BANKING_COUNTER = REGISTRY.register("banking_counter", () -> new BankingCounterBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

@@ -8,7 +8,7 @@
     "name": "Cobium Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:UmbreoTools"
     },
     "toolType": "Hoe",
     "harvestLevel": 3,

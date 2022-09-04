@@ -7,7 +7,8 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
+
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 
 public class NetheriteBattleaxeItem extends SwordItem {
 	public NetheriteBattleaxeItem() {
@@ -35,6 +36,6 @@ public class NetheriteBattleaxeItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.NETHERITE_INGOT));
 			}
-		}, 3, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
+		}, 3, -2.8f, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT).fireResistant());
 	}
 }

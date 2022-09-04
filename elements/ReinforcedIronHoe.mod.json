@@ -8,7 +8,7 @@
     "name": "Reinforced Iron Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:UmbreoTools"
     },
     "toolType": "Hoe",
     "harvestLevel": 2,

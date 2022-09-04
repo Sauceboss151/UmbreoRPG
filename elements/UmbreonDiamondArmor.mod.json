@@ -14,7 +14,7 @@
       "name": "DiamondArmorProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "diamond_armor_",
     "helmetName": "Diamond Helmet",

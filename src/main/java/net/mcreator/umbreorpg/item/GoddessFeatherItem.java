@@ -6,15 +6,16 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
+
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 
 import java.util.List;
 
 public class GoddessFeatherItem extends Item {
 	public GoddessFeatherItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).fireResistant().rarity(Rarity.EPIC));
+		super(new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC).stacksTo(64).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override

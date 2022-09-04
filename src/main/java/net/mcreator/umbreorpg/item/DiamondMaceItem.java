@@ -7,7 +7,8 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
+
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 
 public class DiamondMaceItem extends SwordItem {
 	public DiamondMaceItem() {
@@ -35,6 +36,6 @@ public class DiamondMaceItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.DIAMOND));
 			}
-		}, 3, -2.6f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		}, 3, -2.6f, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT));
 	}
 }

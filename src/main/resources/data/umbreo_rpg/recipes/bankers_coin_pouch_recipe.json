@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "umbreo_rpg:extra_large_coin_pouch"
+    },
+    {
+      "item": "umbreo_rpg:extra_large_coin_pouch"
+    },
+    {
+      "item": "umbreo_rpg:extra_large_coin_pouch"
+    }
+  ],
+  "result": {
+    "item": "umbreo_rpg:bankers_coin_pouch",
+    "count": 1
+  }
+}

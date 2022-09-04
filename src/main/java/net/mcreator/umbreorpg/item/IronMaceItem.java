@@ -7,7 +7,8 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
+
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 
 public class IronMaceItem extends SwordItem {
 	public IronMaceItem() {
@@ -35,6 +36,6 @@ public class IronMaceItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.IRON_INGOT));
 			}
-		}, 3, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		}, 3, -3f, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT));
 	}
 }

@@ -6,16 +6,16 @@ import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.umbreorpg.procedures.OpenCookBookRecipeProcedure;
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 
 public class CookBookItem extends Item {
 	public CookBookItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_FOOD).stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

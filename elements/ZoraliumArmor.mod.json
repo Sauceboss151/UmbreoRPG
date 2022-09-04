@@ -14,7 +14,7 @@
       "name": "ZoraliumArmorEffectProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "zoralium_armor_",
     "helmetName": "Zoralium Helmet",

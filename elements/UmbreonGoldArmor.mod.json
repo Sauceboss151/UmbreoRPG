@@ -14,7 +14,7 @@
       "name": "GoldArmorEffectProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "gold_armor_",
     "helmetName": "Gold Helmet",

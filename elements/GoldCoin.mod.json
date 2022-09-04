@@ -8,7 +8,7 @@
     "name": "Gold Coin",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:UmbreoMisc"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -37,6 +37,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "eat"
+    "animation": "none"
   }
 }

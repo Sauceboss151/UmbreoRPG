@@ -8,7 +8,7 @@
     "name": "Duilium Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:UmbreoTools"
     },
     "toolType": "Axe",
     "harvestLevel": 7,

@@ -8,7 +8,7 @@
     "name": "Raw Mystalium Ore",
     "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:UmbreoMining"
     },
     "stackSize": 64,
     "enchantability": 0,

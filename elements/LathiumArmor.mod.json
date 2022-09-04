@@ -14,7 +14,7 @@
       "name": "LathiumArmorEffect"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "lathium_armor_",
     "helmetName": "Lathium Helmet",

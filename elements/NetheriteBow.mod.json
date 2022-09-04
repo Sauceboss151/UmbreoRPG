@@ -8,7 +8,7 @@
     "name": "Netherite Bow",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "stackSize": 1,
     "ammoItem": {

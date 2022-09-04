@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:UmbreoBlocks"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -101,7 +101,7 @@
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:TwinkleParticle"
+      "value": "CUSTOM:AstralLightParticle"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,

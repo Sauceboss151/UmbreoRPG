@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class UltriumBlockBlock extends Block {
 	public UltriumBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.STONE).strength(5f, 6f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

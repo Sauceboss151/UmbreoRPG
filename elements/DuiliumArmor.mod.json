@@ -14,7 +14,7 @@
       "name": "DuiliumArmorEffect"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "duilium_armor_",
     "helmetName": "Duilium Helmet",

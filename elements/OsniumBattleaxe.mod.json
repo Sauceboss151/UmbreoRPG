@@ -8,7 +8,7 @@
     "name": "Osnium Battleaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "toolType": "Sword",
     "harvestLevel": 0,

@@ -14,7 +14,7 @@
       "name": "OsniumArmorEffect"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "osnium_armor_",
     "helmetName": "Osnium Helmet",

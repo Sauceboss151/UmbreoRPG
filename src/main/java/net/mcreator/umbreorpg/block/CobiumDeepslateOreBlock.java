@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class CobiumDeepslateOreBlock extends Block {
 	public CobiumDeepslateOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(3f, 6f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

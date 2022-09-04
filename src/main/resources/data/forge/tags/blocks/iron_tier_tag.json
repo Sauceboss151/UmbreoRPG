@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:iron_ore",
-    "umbreo_rpg:tetrium_ore",
-    "minecraft:deepslate_iron_ore",
-    "umbreo_rpg:tetrium_deepslate_ore"
-  ]
-}

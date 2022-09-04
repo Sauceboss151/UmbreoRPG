@@ -14,7 +14,7 @@
       "name": "SkoriumArmorEffect"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "skorium_armor_",
     "helmetName": "Skorium Helmet",

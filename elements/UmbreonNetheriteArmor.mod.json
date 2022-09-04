@@ -14,7 +14,7 @@
       "name": "NetheriteArmorEffectProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "netherite_armor_",
     "helmetName": "Netherite Helmet",

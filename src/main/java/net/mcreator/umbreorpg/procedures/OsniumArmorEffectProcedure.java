@@ -9,7 +9,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.umbreorpg.init.UmbreoRpgModMobEffects;
 import net.mcreator.umbreorpg.init.UmbreoRpgModItems;
 
 public class OsniumArmorEffectProcedure {
@@ -27,7 +26,7 @@ public class OsniumArmorEffectProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 10, 2));
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(UmbreoRpgModMobEffects.SPELUNKER.get(), 10, 0));
+				_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 10, 0));
 			if ((world.getBlockState(new BlockPos(entity.getX(), entity.getY() - 2, entity.getZ())))
 					.getMaterial() == net.minecraft.world.level.material.Material.AIR) {
 				if (entity instanceof LivingEntity _entity)

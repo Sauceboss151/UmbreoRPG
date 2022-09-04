@@ -40,14 +40,14 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:UmbreoMining"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -101,7 +101,7 @@
     "breakHarvestLevel": 7,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:TwinkleParticle"
+      "value": "CUSTOM:AstralLightParticle"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,

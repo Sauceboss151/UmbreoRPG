@@ -8,7 +8,7 @@
     "name": "Core Of Mana",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:UmbreoBrewing"
     },
     "stackSize": 64,
     "enchantability": 0,

@@ -14,7 +14,7 @@
       "name": "IronArmorEffectProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "iron_armor_",
     "helmetName": "Iron Helmet",

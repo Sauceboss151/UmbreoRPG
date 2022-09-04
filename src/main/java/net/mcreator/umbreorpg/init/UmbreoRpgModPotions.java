@@ -27,8 +27,6 @@ public class UmbreoRpgModPotions {
 			() -> new Potion(new MobEffectInstance(UmbreoRpgModMobEffects.POISON_RESISTANCE.get(), 4800, 0, false, true)));
 	public static final RegistryObject<Potion> POTION_OF_LIFESTEAL = REGISTRY.register("potion_of_lifesteal",
 			() -> new Potion(new MobEffectInstance(UmbreoRpgModMobEffects.LIFESTEAL.get(), 3600, 0, false, true)));
-	public static final RegistryObject<Potion> POTION_OF_THE_SPELUNKER = REGISTRY.register("potion_of_the_spelunker",
-			() -> new Potion(new MobEffectInstance(UmbreoRpgModMobEffects.SPELUNKER.get(), 7200, 0, false, true)));
 	public static final RegistryObject<Potion> POTION_OF_MANA_REGENERATION = REGISTRY.register("potion_of_mana_regeneration",
 			() -> new Potion(new MobEffectInstance(UmbreoRpgModMobEffects.MANA_REGENERATION.get(), 12000, 0, false, true)));
 	public static final RegistryObject<Potion> POTION_OF_MANA_CAPACITY = REGISTRY.register("potion_of_mana_capacity",

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "umbreo_rpg:items/scroll_of_knowledge_texture"
+  }
+}

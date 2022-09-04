@@ -8,7 +8,7 @@
     "name": "Skorium Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:UmbreoTools"
     },
     "toolType": "Spade",
     "harvestLevel": 4,

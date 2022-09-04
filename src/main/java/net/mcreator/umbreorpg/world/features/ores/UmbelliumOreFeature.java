@@ -30,6 +30,7 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.mcreator.umbreorpg.procedures.UmbelliumOreAdditionalGenerationConditionProcedure;
 import net.mcreator.umbreorpg.init.UmbreoRpgModBlocks;
 
 import java.util.Set;
@@ -66,6 +67,11 @@ public class UmbelliumOreFeature extends OreFeature {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
 			return false;
+		int x = context.origin().getX();
+		int y = context.origin().getY();
+		int z = context.origin().getZ();
+		if (!UmbelliumOreAdditionalGenerationConditionProcedure.execute(world, x, y, z))
+			return false;
 		return super.place(context);
 	}
 
@@ -84,7 +90,7 @@ public class UmbelliumOreFeature extends OreFeature {
 
 		public boolean test(BlockState blockAt, Random random) {
 			if (base_blocks == null) {
-				base_blocks = List.of(Blocks.DEEPSLATE, Blocks.TUFF);
+				base_blocks = List.of(Blocks.DEEPSLATE);
 			}
 			return base_blocks.contains(blockAt.getBlock());
 		}

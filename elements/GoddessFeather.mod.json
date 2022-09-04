@@ -8,7 +8,7 @@
     "name": "Goddess Feather",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:UmbreoMisc"
     },
     "stackSize": 64,
     "enchantability": 0,

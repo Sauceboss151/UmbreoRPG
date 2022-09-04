@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.COMPARATOR"
+      },
+      {
+        "value": "CUSTOM:PureGoldIngot"
+      },
+      {
+        "value": "Items.COMPARATOR"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:GoddessFeather"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:ReinforcedIronIngot"
+      },
+      {
+        "value": "CUSTOM:ReinforcedIronIngot"
+      },
+      {
+        "value": "CUSTOM:ReinforcedIronIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:OreAttunementArtifact"
+    },
+    "name": "ore_attunement_artifact_recipe",
+    "namespace": "mod"
+  }
+}

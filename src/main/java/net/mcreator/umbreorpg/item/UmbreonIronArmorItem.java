@@ -8,7 +8,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
@@ -18,6 +17,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.umbreorpg.procedures.IronArmorEffectProcedureProcedure;
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 
 public abstract class UmbreonIronArmorItem extends ArmorItem {
 	public UmbreonIronArmorItem(EquipmentSlot slot, Item.Properties properties) {
@@ -66,7 +66,7 @@ public abstract class UmbreonIronArmorItem extends ArmorItem {
 
 	public static class Helmet extends UmbreonIronArmorItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT));
 		}
 
 		@Override
@@ -77,7 +77,7 @@ public abstract class UmbreonIronArmorItem extends ArmorItem {
 
 	public static class Chestplate extends UmbreonIronArmorItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT));
 		}
 
 		@Override
@@ -88,7 +88,7 @@ public abstract class UmbreonIronArmorItem extends ArmorItem {
 
 	public static class Leggings extends UmbreonIronArmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT));
 		}
 
 		@Override
@@ -99,7 +99,7 @@ public abstract class UmbreonIronArmorItem extends ArmorItem {
 
 	public static class Boots extends UmbreonIronArmorItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_COMBAT));
 		}
 
 		@Override

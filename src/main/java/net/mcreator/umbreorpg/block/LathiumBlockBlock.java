@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class LathiumBlockBlock extends Block {
 	public LathiumBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.GRAVEL).strength(5f, 6f).requiresCorrectToolForDrops().friction(0.89f));
+		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops().friction(0.89f));
 	}
 
 	@Override

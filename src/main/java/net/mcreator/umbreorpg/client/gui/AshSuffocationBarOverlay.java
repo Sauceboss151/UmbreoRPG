@@ -27,7 +27,6 @@ import net.mcreator.umbreorpg.procedures.Ash30DisplayProcedure;
 import net.mcreator.umbreorpg.procedures.Ash20DisplayProcedure;
 import net.mcreator.umbreorpg.procedures.Ash10DisplayProcedure;
 import net.mcreator.umbreorpg.procedures.Ash100DisplayProcedure;
-import net.mcreator.umbreorpg.network.UmbreoRpgModVariables;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
@@ -112,11 +111,6 @@ public class AshSuffocationBarOverlay {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/ash_damaging_bar_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + 10, posY + 61, 0, 0, 81, 9, 81, 9);
 				}
-				Minecraft.getInstance().font
-						.draw(event.getMatrixStack(),
-								"" + (int) ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgAshBuildUp) + "",
-								posX + -22, posY + -93, -16737793);
 			}
 			RenderSystem.depthMask(true);
 			RenderSystem.defaultBlendFunc();

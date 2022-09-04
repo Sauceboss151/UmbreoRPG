@@ -14,7 +14,7 @@
       "name": "UltriumArmorEffect"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "ultrium_armor_",
     "helmetName": "Ultrium Helmet",

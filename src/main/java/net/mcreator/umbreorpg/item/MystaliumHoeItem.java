@@ -6,8 +6,8 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.item.CreativeModeTab;
 
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
 import net.mcreator.umbreorpg.init.UmbreoRpgModItems;
 
 public class MystaliumHoeItem extends HoeItem {
@@ -36,6 +36,6 @@ public class MystaliumHoeItem extends HoeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(UmbreoRpgModItems.MYSTALIUM_INGOT.get()));
 			}
-		}, 0, 2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		}, 0, 2f, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_TOOLS));
 	}
 }

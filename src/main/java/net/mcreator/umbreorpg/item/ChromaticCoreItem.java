@@ -13,11 +13,13 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.mcreator.umbreorpg.network.UmbreoRpgModVariables;
 
+import net.mcreator.umbreorpg.init.UmbreoRpgModTabs;
+
 import java.util.List;
 
 public class ChromaticCoreItem extends Item {
 	public ChromaticCoreItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(100).fireResistant().rarity(Rarity.EPIC));
+		super(new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_ALCHEMY).durability(100).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override

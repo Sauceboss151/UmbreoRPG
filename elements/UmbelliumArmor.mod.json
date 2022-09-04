@@ -14,7 +14,7 @@
       "name": "UmbelliumEffectProcedure"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:UmbreoCombat"
     },
     "armorTextureFile": "umbellium_armor_",
     "helmetName": "Umbellium Helmet",

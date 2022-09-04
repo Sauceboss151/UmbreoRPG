@@ -8,7 +8,7 @@
     "name": "Cobium Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:UmbreoTools"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 3,
