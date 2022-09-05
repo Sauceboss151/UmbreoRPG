@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:UmbreonLeatherArmor.body"
     },
     "name": "leather_chestplate",
     "namespace": "minecraft"

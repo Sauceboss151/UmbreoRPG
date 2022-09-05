@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:UmbreonGoldArmor.helmet"
     },
     "name": "golden_helmet",
     "namespace": "minecraft"

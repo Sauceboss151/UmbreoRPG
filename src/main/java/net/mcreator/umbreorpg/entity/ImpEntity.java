@@ -16,15 +16,16 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.PanicGoal;
+import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
@@ -32,13 +33,19 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.umbreorpg.procedures.ImpSpawnConditionProcedureProcedure;
+import net.mcreator.umbreorpg.procedures.ImpPanicProcedureProcedure;
 import net.mcreator.umbreorpg.init.UmbreoRpgModEntities;
+
+import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class ImpEntity extends Monster {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("umbreo_rpg:ashlands"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(UmbreoRpgModEntities.IMP.get(), 20, 2, 5));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(UmbreoRpgModEntities.IMP.get(), 100, 2, 6));
 	}
 
 	public ImpEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -59,15 +66,21 @@ public class ImpEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1, false) {
+		this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, DemonEntity.class, (float) 12, 1.5, 1.2));
+		this.goalSelector.addGoal(2, new PanicGoal(this, 2) {
 			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+			public boolean canUse() {
+				double x = ImpEntity.this.getX();
+				double y = ImpEntity.this.getY();
+				double z = ImpEntity.this.getZ();
+				Entity entity = ImpEntity.this;
+				Level world = ImpEntity.this.level;
+				return super.canUse() && ImpPanicProcedureProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
 	}
 
 	@Override
@@ -82,7 +95,7 @@ public class ImpEntity extends Monster {
 
 	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.drowned.step")), 0.15f, 1);
+		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sand.step")), 0.15f, 1);
 	}
 
 	@Override
@@ -93,6 +106,13 @@ public class ImpEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.fox.death"));
+	}
+
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		if (source.isExplosion())
+			return false;
+		return super.hurt(source, amount);
 	}
 
 	public static void init() {
@@ -109,7 +129,7 @@ public class ImpEntity extends Monster {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.4);
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
-		builder = builder.add(Attributes.ARMOR, 0.5);
+		builder = builder.add(Attributes.ARMOR, 1);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 5);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;

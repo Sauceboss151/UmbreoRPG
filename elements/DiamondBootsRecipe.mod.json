@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:UmbreonDiamondArmor.boots"
     },
     "name": "diamond_boots",
     "namespace": "minecraft"

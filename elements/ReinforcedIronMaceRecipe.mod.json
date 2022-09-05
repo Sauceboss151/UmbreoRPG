@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Items.STICK"
+      "value": "CUSTOM:ReinforcedMace"
     },
     "name": "reinforced_iron_mace_recipe",
     "namespace": "mod"

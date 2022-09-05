@@ -4,24 +4,24 @@
   "definition": {
     "mobName": "Imp",
     "mobLabel": "",
-    "mobModelName": "ModelImp",
+    "mobModelName": "Modelimpmodel",
     "mobModelTexture": "imp_texture.png",
     "mobModelGlowTexture": "",
-    "modelWidth": 0.5,
+    "modelWidth": 0.7000000000000001,
     "modelHeight": 1.0,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -15066598,
+      "value": -10066330,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -7303024,
+      "value": -65536,
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:UmbreoMisc"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -50,7 +50,7 @@
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.4,
-    "armorBaseValue": 0.5,
+    "armorBaseValue": 1.0,
     "trackingRange": 64,
     "followRange": 16,
     "health": 10,
@@ -72,7 +72,7 @@
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
-    "immuneToExplosion": false,
+    "immuneToExplosion": true,
     "immuneToTrident": false,
     "immuneToAnvil": false,
     "immuneToWither": false,
@@ -90,18 +90,18 @@
       "value": "entity.fox.death"
     },
     "stepSound": {
-      "value": "entity.drowned.step"
+      "value": "block.sand.step"
     },
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:TwilightParticle"
+      "value": "CUSTOM:AstralLightParticle"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"avoid_entity\"><field name=\"entity\">CUSTOM:Demon</field><field name=\"radius\">12</field><field name=\"farspeed\">1.5</field><field name=\"nearspeed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">2</field><field name=\"condition\">ImpPanicProcedure,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -115,11 +115,15 @@
     "spawningCondition": {
       "name": "ImpSpawnConditionProcedure"
     },
-    "spawningProbability": 20,
+    "spawningProbability": 100,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 2,
-    "maxNumberOfMobsPerGroup": 5,
-    "restrictionBiomes": [],
+    "maxNumberOfMobsPerGroup": 6,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Ashlands"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

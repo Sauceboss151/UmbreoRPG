@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.umbreorpg.entity.ZoraliumBowEntity;
+import net.mcreator.umbreorpg.entity.VenomBeetleEntity;
 import net.mcreator.umbreorpg.entity.UmbelliumBowEntity;
 import net.mcreator.umbreorpg.entity.TreantEntity;
 import net.mcreator.umbreorpg.entity.SkoriumBowEntity;
@@ -25,7 +26,10 @@ import net.mcreator.umbreorpg.entity.NetheriteBowEntity;
 import net.mcreator.umbreorpg.entity.LathiumBowEntity;
 import net.mcreator.umbreorpg.entity.IronBowEntity;
 import net.mcreator.umbreorpg.entity.ImpEntity;
+import net.mcreator.umbreorpg.entity.FireflyEntity;
+import net.mcreator.umbreorpg.entity.DustmiteEntity;
 import net.mcreator.umbreorpg.entity.DiamondBowEntity;
+import net.mcreator.umbreorpg.entity.DemonEntity;
 import net.mcreator.umbreorpg.entity.CobiumBowEntity;
 import net.mcreator.umbreorpg.UmbreoRpgMod;
 
@@ -39,7 +43,7 @@ public class UmbreoRpgModEntities {
 					.sized(1f, 2f));
 	public static final RegistryObject<EntityType<ImpEntity>> IMP = register("imp",
 			EntityType.Builder.<ImpEntity>of(ImpEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(ImpEntity::new).fireImmune().sized(0.5f, 1f));
+					.setUpdateInterval(3).setCustomClientFactory(ImpEntity::new).fireImmune().sized(0.7000000000000001f, 1f));
 	public static final RegistryObject<EntityType<IronBowEntity>> IRON_BOW = register("projectile_iron_bow",
 			EntityType.Builder.<IronBowEntity>of(IronBowEntity::new, MobCategory.MISC).setCustomClientFactory(IronBowEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
@@ -68,6 +72,24 @@ public class UmbreoRpgModEntities {
 	public static final RegistryObject<EntityType<UmbelliumBowEntity>> UMBELLIUM_BOW = register("projectile_umbellium_bow",
 			EntityType.Builder.<UmbelliumBowEntity>of(UmbelliumBowEntity::new, MobCategory.MISC).setCustomClientFactory(UmbelliumBowEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DustmiteEntity>> DUSTMITE = register("dustmite",
+			EntityType.Builder.<DustmiteEntity>of(DustmiteEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(DustmiteEntity::new)
+
+					.sized(0.3f, 0.3f));
+	public static final RegistryObject<EntityType<FireflyEntity>> FIREFLY = register("firefly",
+			EntityType.Builder.<FireflyEntity>of(FireflyEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(FireflyEntity::new)
+
+					.sized(0.3f, 0.3f));
+	public static final RegistryObject<EntityType<VenomBeetleEntity>> VENOM_BEETLE = register("venom_beetle",
+			EntityType.Builder.<VenomBeetleEntity>of(VenomBeetleEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VenomBeetleEntity::new)
+
+					.sized(0.3f, 0.3f));
+	public static final RegistryObject<EntityType<DemonEntity>> DEMON = register("demon",
+			EntityType.Builder.<DemonEntity>of(DemonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(DemonEntity::new).fireImmune().sized(1.5f, 3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -78,6 +100,10 @@ public class UmbreoRpgModEntities {
 		event.enqueueWork(() -> {
 			TreantEntity.init();
 			ImpEntity.init();
+			DustmiteEntity.init();
+			FireflyEntity.init();
+			VenomBeetleEntity.init();
+			DemonEntity.init();
 		});
 	}
 
@@ -85,5 +111,9 @@ public class UmbreoRpgModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(TREANT.get(), TreantEntity.createAttributes().build());
 		event.put(IMP.get(), ImpEntity.createAttributes().build());
+		event.put(DUSTMITE.get(), DustmiteEntity.createAttributes().build());
+		event.put(FIREFLY.get(), FireflyEntity.createAttributes().build());
+		event.put(VENOM_BEETLE.get(), VenomBeetleEntity.createAttributes().build());
+		event.put(DEMON.get(), DemonEntity.createAttributes().build());
 	}
 }

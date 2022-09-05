@@ -1,7 +1,9 @@
 package net.mcreator.umbreorpg.procedures;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.TextComponent;
 
 import net.mcreator.umbreorpg.network.UmbreoRpgModVariables;
 
@@ -20,6 +22,8 @@ public class ScrollOfKnowledgeAddLevelProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(new TextComponent("Your Combat Skill has Increased"), (true));
 			}
 		} else if (itemstack.getOrCreateTag().getDouble("umbreoRpgScrollType") == 2) {
 			if (!((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -32,6 +36,8 @@ public class ScrollOfKnowledgeAddLevelProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(new TextComponent("Your Mining Skill has Increased"), (true));
 			}
 		} else if (itemstack.getOrCreateTag().getDouble("umbreoRpgScrollType") == 3) {
 			if (!((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -44,6 +50,8 @@ public class ScrollOfKnowledgeAddLevelProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(new TextComponent("Your Farming Skill has Increased"), (true));
 			}
 		} else if (itemstack.getOrCreateTag().getDouble("umbreoRpgScrollType") == 4) {
 			if (!((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -56,6 +64,8 @@ public class ScrollOfKnowledgeAddLevelProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(new TextComponent("Your Cooking Skill has Increased"), (true));
 			}
 		} else if (itemstack.getOrCreateTag().getDouble("umbreoRpgScrollType") == 5) {
 			if (!((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -68,6 +78,8 @@ public class ScrollOfKnowledgeAddLevelProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(new TextComponent("Your Alchemy Skill has Increased"), (true));
 			}
 		} else if (itemstack.getOrCreateTag().getDouble("umbreoRpgScrollType") == 6) {
 			if (!((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -80,6 +92,8 @@ public class ScrollOfKnowledgeAddLevelProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(new TextComponent("Your Smithing Skill has Increased"), (true));
 			}
 		} else if (itemstack.getOrCreateTag().getDouble("umbreoRpgScrollType") == 7) {
 			if (!((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -92,6 +106,8 @@ public class ScrollOfKnowledgeAddLevelProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(new TextComponent("Your Fletching Skill has Increased"), (true));
 			}
 		}
 		(itemstack).shrink(1);

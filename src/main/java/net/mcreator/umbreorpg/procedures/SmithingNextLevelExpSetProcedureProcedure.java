@@ -30,7 +30,7 @@ public class SmithingNextLevelExpSetProcedureProcedure {
 		if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgSmithingLevel == 0) {
 			{
-				double _setval = 25;
+				double _setval = 2;
 				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.umbreoRpgSmithingExpNextLevel = _setval;
 					capability.syncPlayerVariables(entity);
@@ -39,7 +39,7 @@ public class SmithingNextLevelExpSetProcedureProcedure {
 		} else if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgSmithingLevel == 1) {
 			{
-				double _setval = 75;
+				double _setval = 25;
 				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.umbreoRpgSmithingExpNextLevel = _setval;
 					capability.syncPlayerVariables(entity);
@@ -48,7 +48,7 @@ public class SmithingNextLevelExpSetProcedureProcedure {
 		} else if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgSmithingLevel == 2) {
 			{
-				double _setval = 160;
+				double _setval = 75;
 				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.umbreoRpgSmithingExpNextLevel = _setval;
 					capability.syncPlayerVariables(entity);
@@ -57,7 +57,7 @@ public class SmithingNextLevelExpSetProcedureProcedure {
 		} else if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgSmithingLevel == 3) {
 			{
-				double _setval = 280;
+				double _setval = 160;
 				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.umbreoRpgSmithingExpNextLevel = _setval;
 					capability.syncPlayerVariables(entity);
@@ -66,7 +66,7 @@ public class SmithingNextLevelExpSetProcedureProcedure {
 		} else if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgSmithingLevel == 4) {
 			{
-				double _setval = 425;
+				double _setval = 280;
 				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.umbreoRpgSmithingExpNextLevel = _setval;
 					capability.syncPlayerVariables(entity);
@@ -75,7 +75,7 @@ public class SmithingNextLevelExpSetProcedureProcedure {
 		} else if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgSmithingLevel == 5) {
 			{
-				double _setval = 675;
+				double _setval = 425;
 				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.umbreoRpgSmithingExpNextLevel = _setval;
 					capability.syncPlayerVariables(entity);
@@ -84,7 +84,7 @@ public class SmithingNextLevelExpSetProcedureProcedure {
 		} else if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgSmithingLevel == 6) {
 			{
-				double _setval = 850;
+				double _setval = 675;
 				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.umbreoRpgSmithingExpNextLevel = _setval;
 					capability.syncPlayerVariables(entity);
@@ -93,7 +93,7 @@ public class SmithingNextLevelExpSetProcedureProcedure {
 		} else if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgSmithingLevel == 7) {
 			{
-				double _setval = 1100;
+				double _setval = 850;
 				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.umbreoRpgSmithingExpNextLevel = _setval;
 					capability.syncPlayerVariables(entity);
@@ -102,7 +102,7 @@ public class SmithingNextLevelExpSetProcedureProcedure {
 		} else if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgSmithingLevel == 8) {
 			{
-				double _setval = 1750;
+				double _setval = 1100;
 				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.umbreoRpgSmithingExpNextLevel = _setval;
 					capability.syncPlayerVariables(entity);
@@ -111,7 +111,7 @@ public class SmithingNextLevelExpSetProcedureProcedure {
 		} else if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgSmithingLevel == 9) {
 			{
-				double _setval = 2500;
+				double _setval = 2000;
 				entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.umbreoRpgSmithingExpNextLevel = _setval;
 					capability.syncPlayerVariables(entity);

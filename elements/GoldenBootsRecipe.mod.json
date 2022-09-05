@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:UmbreonGoldArmor.boots"
     },
     "name": "golden_boots",
     "namespace": "minecraft"

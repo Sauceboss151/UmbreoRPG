@@ -12044,6 +12044,317 @@
         ]
       },
       "path": "~/Other"
+    },
+    {
+      "name": "AddArmorRecipesSmithingLevel",
+      "type": "procedure",
+      "sortid": 950,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_armor_recipes_smithing_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "NetheriteSwordRecipe",
+      "type": "recipe",
+      "sortid": 951,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_sword_recipe",
+      "path": "~/Tools/New Netherite Tools"
+    },
+    {
+      "name": "NetheritePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 952,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_pickaxe_recipe",
+      "path": "~/Tools/New Netherite Tools"
+    },
+    {
+      "name": "NetheriteAxeRecipe",
+      "type": "recipe",
+      "sortid": 953,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_axe_recipe",
+      "path": "~/Tools/New Netherite Tools"
+    },
+    {
+      "name": "NetheriteShovelRecipe",
+      "type": "recipe",
+      "sortid": 954,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_shovel_recipe",
+      "path": "~/Tools/New Netherite Tools"
+    },
+    {
+      "name": "NetheriteHoeRecipe",
+      "type": "recipe",
+      "sortid": 955,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_hoe_recipe",
+      "path": "~/Tools/New Netherite Tools"
+    },
+    {
+      "name": "AddCoinPouchesRecipes",
+      "type": "procedure",
+      "sortid": 956,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_coin_pouches_recipes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Banking and Currency/Gold Coin System"
+    },
+    {
+      "name": "CharredLogLootTable",
+      "type": "loottable",
+      "sortid": 957,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charred_log_loot_table",
+      "path": "~/Biome/Ashlands"
+    },
+    {
+      "name": "BugNetRecipe",
+      "type": "recipe",
+      "sortid": 958,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bug_net_recipe",
+      "path": "~/Bug Catching"
+    },
+    {
+      "name": "GiveBugNetRecipe",
+      "type": "procedure",
+      "sortid": 959,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_bug_net_recipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Bug Catching"
+    },
+    {
+      "name": "AddCookingTypeRecipes",
+      "type": "procedure",
+      "sortid": 960,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_cooking_type_recipes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cooking"
+    },
+    {
+      "name": "AlchemyCodexRecipe",
+      "type": "recipe",
+      "sortid": 961,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemy_codex_recipe",
+      "path": "~/Alchemy"
+    },
+    {
+      "name": "AddOreBlockRecipes",
+      "type": "procedure",
+      "sortid": 962,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_ore_block_recipes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ores"
+    },
+    {
+      "name": "Dustmite",
+      "type": "livingentity",
+      "sortid": 963,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dustmite",
+      "path": "~/Bug Catching/Dustmite"
+    },
+    {
+      "name": "Firefly",
+      "type": "livingentity",
+      "sortid": 964,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firefly",
+      "path": "~/Bug Catching/Firefly"
+    },
+    {
+      "name": "VenomBeetle",
+      "type": "livingentity",
+      "sortid": 965,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "venom_beetle",
+      "path": "~/Bug Catching/Venom Beetle"
+    },
+    {
+      "name": "BugCaughtProcedure",
+      "type": "procedure",
+      "sortid": 966,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bug_caught_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bug Catching"
+    },
+    {
+      "name": "ImpPanicProcedure",
+      "type": "procedure",
+      "sortid": 967,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imp_panic_procedure",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Imp"
+    },
+    {
+      "name": "DemonSpawnCondition",
+      "type": "procedure",
+      "sortid": 968,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_spawn_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Demon"
+    },
+    {
+      "name": "Demon",
+      "type": "livingentity",
+      "sortid": 968,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon",
+      "path": "~/Mobs/Demon"
+    },
+    {
+      "name": "DemonRoarCondition",
+      "type": "procedure",
+      "sortid": 969,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_roar_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Demon"
     }
   ],
   "variable_elements": [
@@ -12499,6 +12810,7 @@
       "block.umbreo_rpg.banking_counter": "Banking Counter",
       "biome.umbreo_rpg.fate_biome": "Fate Biome",
       "item.umbreo_rpg.osnium_sword": "Osnium Sword",
+      "entity.umbreo_rpg.venom_beetle": "Venom Beetle",
       "item.umbreo_rpg.ultrium_mace": "Ultrium Mace",
       "block.umbreo_rpg.boreal_sweet_potato_stage_1": "Boreal Sweet Potatoes Stage 1",
       "item.umbreo_rpg.vulcor_shovel": "Vulcor Shovel",
@@ -12525,6 +12837,7 @@
       "item.umbreo_rpg.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
       "item.umbreo_rpg.zoralium_armor_chestplate": "Zoralium Chestplate",
       "item.umbreo_rpg.skorium_sword": "Skorium Sword",
+      "item.umbreo_rpg.firefly_spawn_egg": "Firefly Spawn Egg",
       "item.umbreo_rpg.umbellium_armor_leggings": "Umbellium Leggings",
       "item.umbreo_rpg.zoralium_ingot": "Zoralium Ingot",
       "item.umbreo_rpg.rod_of_daylight": "Rod Of Daylight",
@@ -12556,8 +12869,8 @@
       "item.umbreo_rpg.ultrium_armor_leggings": "Ultrium Leggings",
       "item.minecraft.tipped_arrow.effect.potion_of_ash_protection": "Arrow Of Ash Protection",
       "item.umbreo_rpg.blast_core": "Blast Core",
-      "item.umbreo_rpg.vulcor_crystal": "Vulcor Crystal",
       "item.minecraft.potion.effect.potion_of_mana_regeneration": "Potion Of Mana Regeneration",
+      "item.umbreo_rpg.vulcor_crystal": "Vulcor Crystal",
       "item.umbreo_rpg.lathium_armor_chestplate": "Lathium Chestplate",
       "item.umbreo_rpg.skorium_ingot": "Skorium Ingot",
       "item.umbreo_rpg.vulcor_armor_chestplate": "Vulcor Chestplate",
@@ -12617,6 +12930,7 @@
       "block.umbreo_rpg.cobium_block": "Cobium Block",
       "item.umbreo_rpg.large_coin_pouch": "Large Coin Pouch",
       "item.umbreo_rpg.boreal_sweet_potato": "Boreal Sweet Potato",
+      "entity.umbreo_rpg.dustmite": "Dustmite",
       "item.umbreo_rpg.rod_of_rain": "Rod Of Rain",
       "item.umbreo_rpg.umbellium_hoe": "Umbellium Hoe",
       "item.umbreo_rpg.shepards_pie": "Shepards Pie",
@@ -12706,6 +13020,7 @@
       "item.umbreo_rpg.unactivated_rod_of_rain": "Unactivated Rod Of Rain",
       "item.umbreo_rpg.rice_plant_seeds": "Rice Plant Seeds",
       "block.umbreo_rpg.cooking_range": "Cooking Range",
+      "entity.umbreo_rpg.firefly": "Firefly",
       "item.umbreo_rpg.reinforced_iron_axe": "Reinforced Iron Axe",
       "effect.umbreo_rpg.knowledge_effect": "Knowledge",
       "block.umbreo_rpg.vulcor_block": "Vulcor Block",
@@ -12778,8 +13093,10 @@
       "item.umbreo_rpg.reinforced_iron_shovel": "Reinforced Iron Shovel",
       "item.umbreo_rpg.vorashian_stuffed_rabbit": "Vorashian Stuffed Rabbit",
       "item.umbreo_rpg.umbellium_bow": "Umbellium Bow",
+      "item.umbreo_rpg.demon_spawn_egg": "Demon Spawn Egg",
       "item.umbreo_rpg.pure_gold_ingot": "Pure Gold Ingot",
       "item.umbreo_rpg.gold_battleaxe": "Gold Battleaxe",
+      "item.umbreo_rpg.venom_beetle_spawn_egg": "Venom Beetle Spawn Egg",
       "item.minecraft.splash_potion.effect.potion_of_mana_capacity": "Splash Potion Of Mana Capacity",
       "item.umbreo_rpg.cook_book": "Cook Book",
       "item.umbreo_rpg.raw_umbellium_ore": "Raw Umbellium Ore",
@@ -12808,6 +13125,7 @@
       "item.umbreo_rpg.cooked_carrots": "Cooked Carrots",
       "item.umbreo_rpg.raw_mystalium_ore": "Raw Mystalium Ore",
       "block.umbreo_rpg.garlic_stage_5": "Garlic Stage 5",
+      "item.umbreo_rpg.dustmite_spawn_egg": "Dustmite Spawn Egg",
       "block.umbreo_rpg.garlic_stage_2": "Garlic Stage 2",
       "item.umbreo_rpg.chromatic_core": "Chromatic Core",
       "block.umbreo_rpg.alchemy_table": "Alchemy Table",
@@ -12841,6 +13159,7 @@
       "item.umbreo_rpg.bug_net": "Bug Net",
       "item.umbreo_rpg.zoralium_sword": "Zoralium Sword",
       "item.umbreo_rpg.treant_spawn_egg": "Treant Spawn Egg",
+      "entity.umbreo_rpg.demon": "Demon",
       "block.umbreo_rpg.ash_block": "Ash Block",
       "item.umbreo_rpg.treant_root": "Treant Root",
       "item.umbreo_rpg.umbreon_leather_armor_boots": "Leather Boots",
@@ -12887,10 +13206,6 @@
             "children": []
           },
           {
-            "name": "Aetherial Angel",
-            "children": []
-          },
-          {
             "name": "Netherian Hydra",
             "children": []
           },
@@ -12900,6 +13215,10 @@
           },
           {
             "name": "Mana Golem",
+            "children": []
+          },
+          {
+            "name": "Aetherial Angel",
             "children": []
           }
         ]

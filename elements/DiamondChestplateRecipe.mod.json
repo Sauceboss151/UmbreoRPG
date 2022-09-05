@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:UmbreonDiamondArmor.body"
     },
     "name": "diamond_chestplate",
     "namespace": "minecraft"

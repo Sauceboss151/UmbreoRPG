@@ -277,7 +277,7 @@ public class UmbreoRpgModItems {
 	public static final RegistryObject<Item> TREANT = REGISTRY.register("treant_spawn_egg",
 			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.TREANT, -9810159, -13531813, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> IMP = REGISTRY.register("imp_spawn_egg",
-			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.IMP, -15066598, -7303024, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.IMP, -10066330, -65536, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
 	public static final RegistryObject<Item> CHROMATIC_CORE = REGISTRY.register("chromatic_core", () -> new ChromaticCoreItem());
 	public static final RegistryObject<Item> SPARKLING_FLUID = REGISTRY.register("sparkling_fluid", () -> new SparklingFluidItem());
 	public static final RegistryObject<Item> SMALL_COIN_POUCH = REGISTRY.register("small_coin_pouch", () -> new SmallCoinPouchItem());
@@ -697,6 +697,16 @@ public class UmbreoRpgModItems {
 	public static final RegistryObject<Item> RANDOM_ALLIANCE_BLOCK = block(UmbreoRpgModBlocks.RANDOM_ALLIANCE_BLOCK, null);
 	public static final RegistryObject<Item> GATES_OF_FATES_PORTAL_BLOCK = block(UmbreoRpgModBlocks.GATES_OF_FATES_PORTAL_BLOCK, null);
 	public static final RegistryObject<Item> PLACE_HOLDER_ITEM = REGISTRY.register("place_holder_item", () -> new PlaceHolderItemItem());
+	public static final RegistryObject<Item> DUSTMITE = REGISTRY.register("dustmite_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.DUSTMITE, -13027015, -9079435,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> FIREFLY = REGISTRY.register("firefly_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.FIREFLY, -16777216, -256, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> VENOM_BEETLE = REGISTRY.register("venom_beetle_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.VENOM_BEETLE, -14713059, -14284227,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> DEMON = REGISTRY.register("demon_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.DEMON, -16777216, -13421773, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

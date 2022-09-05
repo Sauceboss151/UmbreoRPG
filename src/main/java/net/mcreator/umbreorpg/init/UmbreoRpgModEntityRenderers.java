@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.umbreorpg.client.renderer.ZoraliumBowRenderer;
+import net.mcreator.umbreorpg.client.renderer.VenomBeetleRenderer;
 import net.mcreator.umbreorpg.client.renderer.UmbelliumBowRenderer;
 import net.mcreator.umbreorpg.client.renderer.TreantRenderer;
 import net.mcreator.umbreorpg.client.renderer.SkoriumBowRenderer;
@@ -18,7 +19,10 @@ import net.mcreator.umbreorpg.client.renderer.NetheriteBowRenderer;
 import net.mcreator.umbreorpg.client.renderer.LathiumBowRenderer;
 import net.mcreator.umbreorpg.client.renderer.IronBowRenderer;
 import net.mcreator.umbreorpg.client.renderer.ImpRenderer;
+import net.mcreator.umbreorpg.client.renderer.FireflyRenderer;
+import net.mcreator.umbreorpg.client.renderer.DustmiteRenderer;
 import net.mcreator.umbreorpg.client.renderer.DiamondBowRenderer;
+import net.mcreator.umbreorpg.client.renderer.DemonRenderer;
 import net.mcreator.umbreorpg.client.renderer.CobiumBowRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -36,5 +40,9 @@ public class UmbreoRpgModEntityRenderers {
 		event.registerEntityRenderer(UmbreoRpgModEntities.SKORIUM_BOW.get(), SkoriumBowRenderer::new);
 		event.registerEntityRenderer(UmbreoRpgModEntities.NETHERITE_BOW.get(), NetheriteBowRenderer::new);
 		event.registerEntityRenderer(UmbreoRpgModEntities.UMBELLIUM_BOW.get(), UmbelliumBowRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.DUSTMITE.get(), DustmiteRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.FIREFLY.get(), FireflyRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.VENOM_BEETLE.get(), VenomBeetleRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.DEMON.get(), DemonRenderer::new);
 	}
 }

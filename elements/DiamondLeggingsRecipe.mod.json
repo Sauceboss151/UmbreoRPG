@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:UmbreonDiamondArmor.legs"
     },
     "name": "diamond_leggings",
     "namespace": "minecraft"

@@ -44,10 +44,10 @@
     },
     "destroyTool": "axe",
     "customDrop": {
-      "value": "Items.COAL#1"
+      "value": ""
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,

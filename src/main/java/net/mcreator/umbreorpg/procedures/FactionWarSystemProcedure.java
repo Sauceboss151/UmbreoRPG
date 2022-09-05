@@ -33,9 +33,9 @@ public class FactionWarSystemProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world) {
-		if (world.dayTime() == 0) {
+		if (world.dayTime() >= 0 && world.dayTime() <= 20) {
 			if (UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgUmbreoWarBoreal == false) {
-				if (Mth.nextInt(new Random(), 1, 100) == 50) {
+				if (Mth.nextInt(new Random(), 1, 500) == 50) {
 					UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgUmbreoWarBoreal = true;
 					UmbreoRpgModVariables.WorldVariables.get(world).syncData(world);
 					if (!world.isClientSide()) {
@@ -46,7 +46,7 @@ public class FactionWarSystemProcedure {
 					}
 				}
 			} else if (UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgUmbreoWarBoreal == true) {
-				if (Mth.nextInt(new Random(), 1, 100) == 50) {
+				if (Mth.nextInt(new Random(), 1, 500) == 50) {
 					UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgUmbreoWarBoreal = false;
 					UmbreoRpgModVariables.WorldVariables.get(world).syncData(world);
 					if (!world.isClientSide()) {
@@ -58,7 +58,7 @@ public class FactionWarSystemProcedure {
 				}
 			}
 			if (UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgUmbreoWarVorash == false) {
-				if (Mth.nextInt(new Random(), 1, 100) == 50) {
+				if (Mth.nextInt(new Random(), 1, 500) == 50) {
 					UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgUmbreoWarVorash = true;
 					UmbreoRpgModVariables.WorldVariables.get(world).syncData(world);
 					if (!world.isClientSide()) {
@@ -69,7 +69,7 @@ public class FactionWarSystemProcedure {
 					}
 				}
 			} else if (UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgUmbreoWarVorash == true) {
-				if (Mth.nextInt(new Random(), 1, 100) == 50) {
+				if (Mth.nextInt(new Random(), 1, 500) == 50) {
 					UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgUmbreoWarVorash = false;
 					UmbreoRpgModVariables.WorldVariables.get(world).syncData(world);
 					if (!world.isClientSide()) {
@@ -81,7 +81,7 @@ public class FactionWarSystemProcedure {
 				}
 			}
 			if (UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgBorealWarVorash == false) {
-				if (Mth.nextInt(new Random(), 1, 100) == 50) {
+				if (Mth.nextInt(new Random(), 1, 500) == 50) {
 					UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgBorealWarVorash = true;
 					UmbreoRpgModVariables.WorldVariables.get(world).syncData(world);
 					if (!world.isClientSide()) {
@@ -92,7 +92,7 @@ public class FactionWarSystemProcedure {
 					}
 				}
 			} else if (UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgBorealWarVorash == true) {
-				if (Mth.nextInt(new Random(), 1, 100) == 50) {
+				if (Mth.nextInt(new Random(), 1, 500) == 50) {
 					UmbreoRpgModVariables.WorldVariables.get(world).umbreoRpgBorealWarVorash = false;
 					UmbreoRpgModVariables.WorldVariables.get(world).syncData(world);
 					if (!world.isClientSide()) {
@@ -102,6 +102,11 @@ public class FactionWarSystemProcedure {
 									ChatType.SYSTEM, Util.NIL_UUID);
 					}
 				}
+			}
+			if (!world.isClientSide()) {
+				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
+				if (_mcserv != null)
+					_mcserv.getPlayerList().broadcastMessage(new TextComponent("This Procedure has Ran"), ChatType.SYSTEM, Util.NIL_UUID);
 			}
 		}
 	}

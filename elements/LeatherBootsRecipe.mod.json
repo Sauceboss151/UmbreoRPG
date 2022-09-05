@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:UmbreonLeatherArmor.boots"
     },
     "name": "leather_boots",
     "namespace": "minecraft"
