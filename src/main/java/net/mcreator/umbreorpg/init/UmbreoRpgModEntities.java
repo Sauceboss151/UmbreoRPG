@@ -42,7 +42,7 @@ public class UmbreoRpgModEntities {
 
 					.sized(1f, 2f));
 	public static final RegistryObject<EntityType<ImpEntity>> IMP = register("imp",
-			EntityType.Builder.<ImpEntity>of(ImpEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			EntityType.Builder.<ImpEntity>of(ImpEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(ImpEntity::new).fireImmune().sized(0.7000000000000001f, 1f));
 	public static final RegistryObject<EntityType<IronBowEntity>> IRON_BOW = register("projectile_iron_bow",
 			EntityType.Builder.<IronBowEntity>of(IronBowEntity::new, MobCategory.MISC).setCustomClientFactory(IronBowEntity::new)
@@ -88,7 +88,7 @@ public class UmbreoRpgModEntities {
 
 					.sized(0.3f, 0.3f));
 	public static final RegistryObject<EntityType<DemonEntity>> DEMON = register("demon",
-			EntityType.Builder.<DemonEntity>of(DemonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			EntityType.Builder.<DemonEntity>of(DemonEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(DemonEntity::new).fireImmune().sized(1.5f, 3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
