@@ -1,8 +1,6 @@
 
 package net.mcreator.umbreorpg.world.biome;
 
-import net.minecraftforge.common.BiomeDictionary;
-
 import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
@@ -22,22 +20,18 @@ import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.AmbientParticleSettings;
 import net.minecraft.util.valueproviders.ConstantInt;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
-import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.Registry;
 
 import net.mcreator.umbreorpg.init.UmbreoRpgModBlocks;
-import net.mcreator.umbreorpg.init.UmbreoRpgModBiomes;
 
 import java.util.List;
 
 public class AshlandsBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.285714285714f, 1.714285714286f),
-			Climate.Parameter.span(-1.714285714286f, -0.285714285714f), Climate.Parameter.span(-0.154285714286f, 1.274285714286f),
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.219047619048f, 1.64761904762f),
+			Climate.Parameter.span(-1.514285714286f, -0.085714285714f), Climate.Parameter.span(-0.154285714286f, 1.274285714286f),
 			Climate.Parameter.span(-1.0142857142859998f, 0.4142857142860002f), Climate.Parameter.point(0),
 			Climate.Parameter.span(-1.038105590011f, 0.390465838561f), 0);
 
@@ -60,12 +54,8 @@ public class AshlandsBiome {
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addFossilDecoration(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.DESERT).temperature(2f).downfall(0f)
-				.specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
-	}
-
-	public static void init() {
-		BiomeDictionary.addTypes(ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(UmbreoRpgModBiomes.ASHLANDS.get())),
-				BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.WASTELAND);
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NONE).temperature(1.9f)
+				.downfall(0.1f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
+				.build();
 	}
 }

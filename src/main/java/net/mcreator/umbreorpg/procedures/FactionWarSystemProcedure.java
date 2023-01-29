@@ -103,11 +103,6 @@ public class FactionWarSystemProcedure {
 					}
 				}
 			}
-			if (!world.isClientSide()) {
-				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (_mcserv != null)
-					_mcserv.getPlayerList().broadcastMessage(new TextComponent("This Procedure has Ran"), ChatType.SYSTEM, Util.NIL_UUID);
-			}
 		}
 	}
 }

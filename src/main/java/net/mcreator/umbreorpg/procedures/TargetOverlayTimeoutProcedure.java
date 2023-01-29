@@ -66,7 +66,7 @@ public class TargetOverlayTimeoutProcedure {
 				});
 			}
 			if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgOverlayTimeout >= 100) {
+					.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgOverlayTimeout >= 75) {
 				UmbreoRpgModVariables.MapVariables.get(world).umbreoRpgTargetOverlayDisplayStat = false;
 				UmbreoRpgModVariables.MapVariables.get(world).syncData(world);
 				{

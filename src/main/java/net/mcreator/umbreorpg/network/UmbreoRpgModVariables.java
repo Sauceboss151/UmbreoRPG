@@ -216,6 +216,7 @@ public class UmbreoRpgModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "umbreo_rpg_mapvars";
 		public boolean umbreoRpgTargetOverlayDisplayStat = false;
+		public boolean umbreoRpgOverlayOn = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -225,11 +226,13 @@ public class UmbreoRpgModVariables {
 
 		public void read(CompoundTag nbt) {
 			umbreoRpgTargetOverlayDisplayStat = nbt.getBoolean("umbreoRpgTargetOverlayDisplayStat");
+			umbreoRpgOverlayOn = nbt.getBoolean("umbreoRpgOverlayOn");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("umbreoRpgTargetOverlayDisplayStat", umbreoRpgTargetOverlayDisplayStat);
+			nbt.putBoolean("umbreoRpgOverlayOn", umbreoRpgOverlayOn);
 			return nbt;
 		}
 

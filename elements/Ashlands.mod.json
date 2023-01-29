@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 34,
   "_type": "biome",
   "definition": {
     "name": "Ashlands",
@@ -42,20 +42,14 @@
       "value": "ASH"
     },
     "particlesProbability": 1.0,
-    "biomeCategory": "DESERT",
-    "rainingPossibility": 0.0,
-    "temperature": 2.0,
+    "rainingPossibility": 0.1,
+    "temperature": 1.9,
     "baseHeight": 0.6,
     "heightVariation": 1.2999999999999998,
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
     "biomeWeight": 50,
-    "biomeDictionaryTypes": [
-      "HOT",
-      "DRY",
-      "WASTELAND"
-    ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

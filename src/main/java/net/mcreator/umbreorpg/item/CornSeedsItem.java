@@ -23,9 +23,9 @@ public class CornSeedsItem extends Item {
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
-		InteractionResult retval = super.useOn(context);
+		super.useOn(context);
 		PlantCornSeedsProcedureProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
 				context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
-		return retval;
+		return InteractionResult.SUCCESS;
 	}
 }

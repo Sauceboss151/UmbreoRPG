@@ -87,8 +87,7 @@ public class GatesOfFatesFirstSpawnInProcedure {
 							ServerLevel nextLevel = _player.server.getLevel(destinationType);
 							if (nextLevel != null) {
 								_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-								_player.teleportTo(nextLevel, nextLevel.getSharedSpawnPos().getX(), nextLevel.getSharedSpawnPos().getY() + 1,
-										nextLevel.getSharedSpawnPos().getZ(), _player.getYRot(), _player.getXRot());
+								_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
 								_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
 								for (MobEffectInstance _effectinstance : _player.getActiveEffects())
 									_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
@@ -97,9 +96,9 @@ public class GatesOfFatesFirstSpawnInProcedure {
 						}
 						{
 							Entity _ent = entity;
-							_ent.teleportTo(1, 52, 7);
+							_ent.teleportTo(1, 51, 7);
 							if (_ent instanceof ServerPlayer _serverPlayer)
-								_serverPlayer.connection.teleport(1, 52, 7, _ent.getYRot(), _ent.getXRot());
+								_serverPlayer.connection.teleport(1, 51, 7, _ent.getYRot(), _ent.getXRot());
 						}
 						{
 							Entity _ent = entity;
@@ -116,6 +115,8 @@ public class GatesOfFatesFirstSpawnInProcedure {
 						}
 						if (entity instanceof Player _player && !_player.level.isClientSide())
 							_player.displayClientMessage(new TextComponent("Right Click an Artifact to Choose Your Fate"), (false));
+						if (entity instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(new TextComponent("Right Click the Cross Block to Teleport to the Overworld "), (false));
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}

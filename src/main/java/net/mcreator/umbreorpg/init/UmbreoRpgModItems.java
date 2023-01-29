@@ -707,6 +707,43 @@ public class UmbreoRpgModItems {
 					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
 	public static final RegistryObject<Item> DEMON = REGISTRY.register("demon_spawn_egg",
 			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.DEMON, -16777216, -13421773, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> STONE_GOLEM = REGISTRY.register("stone_golem_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.STONE_GOLEM, -6710887, -103,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> MANA_GOLEM = REGISTRY.register("mana_golem_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.MANA_GOLEM, -16777012, -10066177,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> MOSSY_GOLEM = REGISTRY.register("mossy_golem_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.MOSSY_GOLEM, -14203375, -9408400,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> FROST_GOLEM = REGISTRY.register("frost_golem_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.FROST_GOLEM, -16711698, -4982026,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> TWILIGHT_GOLEM = REGISTRY.register("twilight_golem_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.TWILIGHT_GOLEM, -13762240, -9632083,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> BLAST_GOLEM = REGISTRY.register("blast_golem_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.BLAST_GOLEM, -48384, -65536,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> BANDIT_BLACK = REGISTRY.register("bandit_black_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.BANDIT_BLACK, -6724096, -16777216,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> BANDIT_BROWN = REGISTRY.register("bandit_brown_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.BANDIT_BROWN, -6724096, -3368704,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> BANDIT_BLONDE = REGISTRY.register("bandit_blonde_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.BANDIT_BLONDE, -6724096, -256,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> BANDIT_LEADER = REGISTRY.register("bandit_leader_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.BANDIT_LEADER, -6710887, -16777216,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> BANKER = REGISTRY.register("banker_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.BANKER, -13312, -13261, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> BAKER = REGISTRY.register("baker_spawn_egg", () -> new ForgeSpawnEggItem(UmbreoRpgModEntities.BAKER,
+			-3355648, -10079488, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> SHOPKEEPER = REGISTRY.register("shopkeeper_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.SHOPKEEPER, -10079488, -8897787,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

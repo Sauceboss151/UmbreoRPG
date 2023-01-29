@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 34,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -13,8 +13,8 @@
             "name": "DisplayTargetInfo"
           },
           "name": "target_overlay_box_texture.png",
-          "x": 0,
-          "y": 0
+          "x": 163,
+          "y": 1
         }
       },
       {
@@ -29,8 +29,8 @@
             "name": "DisplayTargetInfo"
           },
           "name": "<VAR:integer:umbreoRpgTargetOverlayHealth>/<VAR:integer:umbreoRpgTargetOverlayMaxHealth>",
-          "x": 5,
-          "y": 16
+          "x": 168,
+          "y": 17
         }
       },
       {
@@ -45,8 +45,8 @@
             "name": "DisplayTargetInfo"
           },
           "name": "<VAR:umbreoRpgTargetOverlayName>",
-          "x": 5,
-          "y": 5
+          "x": 168,
+          "y": 6
         }
       }
     ],

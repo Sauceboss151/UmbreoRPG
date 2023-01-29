@@ -17,6 +17,7 @@ import net.mcreator.umbreorpg.client.model.Modelskorium_armor_model;
 import net.mcreator.umbreorpg.client.model.Modelreinforced_iron_armor_layer_1;
 import net.mcreator.umbreorpg.client.model.Modelosnium_armor_model;
 import net.mcreator.umbreorpg.client.model.Modelnetherite_armor_layer_1;
+import net.mcreator.umbreorpg.client.model.Modelmodelgolem;
 import net.mcreator.umbreorpg.client.model.Modelimpmodel;
 import net.mcreator.umbreorpg.client.model.Modelfirefly;
 import net.mcreator.umbreorpg.client.model.Modeldustmite;
@@ -36,6 +37,7 @@ public class UmbreoRpgModModels {
 		event.registerLayerDefinition(Modeldulium_armor_mode.LAYER_LOCATION, Modeldulium_armor_mode::createBodyLayer);
 		event.registerLayerDefinition(Modelumbreorpg_arrow.LAYER_LOCATION, Modelumbreorpg_arrow::createBodyLayer);
 		event.registerLayerDefinition(Modelskorium_armor_model.LAYER_LOCATION, Modelskorium_armor_model::createBodyLayer);
+		event.registerLayerDefinition(Modelmodelgolem.LAYER_LOCATION, Modelmodelgolem::createBodyLayer);
 		event.registerLayerDefinition(Modelcobium_armor_model.LAYER_LOCATION, Modelcobium_armor_model::createBodyLayer);
 		event.registerLayerDefinition(Modeldustmite.LAYER_LOCATION, Modeldustmite::createBodyLayer);
 		event.registerLayerDefinition(Modelosnium_armor_model.LAYER_LOCATION, Modelosnium_armor_model::createBodyLayer);

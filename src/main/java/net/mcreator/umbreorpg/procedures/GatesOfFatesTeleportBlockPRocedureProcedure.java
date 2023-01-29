@@ -55,6 +55,13 @@ public class GatesOfFatesTeleportBlockPRocedureProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				{
+					Entity _ent = entity;
+					_ent.teleportTo((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn()));
+					if (_ent instanceof ServerPlayer _serverPlayer)
+						_serverPlayer.connection.teleport((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()),
+								(world.getLevelData().getZSpawn()), _ent.getYRot(), _ent.getXRot());
+				}
 				if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
 					ResourceKey<Level> destinationType = Level.OVERWORLD;
 					if (_player.level.dimension() == destinationType)
@@ -62,8 +69,7 @@ public class GatesOfFatesTeleportBlockPRocedureProcedure {
 					ServerLevel nextLevel = _player.server.getLevel(destinationType);
 					if (nextLevel != null) {
 						_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-						_player.teleportTo(nextLevel, nextLevel.getSharedSpawnPos().getX(), nextLevel.getSharedSpawnPos().getY() + 1,
-								nextLevel.getSharedSpawnPos().getZ(), _player.getYRot(), _player.getXRot());
+						_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
 						_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
 						for (MobEffectInstance _effectinstance : _player.getActiveEffects())
 							_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));

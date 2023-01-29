@@ -23,9 +23,9 @@ public class GarlicSeedsItem extends Item {
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
-		InteractionResult retval = super.useOn(context);
+		super.useOn(context);
 		GarlicSeedsPlantProcedureProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
 				context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
-		return retval;
+		return InteractionResult.SUCCESS;
 	}
 }

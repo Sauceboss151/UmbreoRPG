@@ -56,7 +56,7 @@ public class TargetHealthOverlayOverlay {
 			if (DisplayEnemyOvelayProcedureProcedure.execute(world)) {
 				if (DisplayTargetInfoProcedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/target_overlay_box_texture.png"));
-					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -213, posY + -120, 0, 0, 100, 30, 100, 30);
+					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -50, posY + -119, 0, 0, 100, 30, 100, 30);
 				}
 				if (DisplayTargetInfoProcedure.execute(entity))
 					Minecraft.getInstance().font.draw(event.getMatrixStack(),
@@ -65,12 +65,12 @@ public class TargetHealthOverlayOverlay {
 									+ (int) ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 											.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgTargetOverlayMaxHealth)
 									+ "",
-							posX + -208, posY + -104, -12829636);
+							posX + -45, posY + -103, -12829636);
 				if (DisplayTargetInfoProcedure.execute(entity))
 					Minecraft.getInstance().font.draw(event.getMatrixStack(),
 							"" + ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 									.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgTargetOverlayName) + "",
-							posX + -208, posY + -115, -12829636);
+							posX + -45, posY + -114, -12829636);
 			}
 			RenderSystem.depthMask(true);
 			RenderSystem.defaultBlendFunc();
