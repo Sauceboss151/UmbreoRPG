@@ -41,6 +41,7 @@
     "blocks": [],
     "functions": [],
     "entities": [],
+    "biomes": [],
     "name": "smithing_tier_4_tag",
     "namespace": "forge"
   }

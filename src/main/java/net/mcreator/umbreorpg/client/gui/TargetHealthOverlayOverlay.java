@@ -15,7 +15,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.umbreorpg.procedures.DisplayTargetInfoProcedure;
 import net.mcreator.umbreorpg.procedures.DisplayEnemyOvelayProcedureProcedure;
 import net.mcreator.umbreorpg.network.UmbreoRpgModVariables;
 
@@ -54,11 +53,11 @@ public class TargetHealthOverlayOverlay {
 					GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 			RenderSystem.setShaderColor(1, 1, 1, 1);
 			if (DisplayEnemyOvelayProcedureProcedure.execute(world)) {
-				if (DisplayTargetInfoProcedure.execute(entity)) {
+				if (DisplayEnemyOvelayProcedureProcedure.execute(world)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("umbreo_rpg:textures/screens/target_overlay_box_texture.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -50, posY + -119, 0, 0, 100, 30, 100, 30);
 				}
-				if (DisplayTargetInfoProcedure.execute(entity))
+				if (DisplayEnemyOvelayProcedureProcedure.execute(world))
 					Minecraft.getInstance().font.draw(event.getMatrixStack(),
 							"" + (int) ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 									.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgTargetOverlayHealth) + "/"
@@ -66,7 +65,7 @@ public class TargetHealthOverlayOverlay {
 											.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgTargetOverlayMaxHealth)
 									+ "",
 							posX + -45, posY + -103, -12829636);
-				if (DisplayTargetInfoProcedure.execute(entity))
+				if (DisplayEnemyOvelayProcedureProcedure.execute(world))
 					Minecraft.getInstance().font.draw(event.getMatrixStack(),
 							"" + ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 									.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgTargetOverlayName) + "",

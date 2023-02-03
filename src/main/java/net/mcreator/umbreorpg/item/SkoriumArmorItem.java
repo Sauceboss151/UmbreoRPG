@@ -35,7 +35,7 @@ public abstract class SkoriumArmorItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 37;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 33;
 			}
 
 			@Override
@@ -45,7 +45,7 @@ public abstract class SkoriumArmorItem extends ArmorItem {
 
 			@Override
 			public int getEnchantmentValue() {
-				return 15;
+				return 10;
 			}
 
 			@Override
@@ -65,7 +65,7 @@ public abstract class SkoriumArmorItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0f;
+				return 2f;
 			}
 
 			@Override

@@ -147,11 +147,45 @@
       },
       {
         "value": "CUSTOM:CobiumMace"
+      },
+      {
+        "value": "CUSTOM:SkoriumArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:SkoriumArmor.body"
+      },
+      {
+        "value": "CUSTOM:SkoriumArmor.legs"
+      },
+      {
+        "value": "CUSTOM:SkoriumArmor.boots"
+      },
+      {
+        "value": "CUSTOM:SkoriumSword"
+      },
+      {
+        "value": "CUSTOM:SkoriumPickaxe"
+      },
+      {
+        "value": "CUSTOM:SkoriumAxe"
+      },
+      {
+        "value": "CUSTOM:SkoriumShovel"
+      },
+      {
+        "value": "CUSTOM:SkoriumHoe"
+      },
+      {
+        "value": "CUSTOM:SkoriumBattleaxe"
+      },
+      {
+        "value": "CUSTOM:SkoriumMace"
       }
     ],
     "blocks": [],
     "functions": [],
     "entities": [],
+    "biomes": [],
     "name": "smithing_tier_2_tag",
     "namespace": "forge"
   }

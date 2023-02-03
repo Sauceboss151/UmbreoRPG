@@ -10,9 +10,15 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.umbreorpg.client.renderer.ZoraliumBowRenderer;
+import net.mcreator.umbreorpg.client.renderer.VorashMaleCitizenRenderer;
+import net.mcreator.umbreorpg.client.renderer.VorashFemaleCitizenRenderer;
 import net.mcreator.umbreorpg.client.renderer.VenomBeetleRenderer;
+import net.mcreator.umbreorpg.client.renderer.UmbreoMaleCitizenRenderer;
+import net.mcreator.umbreorpg.client.renderer.UmbreoFemaleCitizenRenderer;
 import net.mcreator.umbreorpg.client.renderer.UmbelliumBowRenderer;
 import net.mcreator.umbreorpg.client.renderer.TwilightGolemRenderer;
+import net.mcreator.umbreorpg.client.renderer.TwelveEyesMaleCitizenRenderer;
+import net.mcreator.umbreorpg.client.renderer.TwelveEyesFemaleCitizenRenderer;
 import net.mcreator.umbreorpg.client.renderer.TreantRenderer;
 import net.mcreator.umbreorpg.client.renderer.StoneGolemRenderer;
 import net.mcreator.umbreorpg.client.renderer.SkoriumBowRenderer;
@@ -30,6 +36,8 @@ import net.mcreator.umbreorpg.client.renderer.DustmiteRenderer;
 import net.mcreator.umbreorpg.client.renderer.DiamondBowRenderer;
 import net.mcreator.umbreorpg.client.renderer.DemonRenderer;
 import net.mcreator.umbreorpg.client.renderer.CobiumBowRenderer;
+import net.mcreator.umbreorpg.client.renderer.BorealMaleCitizenRenderer;
+import net.mcreator.umbreorpg.client.renderer.BorealFemaleCitizenRenderer;
 import net.mcreator.umbreorpg.client.renderer.BlastGolemRenderer;
 import net.mcreator.umbreorpg.client.renderer.BankerRenderer;
 import net.mcreator.umbreorpg.client.renderer.BanditLeaderRenderer;
@@ -37,6 +45,7 @@ import net.mcreator.umbreorpg.client.renderer.BanditBrownRenderer;
 import net.mcreator.umbreorpg.client.renderer.BanditBlondeRenderer;
 import net.mcreator.umbreorpg.client.renderer.BanditBlackRenderer;
 import net.mcreator.umbreorpg.client.renderer.BakerRenderer;
+import net.mcreator.umbreorpg.client.renderer.ArmoredGolemRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class UmbreoRpgModEntityRenderers {
@@ -70,5 +79,14 @@ public class UmbreoRpgModEntityRenderers {
 		event.registerEntityRenderer(UmbreoRpgModEntities.BANKER.get(), BankerRenderer::new);
 		event.registerEntityRenderer(UmbreoRpgModEntities.BAKER.get(), BakerRenderer::new);
 		event.registerEntityRenderer(UmbreoRpgModEntities.SHOPKEEPER.get(), ShopkeeperRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.TWELVE_EYES_MALE_CITIZEN.get(), TwelveEyesMaleCitizenRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.TWELVE_EYES_FEMALE_CITIZEN.get(), TwelveEyesFemaleCitizenRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.UMBREO_MALE_CITIZEN.get(), UmbreoMaleCitizenRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.UMBREO_FEMALE_CITIZEN.get(), UmbreoFemaleCitizenRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.BOREAL_MALE_CITIZEN.get(), BorealMaleCitizenRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.BOREAL_FEMALE_CITIZEN.get(), BorealFemaleCitizenRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.VORASH_MALE_CITIZEN.get(), VorashMaleCitizenRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.VORASH_FEMALE_CITIZEN.get(), VorashFemaleCitizenRenderer::new);
+		event.registerEntityRenderer(UmbreoRpgModEntities.ARMORED_GOLEM.get(), ArmoredGolemRenderer::new);
 	}
 }

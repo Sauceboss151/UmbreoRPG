@@ -122,6 +122,7 @@ import net.mcreator.umbreorpg.item.RawNetheriteOreItem;
 import net.mcreator.umbreorpg.item.RawMystaliumOreItem;
 import net.mcreator.umbreorpg.item.RawLathiumOreItem;
 import net.mcreator.umbreorpg.item.RawDuiliumOreItem;
+import net.mcreator.umbreorpg.item.RawDarkiumOreItem;
 import net.mcreator.umbreorpg.item.RawCobiumOreItem;
 import net.mcreator.umbreorpg.item.PureGoldIngotItem;
 import net.mcreator.umbreorpg.item.PumpkinCookiesItem;
@@ -214,6 +215,15 @@ import net.mcreator.umbreorpg.item.DiamondBowItem;
 import net.mcreator.umbreorpg.item.DiamondBattleaxeItem;
 import net.mcreator.umbreorpg.item.DesertRevitalizerItem;
 import net.mcreator.umbreorpg.item.DemonHornItem;
+import net.mcreator.umbreorpg.item.DarksteelSwordItem;
+import net.mcreator.umbreorpg.item.DarksteelShovelItem;
+import net.mcreator.umbreorpg.item.DarksteelPickaxeItem;
+import net.mcreator.umbreorpg.item.DarksteelMaceItem;
+import net.mcreator.umbreorpg.item.DarksteelIngotItem;
+import net.mcreator.umbreorpg.item.DarksteelHoeItem;
+import net.mcreator.umbreorpg.item.DarksteelBattleaxeItem;
+import net.mcreator.umbreorpg.item.DarksteelAxeItem;
+import net.mcreator.umbreorpg.item.DarksteelArmorItem;
 import net.mcreator.umbreorpg.item.CrystalBoneItem;
 import net.mcreator.umbreorpg.item.CornSeedsItem;
 import net.mcreator.umbreorpg.item.CoreOfManaItem;
@@ -743,6 +753,52 @@ public class UmbreoRpgModItems {
 			-3355648, -10079488, new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
 	public static final RegistryObject<Item> SHOPKEEPER = REGISTRY.register("shopkeeper_spawn_egg",
 			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.SHOPKEEPER, -10079488, -8897787,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> TWELVE_EYES_MALE_CITIZEN = REGISTRY.register("twelve_eyes_male_citizen_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.TWELVE_EYES_MALE_CITIZEN, -16777216, -16738048,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> TWELVE_EYES_FEMALE_CITIZEN = REGISTRY.register("twelve_eyes_female_citizen_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.TWELVE_EYES_FEMALE_CITIZEN, -16777216, -10027264,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> UMBREO_MALE_CITIZEN = REGISTRY.register("umbreo_male_citizen_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.UMBREO_MALE_CITIZEN, -10092340, -3407872,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> UMBREO_FEMALE_CITIZEN = REGISTRY.register("umbreo_female_citizen_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.UMBREO_FEMALE_CITIZEN, -10092340, -3407872,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> BOREAL_MALE_CITIZEN = REGISTRY.register("boreal_male_citizen_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.BOREAL_MALE_CITIZEN, -10079488, -16711681,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> BOREAL_FEMALE_CITIZEN = REGISTRY.register("boreal_female_citizen_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.BOREAL_FEMALE_CITIZEN, -10079488, -16711681,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> VORASH_MALE_CITIZEN = REGISTRY.register("vorash_male_citizen_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.VORASH_MALE_CITIZEN, -39322, -39373,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> VORASH_FEMALE_CITIZEN = REGISTRY.register("vorash_female_citizen_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.VORASH_FEMALE_CITIZEN, -39322, -39373,
+					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
+	public static final RegistryObject<Item> SKORIUM_ORE = block(UmbreoRpgModBlocks.SKORIUM_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> DARKIUM_ORE = block(UmbreoRpgModBlocks.DARKIUM_ORE, UmbreoRpgModTabs.TAB_UMBREO_MINING);
+	public static final RegistryObject<Item> DARKSTEEL_BLOCK = block(UmbreoRpgModBlocks.DARKSTEEL_BLOCK, UmbreoRpgModTabs.TAB_UMBREO_BLOCKS);
+	public static final RegistryObject<Item> RAW_DARKIUM_ORE = REGISTRY.register("raw_darkium_ore", () -> new RawDarkiumOreItem());
+	public static final RegistryObject<Item> DARKSTEEL_INGOT = REGISTRY.register("darksteel_ingot", () -> new DarksteelIngotItem());
+	public static final RegistryObject<Item> DARKSTEEL_SWORD = REGISTRY.register("darksteel_sword", () -> new DarksteelSwordItem());
+	public static final RegistryObject<Item> DARKSTEEL_PICKAXE = REGISTRY.register("darksteel_pickaxe", () -> new DarksteelPickaxeItem());
+	public static final RegistryObject<Item> DARKSTEEL_AXE = REGISTRY.register("darksteel_axe", () -> new DarksteelAxeItem());
+	public static final RegistryObject<Item> DARKSTEEL_SHOVEL = REGISTRY.register("darksteel_shovel", () -> new DarksteelShovelItem());
+	public static final RegistryObject<Item> DARKSTEEL_HOE = REGISTRY.register("darksteel_hoe", () -> new DarksteelHoeItem());
+	public static final RegistryObject<Item> DARKSTEEL_BATTLEAXE = REGISTRY.register("darksteel_battleaxe", () -> new DarksteelBattleaxeItem());
+	public static final RegistryObject<Item> DARKSTEEL_MACE = REGISTRY.register("darksteel_mace", () -> new DarksteelMaceItem());
+	public static final RegistryObject<Item> DARKSTEEL_ARMOR_HELMET = REGISTRY.register("darksteel_armor_helmet",
+			() -> new DarksteelArmorItem.Helmet());
+	public static final RegistryObject<Item> DARKSTEEL_ARMOR_CHESTPLATE = REGISTRY.register("darksteel_armor_chestplate",
+			() -> new DarksteelArmorItem.Chestplate());
+	public static final RegistryObject<Item> DARKSTEEL_ARMOR_LEGGINGS = REGISTRY.register("darksteel_armor_leggings",
+			() -> new DarksteelArmorItem.Leggings());
+	public static final RegistryObject<Item> DARKSTEEL_ARMOR_BOOTS = REGISTRY.register("darksteel_armor_boots", () -> new DarksteelArmorItem.Boots());
+	public static final RegistryObject<Item> ARMORED_GOLEM = REGISTRY.register("armored_golem_spawn_egg",
+			() -> new ForgeSpawnEggItem(UmbreoRpgModEntities.ARMORED_GOLEM, -10066330, -11519716,
 					new Item.Properties().tab(UmbreoRpgModTabs.TAB_UMBREO_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {

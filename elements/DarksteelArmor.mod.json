@@ -1,0 +1,65 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "darksteel_helmet_texture",
+    "enableBody": true,
+    "textureBody": "darksteel_chestplate_texture",
+    "enableLeggings": true,
+    "textureLeggings": "darksteel_leggings_texture",
+    "enableBoots": true,
+    "textureBoots": "darksteel_boots_texture",
+    "onBootsTick": {
+      "name": "DarksteelArmorEffectProcedure"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:UmbreoCombat"
+    },
+    "armorTextureFile": "darksteel_armor_",
+    "helmetName": "Darksteel Helmet",
+    "bodyName": "Darksteel Chestplate",
+    "leggingsName": "Darksteel Leggings",
+    "bootsName": "Darksteel Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 37,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 15,
+    "toughness": 3.0,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": "item.armor.equip_generic"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:DarksteelIngot"
+      }
+    ]
+  }
+}

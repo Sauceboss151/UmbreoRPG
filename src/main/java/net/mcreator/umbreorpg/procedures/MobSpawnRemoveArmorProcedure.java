@@ -70,7 +70,7 @@ public class MobSpawnRemoveArmorProcedure {
 					_living.setItemSlot(EquipmentSlot.FEET, (ItemStack.EMPTY));
 				}
 			}
+			MobSpawnWithArmorProcedure.execute(entity);
 		}
-		MobSpawnWithArmorProcedure.execute(entity);
 	}
 }

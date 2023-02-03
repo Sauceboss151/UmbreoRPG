@@ -1,0 +1,48 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Baker"
+      },
+      {
+        "value": "CUSTOM:Banker"
+      },
+      {
+        "value": "CUSTOM:BorealFemaleCitizen"
+      },
+      {
+        "value": "CUSTOM:BorealMaleCitizen"
+      },
+      {
+        "value": "CUSTOM:Shopkeeper"
+      },
+      {
+        "value": "CUSTOM:TwelveEyesFemaleCitizen"
+      },
+      {
+        "value": "CUSTOM:TwelveEyesMaleCitizen"
+      },
+      {
+        "value": "CUSTOM:UmbreoFemaleCitizen"
+      },
+      {
+        "value": "CUSTOM:UmbreoMaleCitizen"
+      },
+      {
+        "value": "CUSTOM:VorashFemaleCitizen"
+      },
+      {
+        "value": "CUSTOM:VorashMaleCitizen"
+      }
+    ],
+    "biomes": [],
+    "name": "citizen_type_mob",
+    "namespace": "forge"
+  }
+}

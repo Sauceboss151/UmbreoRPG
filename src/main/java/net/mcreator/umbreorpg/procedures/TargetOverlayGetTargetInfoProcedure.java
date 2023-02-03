@@ -152,6 +152,7 @@ public class TargetOverlayGetTargetInfoProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				break;
 			}
 			raytrace_distance = raytrace_distance + 1;
 		}

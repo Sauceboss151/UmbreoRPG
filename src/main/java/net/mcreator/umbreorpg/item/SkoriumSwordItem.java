@@ -14,15 +14,15 @@ public class SkoriumSwordItem extends SwordItem {
 	public SkoriumSwordItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2032;
+				return 1561;
 			}
 
 			public float getSpeed() {
-				return 9f;
+				return 4f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 6f;
+				return 5f;
 			}
 
 			public int getLevel() {
@@ -30,7 +30,7 @@ public class SkoriumSwordItem extends SwordItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 15;
+				return 10;
 			}
 
 			public Ingredient getRepairIngredient() {

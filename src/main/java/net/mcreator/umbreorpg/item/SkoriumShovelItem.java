@@ -14,23 +14,23 @@ public class SkoriumShovelItem extends ShovelItem {
 	public SkoriumShovelItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2032;
+				return 1561;
 			}
 
 			public float getSpeed() {
-				return 9f;
+				return 8f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 1.25f;
+				return 0.75f;
 			}
 
 			public int getLevel() {
-				return 4;
+				return 3;
 			}
 
 			public int getEnchantmentValue() {
-				return 15;
+				return 10;
 			}
 
 			public Ingredient getRepairIngredient() {

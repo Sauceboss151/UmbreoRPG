@@ -5,39 +5,6 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:SkoriumArmor.helmet"
-      },
-      {
-        "value": "CUSTOM:SkoriumArmor.body"
-      },
-      {
-        "value": "CUSTOM:SkoriumArmor.legs"
-      },
-      {
-        "value": "CUSTOM:SkoriumArmor.boots"
-      },
-      {
-        "value": "CUSTOM:SkoriumSword"
-      },
-      {
-        "value": "CUSTOM:SkoriumPickaxe"
-      },
-      {
-        "value": "CUSTOM:SkoriumAxe"
-      },
-      {
-        "value": "CUSTOM:SkoriumShovel"
-      },
-      {
-        "value": "CUSTOM:SkoriumHoe"
-      },
-      {
-        "value": "CUSTOM:SkoriumBattleaxe"
-      },
-      {
-        "value": "CUSTOM:SkoriumMace"
-      },
-      {
         "value": "CUSTOM:UmbreonNetheriteArmor.helmet"
       },
       {
@@ -69,11 +36,45 @@
       },
       {
         "value": "CUSTOM:NetheriteMace"
+      },
+      {
+        "value": "CUSTOM:DarksteelSword"
+      },
+      {
+        "value": "CUSTOM:DarksteelPickaxe"
+      },
+      {
+        "value": "CUSTOM:DarksteelAxe"
+      },
+      {
+        "value": "CUSTOM:DarksteelShovel"
+      },
+      {
+        "value": "CUSTOM:DarksteelHoe"
+      },
+      {
+        "value": "CUSTOM:DarksteelBattleaxe"
+      },
+      {
+        "value": "CUSTOM:DarksteelMace"
+      },
+      {
+        "value": "CUSTOM:DarksteelArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:DarksteelArmor.body"
+      },
+      {
+        "value": "CUSTOM:DarksteelArmor.legs"
+      },
+      {
+        "value": "CUSTOM:DarksteelArmor.boots"
       }
     ],
     "blocks": [],
     "functions": [],
     "entities": [],
+    "biomes": [],
     "name": "smithing_tier_3_tag",
     "namespace": "forge"
   }

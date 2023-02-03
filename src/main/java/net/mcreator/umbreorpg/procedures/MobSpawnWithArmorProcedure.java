@@ -25,8 +25,9 @@ public class MobSpawnWithArmorProcedure {
 			rand = Mth.nextInt(new Random(), 0, 100);
 			if (rand <= 15) {
 				randtype = Mth.nextInt(new Random(), 0, 10000);
-				if (randtype <= 4
-						&& !entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:piglin_type_mob")))) {
+				if (randtype <= 4 && !(entity.getType()
+						.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:piglin_type_mob")))
+						|| entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:citizen_type_mob"))))) {
 					randpiece = Mth.nextInt(new Random(), 0, 100);
 					if (randpiece <= 25) {
 						{
@@ -123,8 +124,9 @@ public class MobSpawnWithArmorProcedure {
 							}
 						}
 					}
-				} else if (randtype <= 131
-						&& !entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:piglin_type_mob")))) {
+				} else if (randtype <= 131 && !(entity.getType()
+						.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:piglin_type_mob")))
+						|| entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:citizen_type_mob"))))) {
 					randpiece = Mth.nextInt(new Random(), 0, 100);
 					if (randpiece <= 25) {
 						{
@@ -221,8 +223,9 @@ public class MobSpawnWithArmorProcedure {
 							}
 						}
 					}
-				} else if (randtype <= 1421
-						&& !entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:piglin_type_mob")))) {
+				} else if (randtype <= 1421 && !(entity.getType()
+						.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:piglin_type_mob")))
+						|| entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:citizen_type_mob"))))) {
 					randpiece = Mth.nextInt(new Random(), 0, 100);
 					if (randpiece <= 25) {
 						{
@@ -319,7 +322,8 @@ public class MobSpawnWithArmorProcedure {
 							}
 						}
 					}
-				} else if (randtype <= 6294) {
+				} else if (randtype <= 6294
+						&& !entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:citizen_type_mob")))) {
 					randpiece = Mth.nextInt(new Random(), 0, 100);
 					if (randpiece <= 25) {
 						{

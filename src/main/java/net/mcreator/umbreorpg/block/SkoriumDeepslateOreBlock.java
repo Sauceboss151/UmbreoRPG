@@ -16,7 +16,7 @@ import java.util.Collections;
 
 public class SkoriumDeepslateOreBlock extends Block {
 	public SkoriumDeepslateOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f));
 	}
 
 	@Override

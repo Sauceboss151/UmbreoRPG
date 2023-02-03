@@ -29,7 +29,7 @@ public class TestHealthCommandProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null)
 					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"attribute @p minecraft:generic.max_health base set 40");
+							"attribute @p minecraft:generic.max_health base set 20");
 			}
 		}
 	}

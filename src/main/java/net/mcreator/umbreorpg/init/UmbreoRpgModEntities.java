@@ -17,9 +17,15 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.umbreorpg.entity.ZoraliumBowEntity;
+import net.mcreator.umbreorpg.entity.VorashMaleCitizenEntity;
+import net.mcreator.umbreorpg.entity.VorashFemaleCitizenEntity;
 import net.mcreator.umbreorpg.entity.VenomBeetleEntity;
+import net.mcreator.umbreorpg.entity.UmbreoMaleCitizenEntity;
+import net.mcreator.umbreorpg.entity.UmbreoFemaleCitizenEntity;
 import net.mcreator.umbreorpg.entity.UmbelliumBowEntity;
 import net.mcreator.umbreorpg.entity.TwilightGolemEntity;
+import net.mcreator.umbreorpg.entity.TwelveEyesMaleCitizenEntity;
+import net.mcreator.umbreorpg.entity.TwelveEyesFemaleCitizenEntity;
 import net.mcreator.umbreorpg.entity.TreantEntity;
 import net.mcreator.umbreorpg.entity.StoneGolemEntity;
 import net.mcreator.umbreorpg.entity.SkoriumBowEntity;
@@ -37,6 +43,8 @@ import net.mcreator.umbreorpg.entity.DustmiteEntity;
 import net.mcreator.umbreorpg.entity.DiamondBowEntity;
 import net.mcreator.umbreorpg.entity.DemonEntity;
 import net.mcreator.umbreorpg.entity.CobiumBowEntity;
+import net.mcreator.umbreorpg.entity.BorealMaleCitizenEntity;
+import net.mcreator.umbreorpg.entity.BorealFemaleCitizenEntity;
 import net.mcreator.umbreorpg.entity.BlastGolemEntity;
 import net.mcreator.umbreorpg.entity.BankerEntity;
 import net.mcreator.umbreorpg.entity.BanditLeaderEntity;
@@ -44,6 +52,7 @@ import net.mcreator.umbreorpg.entity.BanditBrownEntity;
 import net.mcreator.umbreorpg.entity.BanditBlondeEntity;
 import net.mcreator.umbreorpg.entity.BanditBlackEntity;
 import net.mcreator.umbreorpg.entity.BakerEntity;
+import net.mcreator.umbreorpg.entity.ArmoredGolemEntity;
 import net.mcreator.umbreorpg.UmbreoRpgMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -156,6 +165,56 @@ public class UmbreoRpgModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShopkeeperEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TwelveEyesMaleCitizenEntity>> TWELVE_EYES_MALE_CITIZEN = register("twelve_eyes_male_citizen",
+			EntityType.Builder.<TwelveEyesMaleCitizenEntity>of(TwelveEyesMaleCitizenEntity::new, MobCategory.MONSTER)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(TwelveEyesMaleCitizenEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TwelveEyesFemaleCitizenEntity>> TWELVE_EYES_FEMALE_CITIZEN = register("twelve_eyes_female_citizen",
+			EntityType.Builder.<TwelveEyesFemaleCitizenEntity>of(TwelveEyesFemaleCitizenEntity::new, MobCategory.MONSTER)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(TwelveEyesFemaleCitizenEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<UmbreoMaleCitizenEntity>> UMBREO_MALE_CITIZEN = register("umbreo_male_citizen",
+			EntityType.Builder.<UmbreoMaleCitizenEntity>of(UmbreoMaleCitizenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(UmbreoMaleCitizenEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<UmbreoFemaleCitizenEntity>> UMBREO_FEMALE_CITIZEN = register("umbreo_female_citizen",
+			EntityType.Builder.<UmbreoFemaleCitizenEntity>of(UmbreoFemaleCitizenEntity::new, MobCategory.MONSTER)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(UmbreoFemaleCitizenEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BorealMaleCitizenEntity>> BOREAL_MALE_CITIZEN = register("boreal_male_citizen",
+			EntityType.Builder.<BorealMaleCitizenEntity>of(BorealMaleCitizenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BorealMaleCitizenEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BorealFemaleCitizenEntity>> BOREAL_FEMALE_CITIZEN = register("boreal_female_citizen",
+			EntityType.Builder.<BorealFemaleCitizenEntity>of(BorealFemaleCitizenEntity::new, MobCategory.MONSTER)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(BorealFemaleCitizenEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<VorashMaleCitizenEntity>> VORASH_MALE_CITIZEN = register("vorash_male_citizen",
+			EntityType.Builder.<VorashMaleCitizenEntity>of(VorashMaleCitizenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VorashMaleCitizenEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<VorashFemaleCitizenEntity>> VORASH_FEMALE_CITIZEN = register("vorash_female_citizen",
+			EntityType.Builder.<VorashFemaleCitizenEntity>of(VorashFemaleCitizenEntity::new, MobCategory.MONSTER)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(VorashFemaleCitizenEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ArmoredGolemEntity>> ARMORED_GOLEM = register("armored_golem",
+			EntityType.Builder.<ArmoredGolemEntity>of(ArmoredGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ArmoredGolemEntity::new)
+
+					.sized(1.5f, 2.6f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -183,6 +242,15 @@ public class UmbreoRpgModEntities {
 			BankerEntity.init();
 			BakerEntity.init();
 			ShopkeeperEntity.init();
+			TwelveEyesMaleCitizenEntity.init();
+			TwelveEyesFemaleCitizenEntity.init();
+			UmbreoMaleCitizenEntity.init();
+			UmbreoFemaleCitizenEntity.init();
+			BorealMaleCitizenEntity.init();
+			BorealFemaleCitizenEntity.init();
+			VorashMaleCitizenEntity.init();
+			VorashFemaleCitizenEntity.init();
+			ArmoredGolemEntity.init();
 		});
 	}
 
@@ -207,5 +275,14 @@ public class UmbreoRpgModEntities {
 		event.put(BANKER.get(), BankerEntity.createAttributes().build());
 		event.put(BAKER.get(), BakerEntity.createAttributes().build());
 		event.put(SHOPKEEPER.get(), ShopkeeperEntity.createAttributes().build());
+		event.put(TWELVE_EYES_MALE_CITIZEN.get(), TwelveEyesMaleCitizenEntity.createAttributes().build());
+		event.put(TWELVE_EYES_FEMALE_CITIZEN.get(), TwelveEyesFemaleCitizenEntity.createAttributes().build());
+		event.put(UMBREO_MALE_CITIZEN.get(), UmbreoMaleCitizenEntity.createAttributes().build());
+		event.put(UMBREO_FEMALE_CITIZEN.get(), UmbreoFemaleCitizenEntity.createAttributes().build());
+		event.put(BOREAL_MALE_CITIZEN.get(), BorealMaleCitizenEntity.createAttributes().build());
+		event.put(BOREAL_FEMALE_CITIZEN.get(), BorealFemaleCitizenEntity.createAttributes().build());
+		event.put(VORASH_MALE_CITIZEN.get(), VorashMaleCitizenEntity.createAttributes().build());
+		event.put(VORASH_FEMALE_CITIZEN.get(), VorashFemaleCitizenEntity.createAttributes().build());
+		event.put(ARMORED_GOLEM.get(), ArmoredGolemEntity.createAttributes().build());
 	}
 }

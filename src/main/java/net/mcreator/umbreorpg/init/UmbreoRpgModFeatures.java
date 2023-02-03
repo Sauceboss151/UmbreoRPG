@@ -28,6 +28,7 @@ import net.mcreator.umbreorpg.world.features.ores.PureGoldOreFeature;
 import net.mcreator.umbreorpg.world.features.ores.PureGoldDeepslateOreFeature;
 import net.mcreator.umbreorpg.world.features.ores.LathiumOreFeature;
 import net.mcreator.umbreorpg.world.features.ores.LathiumDeepslateOreFeature;
+import net.mcreator.umbreorpg.world.features.ores.DarkiumOreFeature;
 import net.mcreator.umbreorpg.world.features.ores.CobiumOreFeature;
 import net.mcreator.umbreorpg.world.features.ores.CobiumDeepslateOreFeature;
 import net.mcreator.umbreorpg.UmbreoRpgMod;
@@ -73,6 +74,8 @@ public class UmbreoRpgModFeatures {
 					SkoriumDeepslateOreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> UMBELLIUM_ORE = register("umbellium_ore", UmbelliumOreFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.UNDERGROUND_ORES, UmbelliumOreFeature.GENERATE_BIOMES, UmbelliumOreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> DARKIUM_ORE = register("darkium_ore", DarkiumOreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DarkiumOreFeature.GENERATE_BIOMES, DarkiumOreFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

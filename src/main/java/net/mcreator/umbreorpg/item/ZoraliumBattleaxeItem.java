@@ -14,7 +14,7 @@ public class ZoraliumBattleaxeItem extends SwordItem {
 	public ZoraliumBattleaxeItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 100;
+				return 1561;
 			}
 
 			public float getSpeed() {

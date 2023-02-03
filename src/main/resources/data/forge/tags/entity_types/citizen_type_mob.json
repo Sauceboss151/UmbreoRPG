@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "umbreo_rpg:banker",
+    "umbreo_rpg:umbreo_female_citizen",
+    "umbreo_rpg:boreal_male_citizen",
+    "umbreo_rpg:twelve_eyes_female_citizen",
+    "umbreo_rpg:umbreo_male_citizen",
+    "umbreo_rpg:baker",
+    "umbreo_rpg:vorash_female_citizen",
+    "umbreo_rpg:boreal_female_citizen",
+    "umbreo_rpg:shopkeeper",
+    "umbreo_rpg:twelve_eyes_male_citizen",
+    "umbreo_rpg:vorash_male_citizen"
+  ]
+}

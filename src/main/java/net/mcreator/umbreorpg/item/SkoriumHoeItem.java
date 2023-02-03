@@ -14,11 +14,11 @@ public class SkoriumHoeItem extends HoeItem {
 	public SkoriumHoeItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2032;
+				return 1561;
 			}
 
 			public float getSpeed() {
-				return 9f;
+				return 8f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -26,11 +26,11 @@ public class SkoriumHoeItem extends HoeItem {
 			}
 
 			public int getLevel() {
-				return 4;
+				return 3;
 			}
 
 			public int getEnchantmentValue() {
-				return 15;
+				return 10;
 			}
 
 			public Ingredient getRepairIngredient() {

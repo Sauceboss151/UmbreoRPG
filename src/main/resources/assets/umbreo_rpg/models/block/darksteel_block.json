@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "umbreo_rpg:blocks/darksteel_block",
+    "particle": "umbreo_rpg:blocks/darksteel_block"
+  }
+}

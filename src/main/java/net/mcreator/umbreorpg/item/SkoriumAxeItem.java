@@ -14,23 +14,23 @@ public class SkoriumAxeItem extends AxeItem {
 	public SkoriumAxeItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2032;
+				return 1561;
 			}
 
 			public float getSpeed() {
-				return 9f;
-			}
-
-			public float getAttackDamageBonus() {
 				return 8f;
 			}
 
+			public float getAttackDamageBonus() {
+				return 7f;
+			}
+
 			public int getLevel() {
-				return 4;
+				return 3;
 			}
 
 			public int getEnchantmentValue() {
-				return 15;
+				return 10;
 			}
 
 			public Ingredient getRepairIngredient() {

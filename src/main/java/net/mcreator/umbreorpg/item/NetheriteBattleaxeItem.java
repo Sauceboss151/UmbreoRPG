@@ -14,7 +14,7 @@ public class NetheriteBattleaxeItem extends SwordItem {
 	public NetheriteBattleaxeItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2031;
+				return 2032;
 			}
 
 			public float getSpeed() {

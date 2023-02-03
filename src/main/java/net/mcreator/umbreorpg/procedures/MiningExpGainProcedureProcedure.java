@@ -127,7 +127,8 @@ public class MiningExpGainProcedureProcedure {
 					|| blockstate.getBlock() == UmbreoRpgModBlocks.ZORALIUM_DEEPSLATE_ORE.get()
 					|| blockstate.getBlock() == UmbreoRpgModBlocks.LATHIUM_DEEPSLATE_ORE.get()
 					|| blockstate.getBlock() == UmbreoRpgModBlocks.COBIUM_DEEPSLATE_ORE.get()
-					|| blockstate.getBlock() == UmbreoRpgModBlocks.PURE_GOLD_DEEPSLATE_ORE.get()) {
+					|| blockstate.getBlock() == UmbreoRpgModBlocks.PURE_GOLD_DEEPSLATE_ORE.get()
+					|| blockstate.getBlock() == UmbreoRpgModBlocks.SKORIUM_DEEPSLATE_ORE.get()) {
 				if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgMiningLevel >= 4) {
 					{
@@ -142,7 +143,7 @@ public class MiningExpGainProcedureProcedure {
 						_player.displayClientMessage(new TextComponent("Mining Exp +3"), (true));
 				}
 			}
-			if (blockstate.getBlock() == Blocks.ANCIENT_DEBRIS || blockstate.getBlock() == UmbreoRpgModBlocks.SKORIUM_DEEPSLATE_ORE.get()) {
+			if (blockstate.getBlock() == Blocks.ANCIENT_DEBRIS || blockstate.getBlock() == UmbreoRpgModBlocks.DARKIUM_ORE.get()) {
 				if ((entity.getCapability(UmbreoRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new UmbreoRpgModVariables.PlayerVariables())).umbreoRpgMiningLevel >= 5) {
 					{

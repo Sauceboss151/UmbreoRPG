@@ -35,6 +35,7 @@ import net.mcreator.umbreorpg.block.UltriumBlockBlock;
 import net.mcreator.umbreorpg.block.TetriumOreBlock;
 import net.mcreator.umbreorpg.block.TetriumDeepslateOreBlock;
 import net.mcreator.umbreorpg.block.TetriumBlockBlock;
+import net.mcreator.umbreorpg.block.SkoriumOreBlock;
 import net.mcreator.umbreorpg.block.SkoriumDeepslateOreBlock;
 import net.mcreator.umbreorpg.block.SkoriumBlockBlock;
 import net.mcreator.umbreorpg.block.RiceStage5Block;
@@ -69,6 +70,8 @@ import net.mcreator.umbreorpg.block.GarlicStage0Block;
 import net.mcreator.umbreorpg.block.DuiliumOreBlock;
 import net.mcreator.umbreorpg.block.DuiliumDeepslateOreBlock;
 import net.mcreator.umbreorpg.block.DuiliumBlockBlock;
+import net.mcreator.umbreorpg.block.DarksteelBlockBlock;
+import net.mcreator.umbreorpg.block.DarkiumOreBlock;
 import net.mcreator.umbreorpg.block.CornStage9Block;
 import net.mcreator.umbreorpg.block.CornStage8Block;
 import net.mcreator.umbreorpg.block.CornStage7Block;
@@ -208,6 +211,9 @@ public class UmbreoRpgModBlocks {
 			() -> new RandomAllianceBlockBlock());
 	public static final RegistryObject<Block> GATES_OF_FATES_PORTAL_BLOCK = REGISTRY.register("gates_of_fates_portal_block",
 			() -> new GatesOfFatesPortalBlockBlock());
+	public static final RegistryObject<Block> SKORIUM_ORE = REGISTRY.register("skorium_ore", () -> new SkoriumOreBlock());
+	public static final RegistryObject<Block> DARKIUM_ORE = REGISTRY.register("darkium_ore", () -> new DarkiumOreBlock());
+	public static final RegistryObject<Block> DARKSTEEL_BLOCK = REGISTRY.register("darksteel_block", () -> new DarksteelBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
